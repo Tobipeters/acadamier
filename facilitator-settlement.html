@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Facilitator Dashboard - Acadamier</title>
+    <title>Facilitator Revenue - Acadamier</title>
 
     <!-- Prevent the demo from appearing in search engines -->
     <meta name="robots" content="noindex">
@@ -33,6 +33,10 @@
 
     <!-- App CSS -->
     <link type="text/css" href="assets/css/app.css" rel="stylesheet">
+    <!-- Flatpickr -->
+    <link type="text/css" href="assets/css/flatpickr.css" rel="stylesheet">
+
+    <link type="text/css" href="assets/css/flatpickr-airbnb.css" rel="stylesheet">
 
 </head>
 
@@ -273,15 +277,13 @@
                     <div class="flex d-flex flex-column flex-sm-row align-items-center mb-24pt mb-md-0">
 
                         <div class="mb-24pt mb-sm-0 mr-sm-24pt">
-                            <h2 class="mb-0">Dashboard</h2>
+                            <h2 class="mb-0">Settlement</h2>
 
                             <ol class="breadcrumb p-0 m-0">
-                                <li class="breadcrumb-item"><a href="student-dashboard.html">Home</a></li>
+                                <li class="breadcrumb-item"><a href="facilitator-dashboard.html">Home</a></li>
 
                                 <li class="breadcrumb-item active">
-
-                                    Dashboard
-
+                                    Settlement
                                 </li>
 
                             </ol>
@@ -293,16 +295,9 @@
                     <!-- Create Button With Dropdown -->
                     <div class="row" role="tablist">
                         <div class="col-auto">
-                            <a href="student-my-courses.html" class="btn btn-outline-secondary dropdown-toggle"
-                                id="dropdownMenuButton" data-toggle="dropdown">
-                                Create New
+                            <a href="facilitator-settlement.html" class="btn btn-outline-secondary">
+                                Request Withdrawal
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="border-bottom dropdown-item" href="#">Course</a>
-                                <a class="border-bottom dropdown-item" href="#">Class </a>
-                                <a class="border-bottom dropdown-item" href="#">Book </a>
-                                <a class="border-bottom dropdown-item" href="#">Quiz </a>
-                            </div>
                         </div>
                     </div>
 
@@ -312,189 +307,16 @@
             <div class="container page__container">
 
                 <div class="page-section">
-                    <!-- Overview Session -->
-                    <div class="page-separator">
-                        <div class="page-separator__text">Overview</div>
-                    </div>
 
-                    <div class="row card-group-row mb-lg-8pt">
-                        <div class="col-lg-4 card-group-row__col">
-
-                            <div class="card card-group-row__card">
-                                <div class="card-body py-12pt d-flex align-items-center">
-                                    <strong class="flex">Total Courses</strong>
-                                    <div class="text-100 h2">105</div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-lg-4 card-group-row__col">
-                            <div class="card card-group-row__card">
-                                <div class="card-body py-12pt d-flex align-items-center">
-                                    <strong class="flex">Total Students</strong>
-                                    <div class="text-100 h2">445</div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-lg-4 card-group-row__col">
-                            <div class="card card-group-row__card">
-                                <div class="card-body py-12pt d-flex align-items-center">
-                                    <strong class="flex">Total Books</strong>
-                                    <div class="text-100 h2">445</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 card-group-row__col">
-                            <div class="card card-group-row__card">
-                                <div class="card-body py-12pt d-flex align-items-center">
-                                    <strong class="flex">Total Classes</strong>
-                                    <div class="text-100 h2">78</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 card-group-row__col">
-                            <div class="card card-group-row__card">
-                                <div class="card-body py-12pt d-flex align-items-center">
-                                    <strong class="flex">Average Ratings</strong>
-                                    <div class="text-100 h2">4/5</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 card-group-row__col">
-                            <div class="card card-group-row__card">
-                                <div class="card-body py-12pt d-flex align-items-center">
-                                    <strong class="flex">Total Revenue</strong>
-                                    <div class="text-100 h2">78</div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <!-- Messages and certification -->
-                    <div class="row py-5">
-                        <!-- Message Column -->
-                        <div class="col-md-6">
-                            <div class="page-separator">
-                                <div class="page-separator__text">Messages</div>
-                            </div>
-                            <div>
-                                <div class="card card-body">
-                                    <div class="d-flex">
-                                        <a href="#" class="avatar avatar-sm avatar-online mr-12pt">
-                                            <span class="avatar-title rounded-circle">JD</span>
-                                        </a>
-                                        <div class="flex">
-                                            <p class="d-flex align-items-center mb-2">
-                                                <a href="#" class="text-body mr-2"><strong>Jenell D. Matney</strong></a>
-                                                <small class="text-muted">2 min ago</small>
-                                            </p>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores
-                                                beatae quisquam iste maiores libero, corrupti totam saepe itaque quidem
-                                                perspiciatis?
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card card-body">
-                                    <div class="d-flex">
-                                        <a href="#" class="avatar avatar-sm avatar-online mr-12pt">
-                                            <span class="avatar-title rounded-circle">JD</span>
-                                        </a>
-                                        <div class="flex">
-                                            <p class="d-flex align-items-center mb-2">
-                                                <a href="#" class="text-body mr-2"><strong>Jenell D. Matney</strong></a>
-                                                <small class="text-muted">2 min ago</small>
-                                            </p>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores
-                                                beatae quisquam iste maiores libero, corrupti totam saepe itaque quidem
-                                                perspiciatis?
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Certification Column -->
-                        <div class="col-md-6">
-                            <div class="page-separator">
-                                <div class="page-separator__text">Certification</div>
-                            </div>
-                            <div>
-                                <div class="card card-body">
-                                    <div class="d-flex">
-                                        <a href="#" class="avatar avatar-sm mr-12pt">
-                                            <img src="./assets/images/paths/5f5635f521a1b.jpg" width="45" height="45"
-                                                class="rounded border">
-                                        </a>
-                                        <div class="flex">
-                                            <h6 class="d-flex align-items-center mb-2">
-                                                <a href="#" class="text-body mr-2"><strong>Taylor Jones </strong></a>
-                                            </h6>
-                                            <p class="mb-0 font-weight-bold">Engineering Mechanics</p>
-                                            <div class="d-flex justify-content-between">
-                                                <small class="text-muted d-inline-block pt-1">21 September, 2020</small>
-                                                <a class="btn btn-sm btn-outline-primary">Issue</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card card-body">
-                                    <div class="d-flex">
-                                        <a href="#" class="avatar avatar-sm mr-12pt">
-                                            <img src="./assets/images/paths/5f5635f521a1b.jpg" width="45" height="45"
-                                                class="rounded border">
-                                        </a>
-                                        <div class="flex">
-                                            <h6 class="d-flex align-items-center mb-2">
-                                                <a href="#" class="text-body mr-2"><strong>Taylor Jones </strong></a>
-                                            </h6>
-                                            <p class="mb-0 font-weight-bold">Engineering Mechanics</p>
-                                            <div class="d-flex justify-content-between">
-                                                <small class="text-muted d-inline-block pt-1">21 September, 2020</small>
-                                                <a class="btn btn-sm btn-outline-primary">Issue</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card card-body">
-                                    <div class="d-flex">
-                                        <a href="#" class="avatar avatar-sm mr-12pt">
-                                            <img src="./assets/images/paths/5f5635f521a1b.jpg" width="45" height="45"
-                                                class="rounded border">
-                                        </a>
-                                        <div class="flex">
-                                            <h6 class="d-flex align-items-center mb-2">
-                                                <a href="#" class="text-body mr-2"><strong>Taylor Jones </strong></a>
-                                            </h6>
-                                            <p class="mb-0 font-weight-bold">Engineering Mechanics</p>
-                                            <div class="d-flex justify-content-between">
-                                                <small class="text-muted d-inline-block pt-1">21 September, 2020</small>
-                                                <a class="btn btn-sm btn-outline-primary">Issue</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-                    <!-- Course List -->
+                    <!-- ALl transcations -->
                     <div class="pt-3 pb-5">
                         <div class="page-separator">
-                            <div class="page-separator__text">Course List</div>
+                            <div class="page-separator__text">All Transactions</div>
                         </div>
 
                         <div class="card m-0">
-                            <div class="table-responsive" data-toggle="lists" data-lists-sort-by="js-lists-values-class"
-                                data-lists-values='["js-lists-values-class", "js-lists-values-employer-name", "js-lists-values-projects", "js-lists-values-rating", "js-lists-values-earnings"]'>
+                            <div class="table-responsive" data-toggle="lists" data-lists-sort-by="js-lists-values-id"
+                                data-lists-values='["js-lists-values-id", "js-lists-values-amount", "js-lists-values-date", "js-lists-values-status"]'>
 
                                 <div class="card-header mx-0 row px-0">
                                     <div class="col-md-6">
@@ -511,19 +333,20 @@
                                         <tr>
                                             <th>
                                                 <a href="javascript:void(0)" class="sort"
-                                                    data-sort="js-lists-values-class">Course</a>
+                                                    data-sort="js-lists-values-id">Transaction ID</a>
                                             </th>
-                                            <th style="width: 37px;">Status</th>
-                                            <th style="width: 37px;">Student Count</th>
-                                            <th style="width: 120px;">
+                                            <th style="width: 37px;">
                                                 <a href="javascript:void(0)" class="sort"
-                                                    data-sort="js-lists-values-rating">Average Rating</a>
+                                                    data-sort="js-lists-values-amount">Amount</a>
+                                            </th>
+                                            <th style="width: 37px;">
+                                                <a href="javascript:void(0)" class="sort"
+                                                    data-sort="js-lists-values-date">Date Requested</a>
                                             </th>
                                             <th style="width: 51px;">
                                                 <a href="javascript:void(0)" class="sort"
-                                                    data-sort="js-lists-values-earnings">Total Earnings</a>
+                                                    data-sort="js-lists-values-status">Status</a>
                                             </th>
-                                            <th style="width: 24px;" class="pl-0">Action</th>
                                         </tr>
                                     </thead>
                                     <tbody class="list" id="search">
@@ -532,58 +355,66 @@
                                             <td>
                                                 <div class="d-flex flex-column">
                                                     <p class="mb-0">
-                                                        <strong class="js-lists-values-class">Engineering Mechanics
-                                                            I</strong>
+                                                        <strong class="js-lists-values-id">
+                                                            #109823
+                                                        </strong>
                                                     </p>
                                                     <!-- Extra description -->
                                                     <small class="js-lists-values-employee-email text-50"></small>
                                                 </div>
                                             </td>
-                                            <td> Live </td>
-                                            <td> 249 </td>
-                                            <td class="text-50 js-lists-values-rating small">4/5</td>
-                                            <td class="js-lists-values-earnings small">$12,402</td>
+                                            <td class="text-50 js-lists-values-amount small">&#8358;40,000</td>
+                                            <td class="js-lists-values-date small text-center">19/08/2020</td>
                                             <td class="text-right pl-0">
-                                                <a href="student-my-courses.html"
-                                                    class="btn btn-sm btn-outline-secondary dropdown-toggle"
-                                                    id="tableAction" data-toggle="dropdown">
-                                                    More
-                                                </a>
-                                                <div class="dropdown-menu" aria-labelledby="tableAction">
-                                                    <a class="border-bottom dropdown-item" href="#">Earnings</a>
-                                                    <a class="border-bottom dropdown-item" href="#">Reviews </a>
-                                                    <a class="border-bottom dropdown-item" href="#">Student List </a>
-                                                    <a class="dropdown-item" href="#">Discussion </a>
+                                                <div class="alert alert-success  js-lists-values-status mb-0 px-2 py-1 text-center"
+                                                    role="alert">
+                                                    Success
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <div class="d-flex flex-column">
-                                                    <p class="mb-0"><strong class="js-lists-values-class">Engineering
-                                                            Mechanics II</strong>
+                                                    <p class="mb-0">
+                                                        <strong class="js-lists-values-id">
+                                                            #109823
+                                                        </strong>
                                                     </p>
+                                                    <!-- Extra description -->
                                                     <small class="js-lists-values-employee-email text-50"></small>
                                                 </div>
                                             </td>
-                                            <td> Draft </td>
-                                            <td> 250 </td>
-                                            <td class="text-50 js-lists-values-rating small">4/5</td>
-                                            <td class="js-lists-values-earnings small">$1,943</td>
+                                            <td class="text-50 js-lists-values-amount small">&#8358;40,000</td>
+                                            <td class="js-lists-values-date small text-center">19/08/2020</td>
                                             <td class="text-right pl-0">
-                                                <a href="student-my-courses.html"
-                                                    class="btn btn-sm btn-outline-secondary dropdown-toggle"
-                                                    id="tableAction" data-toggle="dropdown">
-                                                    More
-                                                </a>
-                                                <div class="dropdown-menu" aria-labelledby="tableAction">
-                                                    <a class="border-bottom dropdown-item" href="#">Earnings</a>
-                                                    <a class="border-bottom dropdown-item" href="#">Reviews </a>
-                                                    <a class="border-bottom dropdown-item" href="#">Student List </a>
-                                                    <a class="dropdown-item" href="#">Discussion </a>
+                                                <div class="alert alert-warning  js-lists-values-status mb-0 px-2 py-1 text-center"
+                                                    role="alert">
+                                                    Pending
                                                 </div>
                                             </td>
                                         </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex flex-column">
+                                                    <p class="mb-0">
+                                                        <strong class="js-lists-values-id">
+                                                            #109823
+                                                        </strong>
+                                                    </p>
+                                                    <!-- Extra description -->
+                                                    <small class="js-lists-values-employee-email text-50"></small>
+                                                </div>
+                                            </td>
+                                            <td class="text-50 js-lists-values-amount small">&#8358;20,000</td>
+                                            <td class="js-lists-values-date small text-center">19/08/2020</td>
+                                            <td class="text-right pl-0">
+                                                <div class="alert alert-danger  js-lists-values-status mb-0 px-2 py-1 text-center"
+                                                    role="alert">
+                                                    Rejected
+                                                </div>
+                                            </td>
+                                        </tr>
+
 
                                     </tbody>
                                 </table>
@@ -592,113 +423,16 @@
 
                         </div>
                     </div>
-                    <!-- Course List Ends here -->
-
-                    <!-- Class List -->
-                    <div class="card m-0">
-                        <div class="table-responsive" data-toggle="lists" data-lists-sort-by="js-lists-values-class"
-                            data-lists-values='["js-lists-values-class", "js-lists-values-employer-name", "js-lists-values-projects", "js-lists-values-rating", "js-lists-values-earnings"]'>
-
-                            <div class="card-header mx-0 row px-0">
-                                <div class="col-md-6">
-                                    <div class="search-form w-50">
-                                        <input type="text" class="form-control search" placeholder="Search ...">
-                                        <button class="btn" type="button"><i class="material-icons">search</i></button>
-                                    </div>
-                                </div>
-                                <div class="col-md-6"></div>
-                            </div>
-                            <table class="table mb-0 thead-border-top-0 table-nowrap">
-                                <thead>
-                                    <tr>
-                                        <th>
-                                            <a href="javascript:void(0)" class="sort"
-                                                data-sort="js-lists-values-class">Class</a>
-                                        </th>
-                                        <th style="width: 37px;">Status</th>
-                                        <th style="width: 37px;">Student Count</th>
-                                        <th style="width: 120px;">
-                                            <a href="javascript:void(0)" class="sort"
-                                                data-sort="js-lists-values-rating">Average Rating</a>
-                                        </th>
-                                        <th style="width: 51px;">
-                                            <a href="javascript:void(0)" class="sort"
-                                                data-sort="js-lists-values-earnings">Total Earnings</a>
-                                        </th>
-                                        <th style="width: 24px;" class="pl-0">Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody class="list" id="search">
-
-                                    <tr>
-                                        <td>
-                                            <div class="d-flex flex-column">
-                                                <p class="mb-0">
-                                                    <strong class="js-lists-values-class">Engineering Mechanics
-                                                        I</strong>
-                                                </p>
-                                                <!-- Extra description -->
-                                                <small class="js-lists-values-employee-email text-50"></small>
-                                            </div>
-                                        </td>
-                                        <td> Live </td>
-                                        <td> 249 </td>
-                                        <td class="text-50 js-lists-values-rating small">4/5</td>
-                                        <td class="js-lists-values-earnings small">$12,402</td>
-                                        <td class="text-right pl-0">
-                                            <a href="student-my-courses.html"
-                                                class="btn btn-sm btn-outline-secondary dropdown-toggle"
-                                                id="tableAction" data-toggle="dropdown">
-                                                More
-                                            </a>
-                                            <div class="dropdown-menu" aria-labelledby="tableAction">
-                                                <a class="border-bottom dropdown-item" href="#">Earnings</a>
-                                                <a class="border-bottom dropdown-item" href="#">Reviews </a>
-                                                <a class="border-bottom dropdown-item" href="#">Student List </a>
-                                                <a class="dropdown-item" href="#">Discussion </a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="d-flex flex-column">
-                                                <p class="mb-0"><strong class="js-lists-values-class">Engineering
-                                                        Mechanics II</strong>
-                                                </p>
-                                                <small class="js-lists-values-employee-email text-50"></small>
-                                            </div>
-                                        </td>
-                                        <td> Private </td>
-                                        <td> 250 </td>
-                                        <td class="text-50 js-lists-values-rating small">4/5</td>
-                                        <td class="js-lists-values-earnings small">$1,943</td>
-                                        <td class="text-right pl-0">
-                                            <a href="student-my-courses.html"
-                                                class="btn btn-sm btn-outline-secondary dropdown-toggle"
-                                                id="tableAction" data-toggle="dropdown">
-                                                More
-                                            </a>
-                                            <div class="dropdown-menu" aria-labelledby="tableAction">
-                                                <a class="border-bottom dropdown-item" href="#">Earnings</a>
-                                                <a class="border-bottom dropdown-item" href="#">Reviews </a>
-                                                <a class="border-bottom dropdown-item" href="#">Student List </a>
-                                                <a class="dropdown-item" href="#">Discussion </a>
-                                            </div>
-                                        </td>
-                                    </tr>
-
-                                </tbody>
-                            </table>
-                        </div>
+                    <!-- All transcations Ends here -->
 
 
-                    </div>
-                    <!-- Class List Ends here -->
                 </div>
             </div>
 
 
 
+
+            <!-- Footer -->
 
             <div class="js-fix-footer2 bg-white border-top-2">
                 <div class="container page__container page-section d-flex flex-column">
@@ -757,7 +491,7 @@
                     <ul class="sidebar-menu">
 
 
-                        <li class="sidebar-menu-item active">
+                        <li class="sidebar-menu-item">
                             <a class="sidebar-menu-button" href="instructor-dashboard.html">
                                 <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">school</span>
                                 <span class="sidebar-menu-text">Facilitator Dashboard</span>
@@ -781,25 +515,25 @@
 
                             </a>
                         </li>
-                        <li class="sidebar-menu-item">
-                                <a class="sidebar-menu-button" data-toggle="collapse" href="#revenue_menu">
-                                    <span
-                                        class="material-icons sidebar-menu-icon sidebar-menu-icon--left">trending_up</span>
-                                    <span class="sidebar-menu-text">Revenue</span>
-                                </a>
-                                <ul class="sidebar-submenu collapse sm-indent" id="revenue_menu">
-                                    <li class="sidebar-menu-item">
-                                        <a class="sidebar-menu-button" href="facilitator-earning.html">
-                                            <span class="sidebar-menu-text">Earnings</span>
-                                        </a>
-                                    </li>
-                                    <li class="sidebar-menu-item">
-                                        <a class="sidebar-menu-button disabled" href="facilitator-settlement.html">
-                                            <span class="sidebar-menu-text">settlement</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
+                        <li class="sidebar-menu-item active">
+                            <a class="sidebar-menu-button" data-toggle="collapse" href="#revenue_menu">
+                                <span
+                                    class="material-icons sidebar-menu-icon sidebar-menu-icon--left">trending_up</span>
+                                <span class="sidebar-menu-text">Revenue</span>
+                            </a>
+                            <ul class="sidebar-submenu collapse sm-indent" id="revenue_menu">
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="facilitator-earning.html">
+                                        <span class="sidebar-menu-text">Earnings</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="facilitator-settlement.html">
+                                        <span class="sidebar-menu-text">settlement</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
                         <li class="sidebar-menu-item">
                             <a class="sidebar-menu-button" href="instructor-statement.html">
                                 <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">receipt</span>
@@ -1299,36 +1033,6 @@
                                         <span class="sidebar-menu-text">Pagination</span>
                                     </a>
                                 </li>
-                                <!-- <li class="sidebar-menu-item">
-      <a class="sidebar-menu-button disabled" href="ui-typography.html">
-        <span class="sidebar-menu-text">Typography</span>
-      </a>
-    </li>
-    <li class="sidebar-menu-item">
-      <a class="sidebar-menu-button disabled" href="ui-colors.html">
-        <span class="sidebar-menu-text">Colors</span>
-      </a>
-    </li>
-    <li class="sidebar-menu-item">
-      <a class="sidebar-menu-button disabled" href="ui-breadcrumb.html">
-        <span class="sidebar-menu-text">Breadcrumb</span>
-      </a>
-    </li>
-    <li class="sidebar-menu-item">
-      <a class="sidebar-menu-button disabled" href="ui-accordions.html">
-        <span class="sidebar-menu-text">Accordions</span>
-      </a>
-    </li>
-    <li class="sidebar-menu-item">
-      <a class="sidebar-menu-button disabled" href="ui-modals.html">
-        <span class="sidebar-menu-text">Modals</span>
-      </a>
-    </li>
-    <li class="sidebar-menu-item">
-      <a class="sidebar-menu-button disabled" href="ui-chips.html">
-        <span class="sidebar-menu-text">Chips</span>
-      </a>
-    </li> -->
                                 <li class="sidebar-menu-item">
                                     <a class="sidebar-menu-button disabled" href="#">
                                         <span class="sidebar-menu-text">Disabled</span>
@@ -1508,10 +1212,11 @@
 
     <!-- Chart.js -->
     <script src="assets/vendor/Chart.min.js"></script>
+    <script src="assets/js/chartjs-rounded-bar.js"></script>
     <script src="assets/js/chartjs.js"></script>
 
     <!-- Chart.js Samples -->
-    <script src="assets/js/page.student-dashboard.js"></script>
+    <script src="assets/js/page.instructor-earnings.js"></script>
 
     <!-- List.js -->
     <script src="assets/vendor/list.min.js"></script>
