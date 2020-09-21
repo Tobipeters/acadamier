@@ -259,10 +259,37 @@
             <!-- Conditional Alert, If Pro subscription about to end  -->
             <div class="alert alert-danger" role="alert">
                 <div class="container d-flex justify-content-between">
-                    <h5 class="mb-0 text-danger text-md pt-1">Your Pro Subscription ends in 3Days</h5>
-                    <a href="" class="btn btn-primary text-white">Renew</a>
+                    <h5 class="mb-0 text-danger text-md pt-1">Pro Subscription expires in 3 Days</h5>
+                    <a href="" class="btn btn-primary text-white">Renew Now</a>
                 </div>
             </div>
+
+            <!-- table 
+                -Filter
+                -search
+                
+                More dropdown btn
+                -Earnings
+                -reviews
+                -Student List
+                -Discussion
+
+
+
+                *type column (live / private ) class / status column (live / draft )courses
+
+                Create New button dropdown
+                -course 
+                -class 
+                -quiz
+                -book
+
+
+                After overview
+                col-6 certification
+                col-6 Messages
+
+            -->
 
 
 
@@ -290,16 +317,27 @@
                     </div>
 
 
-                    <!-- <div class="row" role="tablist">
+                    <!-- Create Button With Dropdown -->
+                    <div class="row" role="tablist">
                         <div class="col-auto">
-                            <a href="student-my-courses.html" class="btn btn-outline-secondary">My Courses</a>
+                            <a href="student-my-courses.html" class="btn btn-outline-secondary dropdown-toggle"
+                                id="dropdownMenuButton" data-toggle="dropdown">
+                                Create New
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="border-bottom dropdown-item" href="#">Course</a>
+                                <a class="border-bottom dropdown-item" href="#">Class </a>
+                                <a class="border-bottom dropdown-item" href="#">Book </a>
+                                <a class="border-bottom dropdown-item" href="#">Quiz </a>
+                            </div>
                         </div>
-                    </div> -->
+                    </div>
 
                 </div>
             </div>
 
             <div class="container page__container">
+
                 <div class="page-section">
                     <!-- Overview Session -->
                     <div class="page-separator">
@@ -364,339 +402,325 @@
 
                     </div>
 
+                    <!-- Messages and certification -->
+                    <div class="row py-5">
+                        <!-- Message Column -->
+                        <div class="col-md-6">
+                            <div class="page-separator">
+                                <div class="page-separator__text">Messages</div>
+                            </div>
+                            <div>
+                                <div class="card card-body">
+                                    <div class="d-flex">
+                                        <a href="#" class="avatar avatar-sm avatar-online mr-12pt">
+                                            <span class="avatar-title rounded-circle">JD</span>
+                                        </a>
+                                        <div class="flex">
+                                            <p class="d-flex align-items-center mb-2">
+                                                <a href="#" class="text-body mr-2"><strong>Jenell D. Matney</strong></a>
+                                                <small class="text-muted">2 min ago</small>
+                                            </p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores
+                                                beatae quisquam iste maiores libero, corrupti totam saepe itaque quidem
+                                                perspiciatis?
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card card-body">
+                                    <div class="d-flex">
+                                        <a href="#" class="avatar avatar-sm avatar-online mr-12pt">
+                                            <span class="avatar-title rounded-circle">JD</span>
+                                        </a>
+                                        <div class="flex">
+                                            <p class="d-flex align-items-center mb-2">
+                                                <a href="#" class="text-body mr-2"><strong>Jenell D. Matney</strong></a>
+                                                <small class="text-muted">2 min ago</small>
+                                            </p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores
+                                                beatae quisquam iste maiores libero, corrupti totam saepe itaque quidem
+                                                perspiciatis?
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Certification Column -->
+                        <div class="col-md-6">
+                            <div class="page-separator">
+                                <div class="page-separator__text">Certification</div>
+                            </div>
+                            <div>
+                                <div class="card card-body">
+                                    <div class="d-flex">
+                                        <a href="#" class="avatar avatar-sm mr-12pt">
+                                            <img src="./assets/images/paths/5f5635f521a1b.jpg" width="45" height="45"
+                                                class="rounded border">
+                                        </a>
+                                        <div class="flex">
+                                            <h6 class="d-flex align-items-center mb-2">
+                                                <a href="#" class="text-body mr-2"><strong>Taylor Jones </strong></a>
+                                            </h6>
+                                            <p class="mb-0 font-weight-bold">Engineering Mechanics</p>
+                                            <div class="d-flex justify-content-between">
+                                                <small class="text-muted d-inline-block pt-1">21 September, 2020</small>
+                                                <a class="btn btn-sm btn-outline-primary">Issue</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card card-body">
+                                    <div class="d-flex">
+                                        <a href="#" class="avatar avatar-sm mr-12pt">
+                                            <img src="./assets/images/paths/5f5635f521a1b.jpg" width="45" height="45"
+                                                class="rounded border">
+                                        </a>
+                                        <div class="flex">
+                                            <h6 class="d-flex align-items-center mb-2">
+                                                <a href="#" class="text-body mr-2"><strong>Taylor Jones </strong></a>
+                                            </h6>
+                                            <p class="mb-0 font-weight-bold">Engineering Mechanics</p>
+                                            <div class="d-flex justify-content-between">
+                                                <small class="text-muted d-inline-block pt-1">21 September, 2020</small>
+                                                <a class="btn btn-sm btn-outline-primary">Issue</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card card-body">
+                                    <div class="d-flex">
+                                        <a href="#" class="avatar avatar-sm mr-12pt">
+                                            <img src="./assets/images/paths/5f5635f521a1b.jpg" width="45" height="45"
+                                                class="rounded border">
+                                        </a>
+                                        <div class="flex">
+                                            <h6 class="d-flex align-items-center mb-2">
+                                                <a href="#" class="text-body mr-2"><strong>Taylor Jones </strong></a>
+                                            </h6>
+                                            <p class="mb-0 font-weight-bold">Engineering Mechanics</p>
+                                            <div class="d-flex justify-content-between">
+                                                <small class="text-muted d-inline-block pt-1">21 September, 2020</small>
+                                                <a class="btn btn-sm btn-outline-primary">Issue</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
                     <!-- Course List -->
                     <div class="pt-3 pb-5">
                         <div class="page-separator">
                             <div class="page-separator__text">Course List</div>
                         </div>
 
-                        <div class="card mb-0">
-                            <div data-toggle="lists" data-lists-values='[
-                      "js-lists-values-course", 
-                      "js-lists-values-revenue",
-                      "js-lists-values-fees"
-                    ]' data-lists-sort-by="js-lists-values-revenue" data-lists-sort-desc="true"
-                                class="table-responsive">
-                                <table class="table table-nowrap table-flush">
+                        <div class="card m-0">
+                            <div class="table-responsive" data-toggle="lists" data-lists-sort-by="js-lists-values-class"
+                                data-lists-values='["js-lists-values-class", "js-lists-values-employer-name", "js-lists-values-projects", "js-lists-values-rating", "js-lists-values-earnings"]'>
+
+                                <div class="card-header mx-0 row px-0">
+                                    <div class="col-md-6">
+                                        <div class="search-form w-50">
+                                            <input type="text" class="form-control search" placeholder="Search ...">
+                                            <button class="btn" type="button"><i
+                                                    class="material-icons">search</i></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6"></div>
+                                </div>
+                                <table class="table mb-0 thead-border-top-0 table-nowrap">
                                     <thead>
-                                        <tr class="text-uppercase small">
+                                        <tr>
                                             <th>
                                                 <a href="javascript:void(0)" class="sort"
-                                                    data-sort="js-lists-values-course">Course</a>
+                                                    data-sort="js-lists-values-class">Course</a>
                                             </th>
-                                            <th class="text-center" style="width:130px">
+                                            <th style="width: 37px;">Status</th>
+                                            <th style="width: 37px;">Student Count</th>
+                                            <th style="width: 120px;">
                                                 <a href="javascript:void(0)" class="sort"
-                                                    data-sort="js-lists-values-fees">Student Count</a>
+                                                    data-sort="js-lists-values-rating">Average Rating</a>
                                             </th>
-                                            <th class="text-center" style="width:130px">
+                                            <th style="width: 51px;">
                                                 <a href="javascript:void(0)" class="sort"
-                                                    data-sort="js-lists-values-fees">Average Rating</a>
+                                                    data-sort="js-lists-values-earnings">Total Earnings</a>
                                             </th>
-                                            <th class="text-center" style="width:130px">
-                                                <a href="javascript:void(0)" class="sort"
-                                                    data-sort="js-lists-values-revenue">Total Earnings</a>
-                                            </th>
+                                            <th style="width: 24px;" class="pl-0">Action</th>
                                         </tr>
                                     </thead>
-
-
-
-                                    <tbody class="list">
+                                    <tbody class="list" id="search">
 
                                         <tr>
                                             <td>
-                                                <div class="media flex-nowrap align-items-center">
-                                                    <a href="instructor-edit-course.html"
-                                                        class="avatar avatar-4by3 overlay overlay--primary mr-12pt">
-                                                        <img src="assets/images/paths/angular_routing_200x168.png"
-                                                            alt="course" class="avatar-img rounded">
-                                                        <span class="overlay__content"></span>
-                                                    </a>
-                                                    <div class="media-body">
-                                                        <a class="text-body js-lists-values-course"
-                                                            href="instructor-edit-course.html"><strong>Angular Routing
-                                                                In-Depth</strong></a>
-                                                        <div class="text-muted small">34 Sales</div>
-                                                    </div>
+                                                <div class="d-flex flex-column">
+                                                    <p class="mb-0">
+                                                        <strong class="js-lists-values-class">Engineering Mechanics
+                                                            I</strong>
+                                                    </p>
+                                                    <!-- Extra description -->
+                                                    <small class="js-lists-values-employee-email text-50"></small>
                                                 </div>
                                             </td>
-                                            <td class="text-center text-black-70">
-                                                <span class="js-lists-values-fees">120</span>
-                                            </td>
-                                            <td class="text-center text-black-70">
-                                                <span class="js-lists-values-fees">5/5</span>
-                                            </td>
-                                            <td class="text-center text-black-70">
-                                                &dollar;<span class="js-lists-values-revenue">8,737</span> USD
+                                            <td> Live </td>
+                                            <td> 249 </td>
+                                            <td class="text-50 js-lists-values-rating small">4/5</td>
+                                            <td class="js-lists-values-earnings small">$12,402</td>
+                                            <td class="text-right pl-0">
+                                                <a href="student-my-courses.html"
+                                                    class="btn btn-sm btn-outline-secondary dropdown-toggle"
+                                                    id="tableAction" data-toggle="dropdown">
+                                                    More
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="tableAction">
+                                                    <a class="border-bottom dropdown-item" href="#">Earnings</a>
+                                                    <a class="border-bottom dropdown-item" href="#">Reviews </a>
+                                                    <a class="border-bottom dropdown-item" href="#">Student List </a>
+                                                    <a class="dropdown-item" href="#">Discussion </a>
+                                                </div>
                                             </td>
                                         </tr>
-
                                         <tr>
                                             <td>
-                                                <div class="media flex-nowrap align-items-center">
-                                                    <a href="instructor-edit-course.html"
-                                                        class="avatar avatar-4by3 overlay overlay--primary mr-12pt">
-                                                        <img src="assets/images/paths/angular_routing_200x168.png"
-                                                            alt="course" class="avatar-img rounded">
-                                                        <span class="overlay__content"></span>
-                                                    </a>
-                                                    <div class="media-body">
-                                                        <a class="text-body js-lists-values-course"
-                                                            href="instructor-edit-course.html"><strong>Angular Routing
-                                                                In-Depth</strong></a>
-                                                        <div class="text-muted small">34 Sales</div>
-                                                    </div>
+                                                <div class="d-flex flex-column">
+                                                    <p class="mb-0"><strong class="js-lists-values-class">Engineering
+                                                            Mechanics II</strong>
+                                                    </p>
+                                                    <small class="js-lists-values-employee-email text-50"></small>
                                                 </div>
                                             </td>
-                                            <td class="text-center text-black-70">
-                                                <span class="js-lists-values-fees">120</span>
-                                            </td>
-                                            <td class="text-center text-black-70">
-                                                <span class="js-lists-values-fees">5/5</span>
-                                            </td>
-                                            <td class="text-center text-black-70">
-                                                &dollar;<span class="js-lists-values-revenue">8,737</span> USD
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>
-                                                <div class="media flex-nowrap align-items-center">
-                                                    <a href="instructor-edit-course.html"
-                                                        class="avatar avatar-4by3 overlay overlay--primary mr-12pt">
-                                                        <img src="assets/images/paths/angular_routing_200x168.png"
-                                                            alt="course" class="avatar-img rounded">
-                                                        <span class="overlay__content"></span>
-                                                    </a>
-                                                    <div class="media-body">
-                                                        <a class="text-body js-lists-values-course"
-                                                            href="instructor-edit-course.html"><strong>Angular Routing
-                                                                In-Depth</strong></a>
-                                                        <div class="text-muted small">34 Sales</div>
-                                                    </div>
+                                            <td> Draft </td>
+                                            <td> 250 </td>
+                                            <td class="text-50 js-lists-values-rating small">4/5</td>
+                                            <td class="js-lists-values-earnings small">$1,943</td>
+                                            <td class="text-right pl-0">
+                                                <a href="student-my-courses.html"
+                                                    class="btn btn-sm btn-outline-secondary dropdown-toggle"
+                                                    id="tableAction" data-toggle="dropdown">
+                                                    More
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="tableAction">
+                                                    <a class="border-bottom dropdown-item" href="#">Earnings</a>
+                                                    <a class="border-bottom dropdown-item" href="#">Reviews </a>
+                                                    <a class="border-bottom dropdown-item" href="#">Student List </a>
+                                                    <a class="dropdown-item" href="#">Discussion </a>
                                                 </div>
-                                            </td>
-                                            <td class="text-center text-black-70">
-                                                <span class="js-lists-values-fees">120</span>
-                                            </td>
-                                            <td class="text-center text-black-70">
-                                                <span class="js-lists-values-fees">5/5</span>
-                                            </td>
-                                            <td class="text-center text-black-70">
-                                                &dollar;<span class="js-lists-values-revenue">8,737</span> USD
                                             </td>
                                         </tr>
 
                                     </tbody>
-                                    <tfoot class="text-right">
-                                        <tr>
-                                            <td>
-
-
-                                                <ul class="pagination justify-content-start pagination-xsm m-0">
-                                                    <li class="page-item disabled">
-                                                        <a class="page-link" href="#" aria-label="Previous">
-                                                            <span aria-hidden="true"
-                                                                class="material-icons">chevron_left</span>
-                                                            <span>Prev</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="page-item">
-                                                        <a class="page-link" href="#" aria-label="Page 1">
-                                                            <span>1</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="page-item">
-                                                        <a class="page-link" href="#" aria-label="Page 2">
-                                                            <span>2</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="page-item">
-                                                        <a class="page-link" href="#" aria-label="Next">
-                                                            <span>Next</span>
-                                                            <span aria-hidden="true"
-                                                                class="material-icons">chevron_right</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-
-                                            </td>
-                                            <td colspan="3">Total <i class="material-icons text-muted">remove</i>
-                                                <strong>&dollar;6,129 USD</strong></td>
-                                        </tr>
-                                    </tfoot>
                                 </table>
                             </div>
+
+
                         </div>
                     </div>
                     <!-- Course List Ends here -->
 
                     <!-- Class List -->
-                    <div class="pt-3 pb-5">
-                        <div class="page-separator">
-                            <div class="page-separator__text">Class List</div>
-                        </div>
+                    <div class="card m-0">
+                        <div class="table-responsive" data-toggle="lists" data-lists-sort-by="js-lists-values-class"
+                            data-lists-values='["js-lists-values-class", "js-lists-values-employer-name", "js-lists-values-projects", "js-lists-values-rating", "js-lists-values-earnings"]'>
 
-                        <div class="card mb-0">
-                            <div data-toggle="lists" data-lists-values='[
-                          "js-lists-values-course", 
-                          "js-lists-values-revenue",
-                          "js-lists-values-fees"
-                        ]' data-lists-sort-by="js-lists-values-revenue" data-lists-sort-desc="true"
-                                class="table-responsive">
-                                <table class="table table-nowrap table-flush">
-                                    <thead>
-                                        <tr class="text-uppercase small">
-                                            <th>
-                                                <a href="javascript:void(0)" class="sort"
-                                                    data-sort="js-lists-values-course">Class</a>
-                                            </th>
-                                            <th class="text-center" style="width:130px">
-                                                <a href="javascript:void(0)" class="sort"
-                                                    data-sort="js-lists-values-fees">Student Count</a>
-                                            </th>
-                                            <th class="text-center" style="width:130px">
-                                                <a href="javascript:void(0)" class="sort"
-                                                    data-sort="js-lists-values-fees">Average Rating</a>
-                                            </th>
-                                            <th class="text-center" style="width:130px">
-                                                <a href="javascript:void(0)" class="sort"
-                                                    data-sort="js-lists-values-revenue">Total Earnings</a>
-                                            </th>
-                                        </tr>
-                                    </thead>
-
-
-
-                                    <tbody class="list">
-
-                                        <tr>
-                                            <td>
-                                                <div class="media flex-nowrap align-items-center">
-                                                    <a href="instructor-edit-course.html"
-                                                        class="avatar avatar-4by3 overlay overlay--primary mr-12pt">
-                                                        <img src="assets/images/paths/angular_routing_200x168.png"
-                                                            alt="course" class="avatar-img rounded">
-                                                        <span class="overlay__content"></span>
-                                                    </a>
-                                                    <div class="media-body">
-                                                        <a class="text-body js-lists-values-course"
-                                                            href="instructor-edit-course.html"><strong>Angular Routing
-                                                                In-Depth</strong></a>
-                                                        <div class="text-muted small">34 Sales</div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="text-center text-black-70">
-                                                <span class="js-lists-values-fees">120</span>
-                                            </td>
-                                            <td class="text-center text-black-70">
-                                                <span class="js-lists-values-fees">5/5</span>
-                                            </td>
-                                            <td class="text-center text-black-70">
-                                                &dollar;<span class="js-lists-values-revenue">8,737</span> USD
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>
-                                                <div class="media flex-nowrap align-items-center">
-                                                    <a href="instructor-edit-course.html"
-                                                        class="avatar avatar-4by3 overlay overlay--primary mr-12pt">
-                                                        <img src="assets/images/paths/angular_routing_200x168.png"
-                                                            alt="course" class="avatar-img rounded">
-                                                        <span class="overlay__content"></span>
-                                                    </a>
-                                                    <div class="media-body">
-                                                        <a class="text-body js-lists-values-course"
-                                                            href="instructor-edit-course.html"><strong>Angular Routing
-                                                                In-Depth</strong></a>
-                                                        <div class="text-muted small">34 Sales</div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="text-center text-black-70">
-                                                <span class="js-lists-values-fees">120</span>
-                                            </td>
-                                            <td class="text-center text-black-70">
-                                                <span class="js-lists-values-fees">5/5</span>
-                                            </td>
-                                            <td class="text-center text-black-70">
-                                                &dollar;<span class="js-lists-values-revenue">8,737</span> USD
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>
-                                                <div class="media flex-nowrap align-items-center">
-                                                    <a href="instructor-edit-course.html"
-                                                        class="avatar avatar-4by3 overlay overlay--primary mr-12pt">
-                                                        <img src="assets/images/paths/angular_routing_200x168.png"
-                                                            alt="course" class="avatar-img rounded">
-                                                        <span class="overlay__content"></span>
-                                                    </a>
-                                                    <div class="media-body">
-                                                        <a class="text-body js-lists-values-course"
-                                                            href="instructor-edit-course.html"><strong>Angular Routing
-                                                                In-Depth</strong></a>
-                                                        <div class="text-muted small">34 Sales</div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td class="text-center text-black-70">
-                                                <span class="js-lists-values-fees">120</span>
-                                            </td>
-                                            <td class="text-center text-black-70">
-                                                <span class="js-lists-values-fees">5/5</span>
-                                            </td>
-                                            <td class="text-center text-black-70">
-                                                &dollar;<span class="js-lists-values-revenue">8,737</span> USD
-                                            </td>
-                                        </tr>
-
-                                    </tbody>
-                                    <tfoot class="text-right">
-                                        <tr>
-                                            <td>
-
-
-                                                <ul class="pagination justify-content-start pagination-xsm m-0">
-                                                    <li class="page-item disabled">
-                                                        <a class="page-link" href="#" aria-label="Previous">
-                                                            <span aria-hidden="true"
-                                                                class="material-icons">chevron_left</span>
-                                                            <span>Prev</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="page-item">
-                                                        <a class="page-link" href="#" aria-label="Page 1">
-                                                            <span>1</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="page-item">
-                                                        <a class="page-link" href="#" aria-label="Page 2">
-                                                            <span>2</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="page-item">
-                                                        <a class="page-link" href="#" aria-label="Next">
-                                                            <span>Next</span>
-                                                            <span aria-hidden="true"
-                                                                class="material-icons">chevron_right</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-
-                                            </td>
-                                            <td colspan="3">Total <i class="material-icons text-muted">remove</i>
-                                                <strong>&dollar;6,129 USD</strong></td>
-                                        </tr>
-                                    </tfoot>
-                                </table>
+                            <div class="card-header mx-0 row px-0">
+                                <div class="col-md-6">
+                                    <div class="search-form w-50">
+                                        <input type="text" class="form-control search" placeholder="Search ...">
+                                        <button class="btn" type="button"><i class="material-icons">search</i></button>
+                                    </div>
+                                </div>
+                                <div class="col-md-6"></div>
                             </div>
+                            <table class="table mb-0 thead-border-top-0 table-nowrap">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <a href="javascript:void(0)" class="sort"
+                                                data-sort="js-lists-values-class">Class</a>
+                                        </th>
+                                        <th style="width: 37px;">Status</th>
+                                        <th style="width: 37px;">Student Count</th>
+                                        <th style="width: 120px;">
+                                            <a href="javascript:void(0)" class="sort"
+                                                data-sort="js-lists-values-rating">Average Rating</a>
+                                        </th>
+                                        <th style="width: 51px;">
+                                            <a href="javascript:void(0)" class="sort"
+                                                data-sort="js-lists-values-earnings">Total Earnings</a>
+                                        </th>
+                                        <th style="width: 24px;" class="pl-0">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="list" id="search">
+
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex flex-column">
+                                                <p class="mb-0">
+                                                    <strong class="js-lists-values-class">Engineering Mechanics
+                                                        I</strong>
+                                                </p>
+                                                <!-- Extra description -->
+                                                <small class="js-lists-values-employee-email text-50"></small>
+                                            </div>
+                                        </td>
+                                        <td> Live </td>
+                                        <td> 249 </td>
+                                        <td class="text-50 js-lists-values-rating small">4/5</td>
+                                        <td class="js-lists-values-earnings small">$12,402</td>
+                                        <td class="text-right pl-0">
+                                            <a href="student-my-courses.html"
+                                                class="btn btn-sm btn-outline-secondary dropdown-toggle"
+                                                id="tableAction" data-toggle="dropdown">
+                                                More
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="tableAction">
+                                                <a class="border-bottom dropdown-item" href="#">Earnings</a>
+                                                <a class="border-bottom dropdown-item" href="#">Reviews </a>
+                                                <a class="border-bottom dropdown-item" href="#">Student List </a>
+                                                <a class="dropdown-item" href="#">Discussion </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex flex-column">
+                                                <p class="mb-0"><strong class="js-lists-values-class">Engineering
+                                                        Mechanics II</strong>
+                                                </p>
+                                                <small class="js-lists-values-employee-email text-50"></small>
+                                            </div>
+                                        </td>
+                                        <td> Private </td>
+                                        <td> 250 </td>
+                                        <td class="text-50 js-lists-values-rating small">4/5</td>
+                                        <td class="js-lists-values-earnings small">$1,943</td>
+                                        <td class="text-right pl-0">
+                                            <a href="student-my-courses.html"
+                                                class="btn btn-sm btn-outline-secondary dropdown-toggle"
+                                                id="tableAction" data-toggle="dropdown">
+                                                More
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="tableAction">
+                                                <a class="border-bottom dropdown-item" href="#">Earnings</a>
+                                                <a class="border-bottom dropdown-item" href="#">Reviews </a>
+                                                <a class="border-bottom dropdown-item" href="#">Student List </a>
+                                                <a class="dropdown-item" href="#">Discussion </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
                         </div>
+
+
                     </div>
-                     <!-- Class List Ends here -->
+                    <!-- Class List Ends here -->
                 </div>
             </div>
 
@@ -745,7 +769,6 @@
 
 
                     <a href="index-2.html" class="sidebar-brand ">
-                        <!-- <img class="sidebar-brand-icon" src="assets/images/illustration/teacher/128/white.svg" alt="Luma"> -->
 
                         <span class="avatar avatar-xl sidebar-brand-icon h-auto">
 
@@ -757,11 +780,6 @@
 
                         <span>Luma</span>
                     </a>
-
-
-
-
-
                     <div class="sidebar-heading">Facilitator</div>
                     <ul class="sidebar-menu">
 
@@ -974,46 +992,6 @@
                                         <span class="sidebar-menu-text">Departments</span>
                                     </a>
                                 </li>
-                                <!-- <li class="sidebar-menu-item">
-      <a class="sidebar-menu-button disabled" href="documents.html">
-        <span class="sidebar-menu-text">Documents</span>
-      </a>
-    </li>
-    <li class="sidebar-menu-item">
-      <a class="sidebar-menu-button disabled" href="attendance.html">
-        <span class="sidebar-menu-text">Attendance</span>
-      </a>
-    </li>
-    <li class="sidebar-menu-item">
-      <a class="sidebar-menu-button disabled" href="recruitment.html">
-        <span class="sidebar-menu-text">Recruitment</span>
-      </a>
-    </li>
-    <li class="sidebar-menu-item">
-      <a class="sidebar-menu-button disabled" href="payroll.html">
-        <span class="sidebar-menu-text">Payroll</span>
-      </a>
-    </li>
-    <li class="sidebar-menu-item">
-      <a class="sidebar-menu-button disabled" href="training.html">
-        <span class="sidebar-menu-text">Training</span>
-      </a>
-    </li>
-    <li class="sidebar-menu-item">
-      <a class="sidebar-menu-button disabled" href="employee-profile.html">
-        <span class="sidebar-menu-text">Employee Profile</span>
-      </a>
-    </li>
-    <li class="sidebar-menu-item">
-      <a class="sidebar-menu-button disabled" href="accounting.html">
-        <span class="sidebar-menu-text">Accounting</span>
-      </a>
-    </li>
-    <li class="sidebar-menu-item">
-      <a class="sidebar-menu-button disabled" href="inventory.html">
-        <span class="sidebar-menu-text">Inventory</span>
-      </a>
-    </li> -->
                             </ul>
                         </li>
                         <li class="sidebar-menu-item">
@@ -1044,16 +1022,6 @@
                                         <span class="sidebar-menu-text">Kanban</span>
                                     </a>
                                 </li>
-                                <!-- <li class="sidebar-menu-item">
-      <a class="sidebar-menu-button disabled" href="task-details.html">
-        <span class="sidebar-menu-text">Task Details</span>
-      </a>
-    </li>
-    <li class="sidebar-menu-item">
-      <a class="sidebar-menu-button disabled" href="team-members.html">
-        <span class="sidebar-menu-text">Team Members</span>
-      </a>
-    </li> -->
                             </ul>
                         </li>
                         <li class="sidebar-menu-item">
