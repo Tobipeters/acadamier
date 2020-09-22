@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Quizzes</title>
+    <title>Edit Course</title>
 
     <!-- Prevent the demo from appearing in search engines -->
     <meta name="robots" content="noindex">
@@ -36,47 +36,18 @@
 
 
 
+    <!-- Quill Theme -->
+    <link type="text/css" href="assets/css/quill.css" rel="stylesheet">
 
+    <!-- Select2 -->
+    <link type="text/css" href="assets/css/select2.css" rel="stylesheet">
+
+    <link type="text/css" href="assets/vendor/select2/select2.min.css" rel="stylesheet">
 
 
 </head>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <body class="layout-app ">
-
     <div class="preloader">
         <div class="sk-double-bounce">
             <div class="sk-child sk-double-bounce1"></div>
@@ -86,14 +57,7 @@
 
     <div class="mdk-drawer-layout js-mdk-drawer-layout" data-push data-responsive-width="992px">
         <div class="mdk-drawer-layout__content page-content">
-
             <!-- Header -->
-
-
-
-
-
-
             <div class="navbar navbar-expand pr-0 navbar-light border-bottom-2" id="default-navbar" data-primary>
                 <!-- Navbar toggler -->
                 <button class="navbar-toggler w-auto mr-16pt d-block d-lg-none rounded-0" type="button"
@@ -114,33 +78,20 @@
 
                     <span class="d-none d-lg-block">Luma</span>
                 </a>
-
-
-
-
-
                 <span class="d-none d-md-flex align-items-center mr-16pt">
-
                     <span class="avatar avatar-sm mr-12pt">
-
                         <span class="avatar-title rounded navbar-avatar"><i
                                 class="material-icons">trending_up</i></span>
-
                     </span>
-
                     <small class="flex d-flex flex-column">
                         <strong class="navbar-text-100">Earnings</strong>
                         <span class="navbar-text-50">&dollar;12.3k</span>
                     </small>
                 </span>
                 <span class="d-none d-md-flex align-items-center mr-16pt">
-
                     <span class="avatar avatar-sm mr-12pt">
-
                         <span class="avatar-title rounded navbar-avatar"><i class="material-icons">receipt</i></span>
-
                     </span>
-
                     <small class="flex d-flex flex-column">
                         <strong class="navbar-text-100">Sales</strong>
                         <span class="navbar-text-50">264</span>
@@ -155,7 +106,7 @@
 
 
                 <!-- Toggler -->
-                <a href="compact-instructor-quizzes.html"
+                <a href="compact-instructor-edit-course.html"
                     class="navbar-toggler navbar-toggler-custom align-items-center justify-content-center d-none d-lg-flex"
                     data-toggle="tooltip" data-title="Switch to Compact Layout" data-placement="bottom"
                     data-boundary="window">
@@ -313,9 +264,7 @@
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
                             <div class="dropdown-header"><strong>Account</strong></div>
-                            <a class="dropdown-item" href="edit-account.html">Edit Account</a>
-                            <a class="dropdown-item" href="billing.html">Billing</a>
-                            <a class="dropdown-item" href="billing-history.html">Payments</a>
+                            <a class="dropdown-item" href="facilitator-profile.html">Profile</a>
                             <a class="dropdown-item" href="login.html">Logout</a>
                         </div>
                     </div>
@@ -332,17 +281,17 @@
             <div class="pt-32pt">
                 <div
                     class="container page__container d-flex flex-column flex-md-row align-items-center text-center text-sm-left">
-                    <div class="flex d-flex flex-column flex-sm-row align-items-center mb-24pt mb-md-0">
+                    <div class="flex d-flex flex-column flex-sm-row align-items-center">
 
                         <div class="mb-24pt mb-sm-0 mr-sm-24pt">
-                            <h2 class="mb-0">Quizzes</h2>
+                            <h2 class="mb-0">Edit Book</h2>
 
                             <ol class="breadcrumb p-0 m-0">
                                 <li class="breadcrumb-item"><a href="index-2.html">Home</a></li>
 
                                 <li class="breadcrumb-item active">
 
-                                    Quizzes
+                                    Edit Book
 
                                 </li>
 
@@ -352,12 +301,6 @@
                     </div>
 
 
-                    <div class="row" role="tablist">
-                        <div class="col-auto">
-                            <a href="instructor-edit-quiz.html" class="btn btn-outline-secondary">Add Quiz</a>
-                        </div>
-                    </div>
-
                 </div>
             </div>
 
@@ -376,372 +319,206 @@
 
 
 
-            <div class="container page__container page-section">
+            <div class="page-section border-bottom-2">
+                <div class="container page__container">
 
+                    <div class="row">
+                        <div class="col-md-8">
 
-
-
-                <div class="row card-group-row">
-
-                    <div class="card-group-row__col col-md-6">
-                        <div class="card card-group-row__card card-sm">
-                            <div class="card-body d-flex align-items-center">
-                                <a href="instructor-edit-quiz.html"
-                                    class="avatar overlay overlay--primary avatar-4by3 mr-12pt">
-                                    <img src="assets/images/paths/angular_routing_200x168.png"
-                                        alt="Angular Routing In-Depth" class="avatar-img rounded">
-                                    <span class="overlay__content"></span>
-                                </a>
-                                <div class="flex">
-                                    <a class="card-title" href="instructor-edit-quiz.html">Angular Routing In-Depth</a>
-                                    <div class="card-subtitle text-50">15 completed</div>
-                                </div>
+                            <div class="page-separator">
+                                <div class="page-separator__text">Basic information</div>
                             </div>
-                            <div class="card-footer">
-                                <div class="d-flex align-items-center">
-                                    <div class="flex mr-2">
-                                        <a href="#" class="btn btn-light btn-sm">
-                                            <i class="material-icons icon--left">playlist_add_check</i> Review
-                                            <span class="badge badge-dark badge-notifications ml-2">5</span>
-                                        </a>
-                                    </div>
 
-                                    <div class="dropdown">
-                                        <a href="#" data-toggle="dropdown" data-caret="false" class="text-muted"><i
-                                                class="material-icons">more_horiz</i></a>
-                                        <div class="dropdown-menu dropdown-menu-right">
-                                            <a href="javascript:void(0)" class="dropdown-item">Review Quiz</a>
-                                            <a href="instructor-edit-quiz.html" class="dropdown-item">Edit Quiz</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:void(0)" class="dropdown-item text-danger">Delete
-                                                Quiz</a>
+                            <label class="form-label">Book title</label>
+                            <div class="form-group mb-24pt">
+                                <input type="text" class="form-control form-control-lg" placeholder="Course title"
+                                    value="Mechanics">
+                                <small class="form-text text-muted">Please see our <a href="#">book title
+                                        guideline</a></small>
+                            </div>
+
+                            <div class="form-group mb-32pt">
+                                <label class="form-label">About Book</label>
+                                <!-- <textarea class="form-control" rows="3" placeholder="Course description"></textarea> -->
+                                <div style="height: 150px;" class="mb-0" data-toggle="quill"
+                                    data-quill-placeholder="Course description">
+                                    <h1>Hello World!</h1>
+                                    <p>Some initial <strong>bold</strong> text</p>
+                                    <p><br></p>
+                                </div>
+                                <small class="form-text text-muted">Shortly Write about this book.</small>
+                            </div>
+
+                            <div class="page-separator">
+                                <div class="page-separator__text">Sections</div>
+                            </div>
+
+                            <div class="accordion js-accordion accordion--boxed mb-24pt" id="parent">
+                                <div class="accordion__item">
+                                    <a href="#" class="accordion__toggle collapsed" data-toggle="collapse"
+                                        data-target="#course-toc-1" data-parent="#parent">
+                                        <span class="flex">Course Overview</span>
+                                        <span class="accordion__toggle-icon material-icons">keyboard_arrow_down</span>
+                                    </a>
+                                    <div class="accordion__menu collapse" id="course-toc-1">
+                                        <div class="accordion__menu-link">
+                                            <i class="material-icons text-70 icon-16pt icon--left">drag_handle</i>
+                                            <a class="flex" href="student-lesson.html">Watch Trailer</a>
+                                            <span class="text-muted">1m 10s</span>
                                         </div>
                                     </div>
-
+                                </div>
+                                <div class="accordion__item open">
+                                    <a href="#" class="accordion__toggle" data-toggle="collapse"
+                                        data-target="#course-toc-2" data-parent="#parent">
+                                        <span class="flex">Getting Started with Angular</span>
+                                        <span class="accordion__toggle-icon material-icons">keyboard_arrow_down</span>
+                                    </a>
+                                    <div class="accordion__menu collapse show" id="course-toc-2">
+                                        <div class="accordion__menu-link">
+                                            <i class="material-icons text-70 icon-16pt icon--left">drag_handle</i>
+                                            <a class="flex" href="student-lesson.html">Introduction</a>
+                                            <span class="text-muted">8m 42s</span>
+                                        </div>
+                                        <div class="accordion__menu-link active">
+                                            <i class="material-icons text-70 icon-16pt icon--left">drag_handle</i>
+                                            <a class="flex" href="student-lesson.html">Introduction to TypeScript</a>
+                                            <span class="text-muted">50m 13s</span>
+                                        </div>
+                                        <div class="accordion__menu-link">
+                                            <i class="material-icons text-70 icon-16pt icon--left">drag_handle</i>
+                                            <a class="flex" href="student-lesson.html">Comparing Angular to
+                                                AngularJS</a>
+                                            <span class="text-muted">12m 10s</span>
+                                        </div>
+                                        <div class="accordion__menu-link">
+                                            <i class="material-icons text-70 icon-16pt icon--left">drag_handle</i>
+                                            <a class="flex" href="student-take-quiz.html">Quiz: Getting Started With
+                                                Angular</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion__item">
+                                    <a href="#" class="accordion__toggle collapsed" data-toggle="collapse"
+                                        data-target="#course-toc-3" data-parent="#parent">
+                                        <span class="flex">Creating and Communicating Between Angular Components</span>
+                                        <span class="accordion__toggle-icon material-icons">keyboard_arrow_down</span>
+                                    </a>
+                                    <div class="accordion__menu collapse" id="course-toc-3">
+                                        <div class="accordion__menu-link">
+                                            <i class="material-icons text-70 icon-16pt icon--left">drag_handle</i>
+                                            <a class="flex" href="student-lesson.html">Angular Components</a>
+                                            <span class="text-muted">04:23</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion__item">
+                                    <a href="#" class="accordion__toggle collapsed" data-toggle="collapse"
+                                        data-target="#course-toc-4" data-parent="#parent">
+                                        <span class="flex">Exploring the Angular Template Syntax</span>
+                                        <span class="accordion__toggle-icon material-icons">keyboard_arrow_down</span>
+                                    </a>
+                                    <div class="accordion__menu collapse" id="course-toc-4">
+                                        <div class="accordion__menu-link">
+                                            <i class="material-icons text-70 icon-16pt icon--left">drag_handle</i>
+                                            <a class="flex" href="student-lesson.html">Template Syntax</a>
+                                            <span class="text-muted">04:23</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+
+                            <a href="#" class="btn btn-outline-secondary mb-24pt mb-sm-0">Add Section</a>
+
                         </div>
-                    </div>
+                        <div class="col-md-4">
 
-                    <div class="card-group-row__col col-md-6">
-                        <div class="card card-group-row__card card-sm">
-                            <div class="card-body d-flex align-items-center">
-                                <a href="instructor-edit-quiz.html"
-                                    class="avatar overlay overlay--primary avatar-4by3 mr-12pt">
-                                    <img src="assets/images/paths/angular_testing_200x168.png"
-                                        alt="Angular Unit Testing" class="avatar-img rounded">
-                                    <span class="overlay__content"></span>
-                                </a>
-                                <div class="flex">
-                                    <a class="card-title" href="instructor-edit-quiz.html">Angular Unit Testing</a>
-                                    <div class="card-subtitle text-50">15 completed</div>
+                            <div class="card">
+                                <div class="card-header text-center">
+                                    <a href="#" class="btn btn-accent">Save changes</a>
+                                </div>
+                                <div class="list-group list-group-flush">
+                                    <div class="list-group-item d-flex">
+                                        <a class="flex" href="#"><strong>Save Draft</strong></a>
+                                        <i class="material-icons text-muted">check</i>
+                                    </div>
+                                    <div class="list-group-item">
+                                        <a href="#" class="text-danger"><strong>Delete Book</strong></a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="card-footer">
-                                <div class="d-flex align-items-center">
-                                    <div class="flex mr-2">
-                                        <a href="#" class="btn btn-light btn-sm">
-                                            <i class="material-icons icon--left">playlist_add_check</i> Review
-                                            <span class="badge badge-dark badge-notifications ml-2">5</span>
-                                        </a>
-                                    </div>
 
-                                    <div class="dropdown">
-                                        <a href="#" data-toggle="dropdown" data-caret="false" class="text-muted"><i
-                                                class="material-icons">more_horiz</i></a>
-                                        <div class="dropdown-menu dropdown-menu-right">
-                                            <a href="javascript:void(0)" class="dropdown-item">Review Quiz</a>
-                                            <a href="instructor-edit-quiz.html" class="dropdown-item">Edit Quiz</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:void(0)" class="dropdown-item text-danger">Delete
-                                                Quiz</a>
+                            <div class="page-separator">
+                                <div class="page-separator__text">Video</div>
+                            </div>
+
+                            <div class="card">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item"
+                                        src="https://player.vimeo.com/video/97243285?title=0&amp;byline=0&amp;portrait=0"
+                                        allowfullscreen=""></iframe>
+                                </div>
+                                <div class="card-body">
+                                    <label class="form-label">URL</label>
+                                    <input type="text" class="form-control"
+                                        value="https://player.vimeo.com/video/97243285?title=0&amp;byline=0&amp;portrait=0"
+                                        placeholder="Enter Video URL">
+                                    <small class="form-text text-muted">Enter a valid video URL.</small>
+                                </div>
+                            </div>
+
+                            <div class="page-separator">
+                                <div class="page-separator__text">Options</div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label class="form-label">Category</label>
+                                        <select name="category" class="form-control custom-select">
+                                            <option value="vuejs">VueJs</option>
+                                            <option value="vuejs">Angular</option>
+                                            <option value="vuejs">React</option>
+                                        </select>
+                                        <small class="form-text text-muted">Select a category.</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Price</label>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="input-group form-inline">
+                                                    <span class="input-group-prepend"><span
+                                                            class="input-group-text">$</span></span>
+                                                    <input type="text" class="form-control" value="24">
+                                                </div>
+                                            </div>
                                         </div>
+                                        <small class="form-text text-muted">The recommended price is between &dollar;17
+                                            and &dollar;24</small>
                                     </div>
-
+                                    <div class="form-group mb-0">
+                                        <label class="form-label" for="select03">Tags</label>
+                                        <select id="select03" data-toggle="select" multiple class="form-control">
+                                            <option selected="">JavaScript</option>
+                                            <option selected="">Angular</option>
+                                            <option>Bootstrap</option>
+                                            <option>CSS</option>
+                                            <option>HTML</option>
+                                        </select>
+                                        <small class="form-text text-muted">Select one or more tags.</small>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
 
-                    <div class="card-group-row__col col-md-6">
-                        <div class="card card-group-row__card card-sm">
-                            <div class="card-body d-flex align-items-center">
-                                <a href="instructor-edit-quiz.html"
-                                    class="avatar overlay overlay--primary avatar-4by3 mr-12pt">
-                                    <img src="assets/images/paths/typescript_200x168.png"
-                                        alt="Introduction to TypeScript" class="avatar-img rounded">
-                                    <span class="overlay__content"></span>
-                                </a>
-                                <div class="flex">
-                                    <a class="card-title" href="instructor-edit-quiz.html">Introduction to
-                                        TypeScript</a>
-                                    <div class="card-subtitle text-50">15 completed</div>
-                                </div>
-                            </div>
-                            <div class="card-footer">
-                                <div class="d-flex align-items-center">
-                                    <div class="flex mr-2">
-                                        <a href="#" class="btn btn-light btn-sm">
-                                            <i class="material-icons icon--left">playlist_add_check</i> Review
-                                            <span class="badge badge-dark badge-notifications ml-2">5</span>
-                                        </a>
-                                    </div>
-
-                                    <div class="dropdown">
-                                        <a href="#" data-toggle="dropdown" data-caret="false" class="text-muted"><i
-                                                class="material-icons">more_horiz</i></a>
-                                        <div class="dropdown-menu dropdown-menu-right">
-                                            <a href="javascript:void(0)" class="dropdown-item">Review Quiz</a>
-                                            <a href="instructor-edit-quiz.html" class="dropdown-item">Edit Quiz</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:void(0)" class="dropdown-item text-danger">Delete
-                                                Quiz</a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card-group-row__col col-md-6">
-                        <div class="card card-group-row__card card-sm">
-                            <div class="card-body d-flex align-items-center">
-                                <a href="instructor-edit-quiz.html"
-                                    class="avatar overlay overlay--primary avatar-4by3 mr-12pt">
-                                    <img src="assets/images/paths/angular_200x168.png" alt="Angular Fundamentals"
-                                        class="avatar-img rounded">
-                                    <span class="overlay__content"></span>
-                                </a>
-                                <div class="flex">
-                                    <a class="card-title" href="instructor-edit-quiz.html">Angular Fundamentals</a>
-                                    <div class="card-subtitle text-50">15 completed</div>
-                                </div>
-                            </div>
-                            <div class="card-footer">
-                                <div class="d-flex align-items-center">
-                                    <div class="flex mr-2">
-                                        <a href="#" class="btn btn-light btn-sm">
-                                            <i class="material-icons icon--left">playlist_add_check</i> Review
-                                            <span class="badge badge-dark badge-notifications ml-2">5</span>
-                                        </a>
-                                    </div>
-
-                                    <div class="dropdown">
-                                        <a href="#" data-toggle="dropdown" data-caret="false" class="text-muted"><i
-                                                class="material-icons">more_horiz</i></a>
-                                        <div class="dropdown-menu dropdown-menu-right">
-                                            <a href="javascript:void(0)" class="dropdown-item">Review Quiz</a>
-                                            <a href="instructor-edit-quiz.html" class="dropdown-item">Edit Quiz</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="javascript:void(0)" class="dropdown-item text-danger">Delete
-                                                Quiz</a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
                         </div>
                     </div>
 
                 </div>
-
-                <div class="mb-32pt">
-                    <ul class="pagination justify-content-start pagination-xsm m-0">
-                        <li class="page-item disabled">
-                            <a class="page-link" href="#" aria-label="Previous">
-                                <span aria-hidden="true" class="material-icons">chevron_left</span>
-                                <span>Prev</span>
-                            </a>
-                        </li>
-                        <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Page 1">
-                                <span>1</span>
-                            </a>
-                        </li>
-                        <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Page 2">
-                                <span>2</span>
-                            </a>
-                        </li>
-                        <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Next">
-                                <span>Next</span>
-                                <span aria-hidden="true" class="material-icons">chevron_right</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-
-
-                <div class="card stack">
-                    <div class="list-group list-group-flush">
-
-                        <div class="list-group-item d-flex flex-column flex-sm-row align-items-sm-center px-12pt">
-                            <div class="flex d-flex align-items-center mr-sm-16pt mb-8pt mb-sm-0">
-                                <a href="instructor-edit-quiz.html"
-                                    class="avatar overlay overlay--primary avatar-4by3 mr-12pt">
-                                    <img src="assets/images/paths/mailchimp_200x168.png" alt="Newsletter Design"
-                                        class="avatar-img rounded">
-                                    <span class="overlay__content"></span>
-                                </a>
-                                <div class="flex">
-                                    <a class="card-title mb-4pt" href="instructor-edit-quiz.html">Newsletter Design</a>
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <div class="flex text-center d-flex align-items-center mr-16pt">
-                                    <span class="text-50 text-headings text-uppercase mr-12pt">Completed</span>
-                                    <span class="badge badge-dark badge-notifications">15</span>
-                                </div>
-
-                                <div class="dropdown">
-                                    <a href="#" data-toggle="dropdown" data-caret="false" class="text-muted"><i
-                                            class="material-icons">more_vert</i></a>
-                                    <div class="dropdown-menu dropdown-menu-right">
-                                        <a href="javascript:void(0)" class="dropdown-item">Review Quiz</a>
-                                        <a href="instructor-edit-quiz.html" class="dropdown-item">Edit Quiz</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a href="javascript:void(0)" class="dropdown-item text-danger">Delete Quiz</a>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="list-group-item d-flex flex-column flex-sm-row align-items-sm-center px-12pt">
-                            <div class="flex d-flex align-items-center mr-sm-16pt mb-8pt mb-sm-0">
-                                <a href="instructor-edit-quiz.html"
-                                    class="avatar overlay overlay--primary avatar-4by3 mr-12pt">
-                                    <img src="assets/images/paths/xd_200x168.png" alt="Adobe XD"
-                                        class="avatar-img rounded">
-                                    <span class="overlay__content"></span>
-                                </a>
-                                <div class="flex">
-                                    <a class="card-title mb-4pt" href="instructor-edit-quiz.html">Adobe XD</a>
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <div class="flex text-center d-flex align-items-center mr-16pt">
-                                    <span class="text-50 text-headings text-uppercase mr-12pt">Completed</span>
-                                    <span class="badge badge-dark badge-notifications">15</span>
-                                </div>
-
-                                <div class="dropdown">
-                                    <a href="#" data-toggle="dropdown" data-caret="false" class="text-muted"><i
-                                            class="material-icons">more_vert</i></a>
-                                    <div class="dropdown-menu dropdown-menu-right">
-                                        <a href="javascript:void(0)" class="dropdown-item">Review Quiz</a>
-                                        <a href="instructor-edit-quiz.html" class="dropdown-item">Edit Quiz</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a href="javascript:void(0)" class="dropdown-item text-danger">Delete Quiz</a>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="list-group-item d-flex flex-column flex-sm-row align-items-sm-center px-12pt">
-                            <div class="flex d-flex align-items-center mr-sm-16pt mb-8pt mb-sm-0">
-                                <a href="instructor-edit-quiz.html"
-                                    class="avatar overlay overlay--primary avatar-4by3 mr-12pt">
-                                    <img src="assets/images/paths/invision_200x168.png" alt="inVision App"
-                                        class="avatar-img rounded">
-                                    <span class="overlay__content"></span>
-                                </a>
-                                <div class="flex">
-                                    <a class="card-title mb-4pt" href="instructor-edit-quiz.html">inVision App</a>
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <div class="flex text-center d-flex align-items-center mr-16pt">
-                                    <span class="text-50 text-headings text-uppercase mr-12pt">Completed</span>
-                                    <span class="badge badge-dark badge-notifications">15</span>
-                                </div>
-
-                                <div class="dropdown">
-                                    <a href="#" data-toggle="dropdown" data-caret="false" class="text-muted"><i
-                                            class="material-icons">more_vert</i></a>
-                                    <div class="dropdown-menu dropdown-menu-right">
-                                        <a href="javascript:void(0)" class="dropdown-item">Review Quiz</a>
-                                        <a href="instructor-edit-quiz.html" class="dropdown-item">Edit Quiz</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a href="javascript:void(0)" class="dropdown-item text-danger">Delete Quiz</a>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="list-group-item d-flex flex-column flex-sm-row align-items-sm-center px-12pt">
-                            <div class="flex d-flex align-items-center mr-sm-16pt mb-8pt mb-sm-0">
-                                <a href="instructor-edit-quiz.html"
-                                    class="avatar overlay overlay--primary avatar-4by3 mr-12pt">
-                                    <img src="assets/images/paths/craft_200x168.png" alt="Craft by inVision"
-                                        class="avatar-img rounded">
-                                    <span class="overlay__content"></span>
-                                </a>
-                                <div class="flex">
-                                    <a class="card-title mb-4pt" href="instructor-edit-quiz.html">Craft by inVision</a>
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <div class="flex text-center d-flex align-items-center mr-16pt">
-                                    <span class="text-50 text-headings text-uppercase mr-12pt">Completed</span>
-                                    <span class="badge badge-dark badge-notifications">15</span>
-                                </div>
-
-                                <div class="dropdown">
-                                    <a href="#" data-toggle="dropdown" data-caret="false" class="text-muted"><i
-                                            class="material-icons">more_vert</i></a>
-                                    <div class="dropdown-menu dropdown-menu-right">
-                                        <a href="javascript:void(0)" class="dropdown-item">Review Quiz</a>
-                                        <a href="instructor-edit-quiz.html" class="dropdown-item">Edit Quiz</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a href="javascript:void(0)" class="dropdown-item text-danger">Delete Quiz</a>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-
-
-                <ul class="pagination justify-content-start pagination-xsm m-0">
-                    <li class="page-item disabled">
-                        <a class="page-link" href="#" aria-label="Previous">
-                            <span aria-hidden="true" class="material-icons">chevron_left</span>
-                            <span>Prev</span>
-                        </a>
-                    </li>
-                    <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Page 1">
-                            <span>1</span>
-                        </a>
-                    </li>
-                    <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Page 2">
-                            <span>2</span>
-                        </a>
-                    </li>
-                    <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Next">
-                            <span>Next</span>
-                            <span aria-hidden="true" class="material-icons">chevron_right</span>
-                        </a>
-                    </li>
-                </ul>
             </div>
 
 
 
 
-
-            <!-- Footer -->
             <div class="js-fix-footer2 bg-white border-top-2">
                 <div class="container page__container page-section d-flex flex-column">
                     <p class="text-70 brand mb-24pt">
@@ -783,7 +560,6 @@
 
 
                     <a href="index-2.html" class="sidebar-brand ">
-                        <!-- <img class="sidebar-brand-icon" src="assets/images/illustration/teacher/128/white.svg" alt="Luma"> -->
 
                         <span class="avatar avatar-xl sidebar-brand-icon h-auto">
 
@@ -795,19 +571,14 @@
 
                         <span>Luma</span>
                     </a>
-
-
-
-
-
-                    <div class="sidebar-heading">Instructor</div>
+                    <div class="sidebar-heading">Facilitator</div>
                     <ul class="sidebar-menu">
 
 
                         <li class="sidebar-menu-item">
                             <a class="sidebar-menu-button" href="instructor-dashboard.html">
                                 <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">school</span>
-                                <span class="sidebar-menu-text">Instructor Dashboard</span>
+                                <span class="sidebar-menu-text">Facilitator Dashboard</span>
                             </a>
                         </li>
                         <li class="sidebar-menu-item">
@@ -817,18 +588,41 @@
                                 <span class="sidebar-menu-text">Manage Courses</span>
                             </a>
                         </li>
-                        <li class="sidebar-menu-item active">
-                            <a class="sidebar-menu-button" href="instructor-quizzes.html">
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="facilitator-quizzes.html">
                                 <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">help</span>
                                 <span class="sidebar-menu-text">Manage Quizzes</span>
                             </a>
                         </li>
+                        <li class="sidebar-menu-item active">
+                            <a class="sidebar-menu-button" href="facilitator-books.html">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">poll</span>
+                                <span class="sidebar-menu-text">Manage Books</span>
+                            </a>
+                        </li>
                         <li class="sidebar-menu-item">
                             <a class="sidebar-menu-button" href="instructor-earnings.html">
+
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" data-toggle="collapse" href="#revenue_menu">
                                 <span
                                     class="material-icons sidebar-menu-icon sidebar-menu-icon--left">trending_up</span>
-                                <span class="sidebar-menu-text">Earnings</span>
+                                <span class="sidebar-menu-text">Revenue</span>
                             </a>
+                            <ul class="sidebar-submenu collapse sm-indent" id="revenue_menu">
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="facilitator-earning.html">
+                                        <span class="sidebar-menu-text">Earnings</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button disabled" href="facilitator-settlement.html">
+                                        <span class="sidebar-menu-text">settlement</span>
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="sidebar-menu-item">
                             <a class="sidebar-menu-button" href="instructor-statement.html">
@@ -1424,37 +1218,37 @@
                             </a>
                             <ul class="sidebar-submenu collapse sm-indent" id="layouts_menu">
                                 <li class="sidebar-menu-item">
-                                    <a class="sidebar-menu-button" href="compact-instructor-quizzes.html">
+                                    <a class="sidebar-menu-button" href="compact-instructor-dashboard.html">
                                         <span class="sidebar-menu-text">Compact</span>
                                     </a>
                                 </li>
                                 <li class="sidebar-menu-item">
-                                    <a class="sidebar-menu-button" href="mini-instructor-quizzes.html">
+                                    <a class="sidebar-menu-button" href="mini-instructor-dashboard.html">
                                         <span class="sidebar-menu-text">Mini</span>
                                     </a>
                                 </li>
                                 <li class="sidebar-menu-item">
-                                    <a class="sidebar-menu-button" href="mini-secondary-instructor-quizzes.html">
+                                    <a class="sidebar-menu-button" href="mini-secondary-instructor-dashboard.html">
                                         <span class="sidebar-menu-text">Mini + Secondary</span>
                                     </a>
                                 </li>
                                 <li class="sidebar-menu-item active">
-                                    <a class="sidebar-menu-button" href="instructor-quizzes.html">
+                                    <a class="sidebar-menu-button" href="instructor-dashboard.html">
                                         <span class="sidebar-menu-text">App</span>
                                     </a>
                                 </li>
                                 <li class="sidebar-menu-item">
-                                    <a class="sidebar-menu-button" href="boxed-instructor-quizzes.html">
+                                    <a class="sidebar-menu-button" href="boxed-instructor-dashboard.html">
                                         <span class="sidebar-menu-text">Boxed</span>
                                     </a>
                                 </li>
                                 <li class="sidebar-menu-item">
-                                    <a class="sidebar-menu-button" href="sticky-instructor-quizzes.html">
+                                    <a class="sidebar-menu-button" href="sticky-instructor-dashboard.html">
                                         <span class="sidebar-menu-text">Sticky</span>
                                     </a>
                                 </li>
                                 <li class="sidebar-menu-item">
-                                    <a class="sidebar-menu-button" href="fixed-instructor-quizzes.html">
+                                    <a class="sidebar-menu-button" href="fixed-instructor-dashboard.html">
                                         <span class="sidebar-menu-text">Fixed</span>
                                     </a>
                                 </li>
@@ -1495,7 +1289,12 @@
     <script src="assets/js/app.js"></script>
 
 
-
+    <!-- Quill -->
+    <script src="assets/vendor/quill.min.js"></script>
+    <script src="assets/js/quill.js"></script>
+    <!-- Select2 -->
+    <script src="assets/vendor/select2/select2.min.js"></script>
+    <script src="assets/js/select2.js"></script>
 
 </body>
 
