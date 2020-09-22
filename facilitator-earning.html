@@ -33,10 +33,10 @@
 
     <!-- App CSS -->
     <link type="text/css" href="assets/css/app.css" rel="stylesheet">
-        <!-- Flatpickr -->
-        <link type="text/css" href="assets/css/flatpickr.css" rel="stylesheet">
+    <!-- Flatpickr -->
+    <link type="text/css" href="assets/css/flatpickr.css" rel="stylesheet">
 
-        <link type="text/css" href="assets/css/flatpickr-airbnb.css" rel="stylesheet"> 
+    <link type="text/css" href="assets/css/flatpickr-airbnb.css" rel="stylesheet">
 
 </head>
 
@@ -47,6 +47,33 @@
         <div class="sk-double-bounce">
             <div class="sk-child sk-double-bounce1"></div>
             <div class="sk-child sk-double-bounce2"></div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="withdraw" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Request Withdrawal</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label class="form-label">Amount</label>
+                            <input type="number" class="form-control" value="" placeholder="Enter Amount to Withdraw ...">
+                        </div>
+                        
+                    <button type="submit" class="btn btn-primary w-100">Submit</button>
+                    </form>
+                </div>
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div> -->
+            </div>
         </div>
     </div>
 
@@ -295,7 +322,7 @@
                     <!-- Create Button With Dropdown -->
                     <div class="row" role="tablist">
                         <div class="col-auto">
-                            <a href="student-my-courses.html" class="btn btn-outline-secondary">
+                            <a href="#" class="btn btn-outline-secondary" data-toggle="modal" data-target="#withdraw">
                                 Request Withdrawal
                             </a>
                         </div>
@@ -353,13 +380,16 @@
                     </div>
 
                     <!-- Graph -->
-                    
-                <div class="card mb-lg-32pt">
+
+                    <div class="card mb-lg-32pt">
                         <div class="card-header d-flex align-items-center">
                             <strong class="card-title">Revenue</strong>
                             <div class="flatpickr-wrapper flatpickr-calendar-right d-flex ml-auto">
-                                <div id="recent_orders_date" data-toggle="flatpickr" data-flatpickr-wrap="true" data-flatpickr-static="true" data-flatpickr-mode="range" data-flatpickr-alt-format="d/m/Y" data-flatpickr-date-format="d/m/Y">
-                                    <a href="javascript:void(0)" class="link-date" data-toggle>13/03/2018 to 20/03/2018</a>
+                                <div id="recent_orders_date" data-toggle="flatpickr" data-flatpickr-wrap="true"
+                                    data-flatpickr-static="true" data-flatpickr-mode="range"
+                                    data-flatpickr-alt-format="d/m/Y" data-flatpickr-date-format="d/m/Y">
+                                    <a href="javascript:void(0)" class="link-date" data-toggle>13/03/2018 to
+                                        20/03/2018</a>
                                     <input class="d-none" type="hidden" value="13/03/2018 to 20/03/2018" data-input>
                                 </div>
                             </div>
@@ -367,7 +397,9 @@
                         <div class="card-body">
                             <div class="chart-legend mt-0 mb-24pt justify-content-start" id="ordersChartLegend"></div>
                             <div class="chart">
-                                <canvas id="ordersChart" class="chart-canvas js-update-chart-bar" data-chart-legend="#ordersChartLegend" data-chart-prefix="$" data-chart-suffix="k" data-chart-line-background-color="gradient:primary"></canvas>
+                                <canvas id="ordersChart" class="chart-canvas js-update-chart-bar"
+                                    data-chart-legend="#ordersChartLegend" data-chart-prefix="$" data-chart-suffix="k"
+                                    data-chart-line-background-color="gradient:primary"></canvas>
                             </div>
                         </div>
                     </div>
@@ -769,7 +801,8 @@
                                                         </strong>
                                                     </p>
                                                     <!-- Extra description -->
-                                                    <small class="js-lists-values-employee-email text-50">by Isaac Rajput</small>
+                                                    <small class="js-lists-values-employee-email text-50">by Isaac
+                                                        Rajput</small>
                                                 </div>
                                             </td>
                                             <td> 150 </td>
@@ -795,7 +828,8 @@
                                                         <strong class="js-lists-values-class">Fluid Mechanics</strong>
                                                     </p>
                                                     <!-- Extra description -->
-                                                    <small class="js-lists-values-employee-email text-50">by Josh Pepper</small>
+                                                    <small class="js-lists-values-employee-email text-50">by Josh
+                                                        Pepper</small>
                                                 </div>
                                             </td>
                                             <td> 150 </td>
@@ -818,10 +852,12 @@
                                             <td>
                                                 <div class="d-flex flex-column">
                                                     <p class="mb-0">
-                                                        <strong class="js-lists-values-class"> Dimension Analysis</strong>
+                                                        <strong class="js-lists-values-class"> Dimension
+                                                            Analysis</strong>
                                                     </p>
                                                     <!-- Extra description -->
-                                                    <small class="js-lists-values-employee-email text-50">by Goveey Hmm</small>
+                                                    <small class="js-lists-values-employee-email text-50">by Goveey
+                                                        Hmm</small>
                                                 </div>
                                             </td>
                                             <td> 80 </td>
@@ -1669,13 +1705,13 @@
     <script src="assets/vendor/moment.min.js"></script>
     <script src="assets/vendor/moment-range.min.js"></script>
 
-      <!-- Chart.js -->
-      <script src="assets/vendor/Chart.min.js"></script>
-      <script src="assets/js/chartjs-rounded-bar.js"></script>
-      <script src="assets/js/chartjs.js"></script>
-  
-      <!-- Chart.js Samples -->
-      <script src="assets/js/page.instructor-earnings.js"></script>
+    <!-- Chart.js -->
+    <script src="assets/vendor/Chart.min.js"></script>
+    <script src="assets/js/chartjs-rounded-bar.js"></script>
+    <script src="assets/js/chartjs.js"></script>
+
+    <!-- Chart.js Samples -->
+    <script src="assets/js/page.instructor-earnings.js"></script>
 
     <!-- List.js -->
     <script src="assets/vendor/list.min.js"></script>

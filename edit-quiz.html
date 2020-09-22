@@ -333,8 +333,6 @@
 
             <!-- // END Header -->
 
-
-
             <div class="pt-32pt">
                 <div
                     class="container page__container d-flex flex-column flex-md-row align-items-center text-center text-sm-left">
@@ -342,43 +340,16 @@
 
                         <div class="mb-24pt mb-sm-0 mr-sm-24pt">
                             <h2 class="mb-0">Edit Quiz</h2>
-
                             <ol class="breadcrumb p-0 m-0">
                                 <li class="breadcrumb-item"><a href="index-2.html">Home</a></li>
-
                                 <li class="breadcrumb-item active">
-
                                     Edit Quiz
-
                                 </li>
-
                             </ol>
-
                         </div>
                     </div>
-
-
                 </div>
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
             <div class="page-section border-bottom-2">
@@ -532,9 +503,8 @@
                                     <div class="form-group mb-0">
                                         <label class="form-label">Add to course</label>
                                         <select name="course" id="course" data-toggle="select" data-tags="true"
-                                            data-multiple="false"
-                                            data-minimum-results-for-search="-1" class="form-control"
-                                            data-placeholder="Select course ...">
+                                            data-multiple="false" data-minimum-results-for-search="-1"
+                                            class="form-control" data-placeholder="Select course ...">
                                             <option data-avatar-src="assets/images/paths/angular_40x40@2x.png"
                                                 selected="">Engineering of Mechanics</option>
                                             <option data-avatar-src="assets/images/paths/swift_40x40@2x.png">
@@ -546,24 +516,32 @@
                             </div>
 
                             <div class="page-separator">
-                                    <div class="page-separator__text">Modules</div>
+                                <div class="page-separator__text">Modules</div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="form-group mb-0">
+                                        <label class="form-label">Add to Modules</label>
+                                        <select name="course" id="module" data-toggle="select" data-tags="true"
+                                            data-multiple="true" multiple="multiple"
+                                            data-minimum-results-for-search="-1" class="form-control"
+                                            data-placeholder="Select modules ...">
+                                            <option data-avatar-src="assets/images/paths/angular_40x40@2x.png"
+                                                selected="">
+                                                Fundamental of Mechanics
+                                            </option>
+                                            <option data-avatar-src="assets/images/paths/swift_40x40@2x.png">
+                                                Kinematics
+                                            </option>
+                                        </select>
+                                    </div>
                                 </div>
-                                <div class="card">
+                            </div>
+                            <div class="card">
                                     <div class="card-body">
                                         <div class="form-group mb-0">
-                                            <label class="form-label">Add to Modules</label>
-                                            <select name="course" id="module" data-toggle="select" data-tags="true"
-                                                data-multiple="true" multiple="multiple"
-                                                data-minimum-results-for-search="-1" class="form-control"
-                                                data-placeholder="Select modules ...">
-                                                <option data-avatar-src="assets/images/paths/angular_40x40@2x.png"
-                                                    selected="">
-                                                    Fundamental of Mechanics
-                                                </option>
-                                                <option data-avatar-src="assets/images/paths/swift_40x40@2x.png">
-                                                    Kinematics
-                                                </option>
-                                            </select>
+                                            <label class="form-label">Select Number of Video, Before taking Quiz</label>
+                                            <input type="number" class="form-control" value="">
                                         </div>
                                     </div>
                                 </div>
