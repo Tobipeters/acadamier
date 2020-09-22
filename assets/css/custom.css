@@ -10,3 +10,9 @@
     top: 0;
     z-index: -1;
 }
+.about-book-list .list-group-item{
+    margin-bottom: .5rem;
+}
+.about-book-list .list-group-item:last-child{
+    margin-bottom: 0;
+}
