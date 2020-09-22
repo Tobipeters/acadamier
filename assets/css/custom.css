@@ -1,0 +1,12 @@
+.custom-file-picker input{
+    width: 90px;
+    height: 100%;
+    opacity: 0;
+}
+.custom-file-picker span{
+    position: absolute;
+    cursor: pointer;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
