@@ -61,18 +61,24 @@
                     </button>
                 </div>
                 <div class="modal-body">
+                    <div class="alert alert-warning mb-4 font-weight-bold text-center" role="alert">
+                        Minimum Amount that can be withdraw is &#8358;20,000
+                    </div>
                     <form>
                         <div class="form-group">
                             <label class="form-label">Amount</label>
-                            <input type="number" class="form-control" value="" placeholder="Enter Amount to Withdraw ...">
+                            <input type="number" class="form-control" value=""
+                                placeholder="Enter Amount to Withdraw ...">
+                            <div class="d-flex justify-content-between">
+                                <small class="text-muted font-weight-bold">Zenith Bank, Bosun Jones, 0100244422.</small>
+                                <a class="text-accent text-underline" href="facilitator-profile.html">Change</a>
+                            </div>
                         </div>
-                        
-                    <button type="submit" class="btn btn-primary w-100">Submit</button>
+
+
+                        <button type="submit" class="btn btn-primary w-100 mt-4">Submit</button>
                     </form>
                 </div>
-                <!-- <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div> -->
             </div>
         </div>
     </div>
@@ -980,14 +986,14 @@
 
                         </span>
 
-                        <span>Luma</span>
+                        <span>Acadamier</span>
                     </a>
                     <div class="sidebar-heading">Facilitator</div>
                     <ul class="sidebar-menu">
 
 
-                        <li class="sidebar-menu-item">
-                            <a class="sidebar-menu-button" href="instructor-dashboard.html">
+                        <li class="sidebar-menu-item active">
+                            <a class="sidebar-menu-button" href="facilitator-dashboard.html">
                                 <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">school</span>
                                 <span class="sidebar-menu-text">Facilitator Dashboard</span>
                             </a>
@@ -1006,11 +1012,6 @@
                             </a>
                         </li>
                         <li class="sidebar-menu-item">
-                            <a class="sidebar-menu-button" href="instructor-earnings.html">
-
-                            </a>
-                        </li>
-                        <li class="sidebar-menu-item active">
                             <a class="sidebar-menu-button" data-toggle="collapse" href="#revenue_menu">
                                 <span
                                     class="material-icons sidebar-menu-icon sidebar-menu-icon--left">trending_up</span>
@@ -1023,8 +1024,27 @@
                                     </a>
                                 </li>
                                 <li class="sidebar-menu-item">
-                                    <a class="sidebar-menu-button" href="facilitator-settlement.html">
+                                    <a class="sidebar-menu-button disabled" href="facilitator-settlement.html">
                                         <span class="sidebar-menu-text">settlement</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" data-toggle="collapse" href="#sub">
+                                <span
+                                    class="material-icons sidebar-menu-icon sidebar-menu-icon--left">trending_up</span>
+                                <span class="sidebar-menu-text">Subscription</span>
+                            </a>
+                            <ul class="sidebar-submenu collapse sm-indent" id="sub">
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="billing-upgrade.html">
+                                        <span class="sidebar-menu-text">Plans</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="billing-history.html">
+                                        <span class="sidebar-menu-text">Payment History</span>
                                     </a>
                                 </li>
                             </ul>

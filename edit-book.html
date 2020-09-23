@@ -380,6 +380,15 @@
                                 Add Content
                             </a>
 
+                            <div class="page-separator mt-5">
+                                <div class="page-separator__text">ISBN Number</div>
+                            </div>
+                            <div class="form-group mb-24pt">
+                                <input type="text" class="form-control" placeholder="Enter ISBN Number"
+                                    value="978-3-16-148410-0">
+
+                            </div>
+
                         </div>
                         <div class="col-md-4">
                             <div class="page-separator">
@@ -391,9 +400,27 @@
                                     <img src="./assets/images/paths/5f5634c01c8e2.jpg" class="w-100">
                                 </div>
                                 <div class="card-body">
-                                    <label class="form-label">Book Thumbnail</label>
-                                    <input type="file" class="form-control" placeholder="Enter Video URL">
-                                    <small class="form-text text-muted">Choose Image For the Book</small>
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="inputGroupFile01">
+                                        <label class="custom-file-label" for="inputGroupFile01">Choose file (Book Image)</label>
+                                    </div>
+                                    <small class="form-text text-muted text-right">Choose Image For the Book</small>
+                                </div>
+                            </div>
+
+                            <div class="page-separator">
+                                <div class="page-separator__text">Upload Book</div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="inputGroupFile01"
+                                            accept="application/pdf">
+                                        <label class="custom-file-label" for="inputGroupFile01">Choose
+                                            file (Book)</label>
+                                    </div>
+                                    <small class="form-text text-muted text-right">Only PDF format not more than
+                                        250MB</small>
                                 </div>
                             </div>
 
@@ -406,7 +433,7 @@
                                     <div class="form-group">
                                         <label class="form-label">Attach to Course</label>
                                         <select name="category" class="form-control custom-select">
-                                                <option value="">Select a Course</option>
+                                            <option value="">Select a Course</option>
                                             <option value="vuejs">Engineering Mechanics</option>
                                             <option value="vuejs">Angular</option>
                                             <option value="vuejs">React</option>

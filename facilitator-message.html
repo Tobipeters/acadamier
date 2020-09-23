@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Facilitator Revenue - Acadamier</title>
+    <title>Facilitator Messages</title>
 
     <!-- Prevent the demo from appearing in search engines -->
     <meta name="robots" content="noindex">
@@ -33,47 +33,15 @@
 
     <!-- App CSS -->
     <link type="text/css" href="assets/css/app.css" rel="stylesheet">
-    <!-- Flatpickr -->
-    <link type="text/css" href="assets/css/flatpickr.css" rel="stylesheet">
 
-    <link type="text/css" href="assets/css/flatpickr-airbnb.css" rel="stylesheet">
+
+
+
+
 
 </head>
 
-
 <body class="layout-app ">
-    <!-- Modal -->
-    <div class="modal fade" id="withdraw" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Request Withdrawal</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="alert alert-warning mb-4 font-weight-bold text-center" role="alert">
-                        Minimum Amount that can be withdraw is &#8358;20,000
-                    </div>
-                    <form>
-                        <div class="form-group">
-                            <label class="form-label">Amount</label>
-                            <input type="number" class="form-control" value=""
-                                placeholder="Enter Amount to Withdraw ...">
-                            <div class="d-flex justify-content-between">
-                                <small class="text-muted font-weight-bold">Zenith Bank, Bosun Jones, 0100244422.</small>
-                                <a class="text-accent text-underline" href="facilitator-profile.html">Change</a>
-                            </div>
-                        </div>
-
-
-                        <button type="submit" class="btn btn-primary w-100 mt-4">Submit</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <div class="preloader">
         <div class="sk-double-bounce">
@@ -81,7 +49,6 @@
             <div class="sk-child sk-double-bounce2"></div>
         </div>
     </div>
-
 
     <div class="mdk-drawer-layout js-mdk-drawer-layout" data-push data-responsive-width="992px">
         <div class="mdk-drawer-layout__content page-content">
@@ -93,7 +60,6 @@
                     data-toggle="sidebar">
                     <span class="material-icons">short_text</span>
                 </button>
-
                 <!-- Navbar Brand -->
                 <a href="student-dashboard.html" class="navbar-brand mr-16pt d-lg-none">
 
@@ -106,10 +72,6 @@
 
                 </a>
 
-
-
-
-
                 <span class="d-none d-md-flex align-items-center mr-16pt">
 
                     <span class="avatar avatar-sm mr-12pt">
@@ -120,22 +82,14 @@
                     </span>
 
                     <small class="flex d-flex flex-column">
-                        <strong class="navbar-text-100">Smith Jones</strong>
+                        <strong class="navbar-text-100">Bosun Jones</strong>
                         <span class="navbar-text-50">2,300 points</span>
                     </small>
                 </span>
 
-
-
-
-
                 <div class="flex"></div>
 
-
-
                 <div class="nav navbar-nav flex-nowrap d-flex mr-16pt">
-
-
                     <!-- Notifications dropdown -->
                     <div class="nav-item dropdown dropdown-notifications dropdown-xs-down-full" data-toggle="tooltip"
                         data-title="Messages" data-placement="bottom" data-boundary="window">
@@ -179,7 +133,7 @@
                                             </span>
                                             <span class="flex d-flex flex-column">
                                                 <strong class="text-black-100">Ijeoma Chukwu</strong>
-                                                <span class="text-black-70">🔥 Great meeting you too..</span>
+                                                <span class="text-black-70">🔥 Superb job..</span>
                                             </span>
                                         </span>
                                     </a>
@@ -220,7 +174,7 @@
                                             </span>
                                             <span class="flex d-flex flex-column">
 
-                                                <span class="text-black-70">Your profile information has been updated
+                                                <span class="text-black-70">Your profile information has not been synced
                                                     correctly.</span>
                                             </span>
                                         </span>
@@ -238,7 +192,7 @@
                                                 </span>
                                             </span>
                                             <span class="flex d-flex flex-column">
-                                                <strong class="text-black-100">Mordi Chukwu</strong>
+                                                <strong class="text-black-100">Adrian. D</strong>
                                                 <span class="text-black-70">Wants to join your private group.</span>
                                             </span>
                                         </span>
@@ -257,7 +211,7 @@
                                             </span>
                                             <span class="flex d-flex flex-column">
 
-                                                <span class="text-black-70">Your payment was successful.</span>
+                                                <span class="text-black-70">Your deploy was successful.</span>
                                             </span>
                                         </span>
                                     </a>
@@ -283,189 +237,249 @@
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
                             <div class="dropdown-header"><strong>Account</strong></div>
-                            <a class="dropdown-item" href="edit-account.html">Edit Account</a>
-                            <a class="dropdown-item" href="#">Billing</a>
-                            <a class="dropdown-item" href="#">Payments</a>
+                            <a class="dropdown-item" href="facilitator-profile.html">Profile</a>
+                            <a class="dropdown-item" href="facilitator-billing.html">Billing</a>
                             <a class="dropdown-item" href="#">Logout</a>
                         </div>
                     </div>
                 </div>
             </div>
+
             <!-- // END Header -->
-
-            <!-- Conditional Alert, If Pro subscription about to end  -->
-            <div class="alert alert-danger" role="alert">
-                <div class="container d-flex justify-content-between">
-                    <h5 class="mb-0 text-danger text-md pt-1">Pro Subscription expires in 3 Days</h5>
-                    <a href="" class="btn btn-primary text-white">Renew Now</a>
-                </div>
-            </div>
-
-
-
 
             <div class="pt-32pt">
                 <div
                     class="container page__container d-flex flex-column flex-md-row align-items-center text-center text-sm-left">
-                    <div class="flex d-flex flex-column flex-sm-row align-items-center mb-24pt mb-md-0">
+                    <div class="flex d-flex flex-column flex-sm-row align-items-center">
 
                         <div class="mb-24pt mb-sm-0 mr-sm-24pt">
-                            <h2 class="mb-0">Settlement</h2>
-
+                            <h2 class="mb-0">Messages</h2>
                             <ol class="breadcrumb p-0 m-0">
-                                <li class="breadcrumb-item"><a href="facilitator-dashboard.html">Home</a></li>
-
+                                <li class="breadcrumb-item"><a href="student-dashboard.html">Home</a></li>
                                 <li class="breadcrumb-item active">
-                                    Settlement
+                                    Messages
                                 </li>
-
                             </ol>
-
                         </div>
                     </div>
-
-
-                    <!-- Create Button With Dropdown -->
-                    <div class="row" role="tablist">
-                        <div class="col-auto">
-                            <a href="facilitator-settlement.html" class="btn btn-outline-secondary" data-toggle="modal" data-target="#withdraw">
-                                Request Withdrawal
-                            </a>
-                        </div>
-                    </div>
-
                 </div>
             </div>
+
 
             <div class="container page__container">
-
                 <div class="page-section">
 
-                    <!-- ALl transcations -->
-                    <div class="pt-3 pb-5">
-                        <div class="page-separator">
-                            <div class="page-separator__text">All Transactions</div>
-                        </div>
 
-                        <div class="card m-0">
-                            <div class="table-responsive" data-toggle="lists" data-lists-sort-by="js-lists-values-id"
-                                data-lists-values='["js-lists-values-id", "js-lists-values-amount", "js-lists-values-date", "js-lists-values-status"]'>
+                    <div class="page-separator">
+                        <div class="page-separator__text">Message</div>
+                    </div>
 
-                                <div class="card-header mx-0 row px-0">
-                                    <div class="col-md-6">
-                                        <div class="search-form w-50">
-                                            <input type="text" class="form-control search" placeholder="Search ...">
-                                            <button class="btn" type="button"><i
-                                                    class="material-icons">search</i></button>
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="row align-items-center" style="white-space: nowrap;">
+                                <div class="col-lg-auto">
+                                    <form class="search-form search-form--dark d-lg-inline-flex mb-8pt mb-lg-0"
+                                        action="#">
+                                        <input type="text" class="form-control w-lg-auto"
+                                            placeholder="Search discussions">
+                                        <button class="btn" type="submit" role="button"><i
+                                                class="material-icons">search</i></button>
+                                    </form>
+                                </div>
+                                <div class="col-lg d-flex flex-wrap align-items-center">
+                                    <!-- <div class="ml-lg-auto dropdown">
+                                        <a href="#" class="btn btn-link dropdown-toggle text-70"
+                                            data-toggle="dropdown">All Topics</a>
+                                        <div class="dropdown-menu dropdown-menu-right">
+                                            <a href="#" class="dropdown-item active">All Topics</a>
+                                            <a href="#" class="dropdown-item">My Topics</a>
+                                        </div>
+                                    </div> -->
+                                    <div class="dropdown mr-8pt ml-auto">
+                                        <a href="#" class="btn btn-link dropdown-toggle text-70"
+                                            data-toggle="dropdown">Newest</a>
+                                        <div class="dropdown-menu dropdown-menu-right">
+                                            <a href="#" class="dropdown-item active">Newest</a>
+                                            <a href="#" class="dropdown-item">Unreplied</a>
                                         </div>
                                     </div>
-                                    <div class="col-md-6"></div>
+                                    <!-- <a href="discussions-ask.html" class="btn btn-accent">Ask a question</a> -->
                                 </div>
-                                <table class="table mb-0 thead-border-top-0 table-nowrap">
-                                    <thead>
-                                        <tr>
-                                            <th>
-                                                <a href="javascript:void(0)" class="sort"
-                                                    data-sort="js-lists-values-id">Transaction ID</a>
-                                            </th>
-                                            <th style="width: 37px;">
-                                                <a href="javascript:void(0)" class="sort"
-                                                    data-sort="js-lists-values-amount">Amount</a>
-                                            </th>
-                                            <th style="width: 37px;">
-                                                <a href="javascript:void(0)" class="sort"
-                                                    data-sort="js-lists-values-date">Date Requested</a>
-                                            </th>
-                                            <th style="width: 51px;">
-                                                <a href="javascript:void(0)" class="sort"
-                                                    data-sort="js-lists-values-status">Status</a>
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="list" id="search">
-
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex flex-column">
-                                                    <p class="mb-0">
-                                                        <strong class="js-lists-values-id">
-                                                            #109823
-                                                        </strong>
-                                                    </p>
-                                                    <!-- Extra description -->
-                                                    <small class="js-lists-values-employee-email text-50"></small>
-                                                </div>
-                                            </td>
-                                            <td class="text-50 js-lists-values-amount small">&#8358;40,000</td>
-                                            <td class="js-lists-values-date small text-center">19/08/2020</td>
-                                            <td class="text-right pl-0">
-                                                <div class="alert alert-success  js-lists-values-status mb-0 px-2 py-1 text-center"
-                                                    role="alert">
-                                                    Success
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex flex-column">
-                                                    <p class="mb-0">
-                                                        <strong class="js-lists-values-id">
-                                                            #109823
-                                                        </strong>
-                                                    </p>
-                                                    <!-- Extra description -->
-                                                    <small class="js-lists-values-employee-email text-50"></small>
-                                                </div>
-                                            </td>
-                                            <td class="text-50 js-lists-values-amount small">&#8358;40,000</td>
-                                            <td class="js-lists-values-date small text-center">19/08/2020</td>
-                                            <td class="text-right pl-0">
-                                                <div class="alert alert-warning  js-lists-values-status mb-0 px-2 py-1 text-center"
-                                                    role="alert">
-                                                    Pending
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex flex-column">
-                                                    <p class="mb-0">
-                                                        <strong class="js-lists-values-id">
-                                                            #109823
-                                                        </strong>
-                                                    </p>
-                                                    <!-- Extra description -->
-                                                    <small class="js-lists-values-employee-email text-50"></small>
-                                                </div>
-                                            </td>
-                                            <td class="text-50 js-lists-values-amount small">&#8358;20,000</td>
-                                            <td class="js-lists-values-date small text-center">19/08/2020</td>
-                                            <td class="text-right pl-0">
-                                                <div class="alert alert-danger  js-lists-values-status mb-0 px-2 py-1 text-center"
-                                                    role="alert">
-                                                    Rejected
-                                                </div>
-                                            </td>
-                                        </tr>
+                            </div>
+                        </div>
 
 
-                                    </tbody>
-                                </table>
+                        <div class="list-group list-group-flush">
+
+                            <div class="list-group-item p-3">
+                                <div class="row align-items-start">
+                                    <div class="col-md-3 mb-8pt mb-md-0">
+                                        <div class="media align-items-center">
+                                            <div class="media-left mr-12pt">
+                                                <a href="#" class="avatar avatar-sm">
+                                                    <!-- <img src="LB" alt="avatar" class="avatar-img rounded-circle"> -->
+                                                    <span class="avatar-title rounded-circle">JS</span>
+                                                </a>
+                                            </div>
+                                            <div class="d-flex flex-column media-body media-middle">
+                                                <a href="#" class="card-title">Jide Sanwolu</a>
+                                                <small class="text-muted">2 days ago</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col mb-8pt mb-md-0">
+                                        <p class="mb-8pt"><a href="single-message.html" class="text-body">
+                                                <strong>
+                                                    When will you release a course on Mohr Circle ?
+                                                </strong>
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
 
+                            <div class="list-group-item p-3">
+                                <div class="row align-items-start">
+                                    <div class="col-md-3 mb-8pt mb-md-0">
+                                        <div class="media align-items-center">
+                                            <div class="media-left mr-12pt">
+                                                <a href="#" class="avatar avatar-sm">
+                                                    <!-- <img src="AC" alt="avatar" class="avatar-img rounded-circle"> -->
+                                                    <span class="avatar-title rounded-circle">KA</span>
+                                                </a>
+                                            </div>
+                                            <div class="d-flex flex-column media-body media-middle">
+                                                <a href="#" class="card-title">Kolade Amodu</a>
+                                                <small class="text-muted">3 days ago</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col mb-8pt mb-md-0">
+                                        <p class="mb-0"><a href="single-message.html" class="text-body">
+                                                <strong>
+                                                    Which book will you recommend for deep drive into Fluid Mechanics ?
+                                                </strong>
+                                            </a>
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="list-group-item p-3">
+                                <div class="row align-items-start">
+                                    <div class="col-md-3 mb-8pt mb-md-0">
+                                        <div class="media align-items-center">
+                                            <div class="media-left mr-12pt">
+                                                <a href="#" class="avatar avatar-sm">
+                                                    <!-- <img src="EH" alt="avatar" class="avatar-img rounded-circle"> -->
+                                                    <span class="avatar-title rounded-circle">BJ</span>
+                                                </a>
+                                            </div>
+                                            <div class="d-flex flex-column media-body media-middle">
+                                                <a href="#" class="card-title">Bosun Jones</a>
+                                                <small class="text-muted">4 days ago</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col mb-8pt mb-md-0">
+                                        <p class="mb-0"><a href="single-message.html" class="text-body"><strong>Why is
+                                                    my
+                                                    stitches not coming out on a straight line?</strong></a></p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="list-group-item p-3">
+                                <div class="row align-items-start">
+                                    <div class="col-md-3 mb-8pt mb-md-0">
+                                        <div class="media align-items-center">
+                                            <div class="media-left mr-12pt">
+                                                <a href="#" class="avatar avatar-sm">
+                                                    <!-- <img src="JK" alt="avatar" class="avatar-img rounded-circle"> -->
+                                                    <span class="avatar-title rounded-circle">SO</span>
+                                                </a>
+                                            </div>
+                                            <div class="d-flex flex-column media-body media-middle">
+                                                <a href="#" class="card-title">Sarah Obasi</a>
+                                                <small class="text-muted">6 days ago</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col mb-8pt mb-md-0">
+                                        <p class="mb-0"><a href="single-message.html" class="text-body"><strong>Using
+                                                    satin
+                                                    instead of cotton to make a Tote Bag</strong></a></p>
+
+                                    </div>
+                                </div>
+                            </div>
 
                         </div>
+
+
+                        <div class="card-footer">
+
+
+                            <ul class="pagination justify-content-start pagination-xsm m-0">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true" class="material-icons">chevron_left</span>
+                                        <span>Prev</span>
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Page 1">
+                                        <span>1</span>
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Page 2">
+                                        <span>2</span>
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span>Next</span>
+                                        <span aria-hidden="true" class="material-icons">chevron_right</span>
+                                    </a>
+                                </li>
+                            </ul>
+
+
+                            <!-- <ul class="pagination justify-content-center pagination-sm">
+  <li class="page-item disabled">
+    <a class="page-link" href="#" aria-label="Previous">
+      <span aria-hidden="true" class="material-icons">chevron_left</span>
+      <span>Prev</span>
+    </a>
+  </li>
+  <li class="page-item active">
+    <a class="page-link" href="#" aria-label="1">
+      <span>1</span>
+    </a>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="#" aria-label="1">
+      <span>2</span>
+    </a>
+  </li>
+  <li class="page-item">
+    <a class="page-link" href="#" aria-label="Next">
+      <span>Next</span>
+      <span aria-hidden="true" class="material-icons">chevron_right</span>
+    </a>
+  </li>
+</ul> -->
+                            <!-- <a href="" class="text-70 text-underline">View more discussions</a> -->
+                        </div>
                     </div>
-                    <!-- All transcations Ends here -->
-
-
                 </div>
             </div>
 
 
 
-
-            <!-- Footer -->
 
             <div class="js-fix-footer2 bg-white border-top-2">
                 <div class="container page__container page-section d-flex flex-column">
@@ -488,6 +502,7 @@
 
         </div>
         <!-- // END drawer-layout__content -->
+
 
 
 
@@ -1246,32 +1261,7 @@
     <script src="assets/js/app.js"></script>
 
 
-    <!-- Global Settings -->
-    <script src="assets/js/settings.js"></script>
 
-    <!-- Flatpickr -->
-    <script src="assets/vendor/flatpickr/flatpickr.min.js"></script>
-    <script src="assets/js/flatpickr.js"></script>
-
-    <!-- Moment.js -->
-    <script src="assets/vendor/moment.min.js"></script>
-    <script src="assets/vendor/moment-range.min.js"></script>
-
-    <!-- Chart.js -->
-    <script src="assets/vendor/Chart.min.js"></script>
-    <script src="assets/js/chartjs-rounded-bar.js"></script>
-    <script src="assets/js/chartjs.js"></script>
-
-    <!-- Chart.js Samples -->
-    <script src="assets/js/page.instructor-earnings.js"></script>
-
-    <!-- List.js -->
-    <script src="assets/vendor/list.min.js"></script>
-    <script src="assets/js/list.js"></script>
-
-    <!-- Tables -->
-    <script src="assets/js/toggle-check-all.js"></script>
-    <script src="assets/js/check-selected-row.js"></script>
 
 </body>
 
