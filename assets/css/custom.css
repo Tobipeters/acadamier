@@ -16,3 +16,6 @@
 .about-book-list .list-group-item:last-child{
     margin-bottom: 0;
 }
+.custom-bg-sec{
+    background: #E9ECEF !important;
+}
