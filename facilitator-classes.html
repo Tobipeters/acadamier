@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Account | Profile</title>
+    <title>Facilitator Classes - Acadamier</title>
 
     <!-- Prevent the demo from appearing in search engines -->
     <meta name="robots" content="noindex">
@@ -34,13 +34,8 @@
     <!-- App CSS -->
     <link type="text/css" href="assets/css/app.css" rel="stylesheet">
 
-    <!-- Custom css -->
-    <link type="text/css" href="assets/css/custom.css" rel="stylesheet">
-
-
-
-
 </head>
+
 
 <body class="layout-app ">
 
@@ -88,7 +83,7 @@
                     </span>
 
                     <small class="flex d-flex flex-column">
-                        <strong class="navbar-text-100">Bosun Jones</strong>
+                        <strong class="navbar-text-100">Smith Jones</strong>
                         <span class="navbar-text-50">2,300 points</span>
                     </small>
                 </span>
@@ -147,7 +142,7 @@
                                             </span>
                                             <span class="flex d-flex flex-column">
                                                 <strong class="text-black-100">Ijeoma Chukwu</strong>
-                                                <span class="text-black-70">🔥 Superb job..</span>
+                                                <span class="text-black-70">🔥 Great meeting you too..</span>
                                             </span>
                                         </span>
                                     </a>
@@ -188,7 +183,7 @@
                                             </span>
                                             <span class="flex d-flex flex-column">
 
-                                                <span class="text-black-70">Your profile information has not been synced
+                                                <span class="text-black-70">Your profile information has been updated
                                                     correctly.</span>
                                             </span>
                                         </span>
@@ -252,177 +247,180 @@
                         <div class="dropdown-menu dropdown-menu-right">
                             <div class="dropdown-header"><strong>Account</strong></div>
                             <a class="dropdown-item" href="facilitator-profile.html">Profile</a>
-                            <a class="dropdown-item" href="facilitator-billing.html">Billings</a>
                             <a class="dropdown-item" href="#">Logout</a>
                         </div>
                     </div>
                 </div>
             </div>
-
-
-
-
             <!-- // END Header -->
+
+            <!-- Conditional Alert, If Pro subscription about to end  -->
+            <div class="alert alert-danger" role="alert">
+                <div class="container d-flex justify-content-between">
+                    <h5 class="mb-0 text-danger text-md pt-1">Pro Subscription expires in 3 Days</h5>
+                    <a href="" class="btn btn-primary text-white">Renew Now</a>
+                </div>
+            </div>
+
 
 
 
             <div class="pt-32pt">
                 <div
                     class="container page__container d-flex flex-column flex-md-row align-items-center text-center text-sm-left">
-                    <div class="flex d-flex flex-column flex-sm-row align-items-center">
+                    <div class="flex d-flex flex-column flex-sm-row align-items-center mb-24pt mb-md-0">
 
                         <div class="mb-24pt mb-sm-0 mr-sm-24pt">
-                            <h2 class="mb-0">Profile</h2>
+                            <h2 class="mb-0">Classes</h2>
                             <ol class="breadcrumb p-0 m-0">
                                 <li class="breadcrumb-item"><a href="facilitator-dashboard.html">Home</a></li>
-                                <li class="breadcrumb-item">
-                                    <a href="#">Account</a>
-                                </li>
                                 <li class="breadcrumb-item active">
-                                    Profile
+                                    Classes
                                 </li>
                             </ol>
+
                         </div>
                     </div>
 
+
+                    <!-- Create Button With Dropdown -->
+                    <div class="row" role="tablist">
+                        <div class="col-auto">
+                            <a href="single-class.html" class="btn btn-outline-secondary">
+                                Create New
+                            </a>
+                        </div>
+                    </div>
 
                 </div>
             </div>
 
+            <div class="container page__container">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <div class="container page__container page-section">
-
-                <div class="form-group text-center">
-                    <a target="_blank" href="./assets/images/people/256/256_rsz_florian-perennes-594195-unsplash.jpg">
-                        <img src="./assets/images/people/256/256_rsz_florian-perennes-594195-unsplash.jpg" width="200"
-                            height="200" class="rounded-circle d-block mx-auto" />
-                    </a>
-                    <div class="position-relative d-inline-block mx-auto custom-file-picker my-3">
-                        <input type="file" class="">
-                        <span class="btn btn-sm btn-primary ">Choose File</span>
+                <div class="page-section">
+                    <!-- Overview Session -->
+                    <div class="page-separator">
+                        <div class="page-separator__text">Class List</div>
                     </div>
+
+                    <!-- Class List -->
+                    <div class="card m-0">
+                        <div class="table-responsive" data-toggle="lists" data-lists-sort-by="js-lists-values-class"
+                            data-lists-values='["js-lists-values-class", "js-lists-values-type", "js-lists-values-module"]'>
+
+                            <div class="card-header mx-0 row px-0">
+                                <div class="col-md-6">
+                                    <div class="search-form w-50">
+                                        <input type="text" class="form-control search" placeholder="Search ...">
+                                        <button class="btn" type="button"><i class="material-icons">search</i></button>
+                                    </div>
+                                </div>
+                                <div class="col-md-6"></div>
+                            </div>
+                            <table class="table mb-0 thead-border-top-0 table-nowrap">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <a href="javascript:void(0)" class="sort"
+                                                data-sort="js-lists-values-class">Name</a>
+                                        </th>
+                                        <th style="width: 37px;">
+                                            <a href="javascript:void(0)" class="sort" data-sort="js-lists-values-type">
+                                                Type
+                                            </a>
+                                        </th>
+                                        <th style="width: 37px;">
+                                            <a href="javascript:void(0)" class="sort"
+                                                data-sort="js-lists-values-module">
+                                                Modules
+                                            </a>
+                                        </th>
+                                        <th style="width: 37px;">Number Learners</th>
+                                        <th style="width: 24px;" class="pl-0">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="list" id="search">
+
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex flex-column">
+                                                <p class="mb-0">
+                                                    <a href="#"
+                                                        class="avatar avatar-4by3 overlay overlay--primary mr-12pt rounded">
+                                                        <img src="assets/images/paths/angular_routing_200x168.png"
+                                                            alt="Angular Routing In-Depth" width="50" height="50"
+                                                            class="avatar-img rounded">
+                                                        <span class="overlay__content"></span>
+                                                    </a>
+                                                    <strong class="js-lists-values-class">
+                                                        Excellence in Leadership
+                                                    </strong>
+                                                </p>
+                                                <!-- Extra description -->
+                                                <small class="js-lists-values-employee-email text-50"></small>
+                                            </div>
+                                        </td>
+                                        <td class="text-center"> Live </td>
+                                        <td class="text-center"> 7 </td>
+                                        <td class="text-50 js-lists-values-rating text-center small">400</td>
+                                        <td class="text-right pl-0">
+                                            <a href="student-my-courses.html"
+                                                class="btn btn-sm btn-outline-secondary dropdown-toggle"
+                                                id="tableAction" data-toggle="dropdown">
+                                                More
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="tableAction">
+                                                <a class="border-bottom dropdown-item" href="single-class.html">Edit</a>
+                                                <a class="border-bottom dropdown-item" href="single-class.html">Delete
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex flex-column">
+                                                <p class="mb-0">
+                                                    <a href="#"
+                                                        class="avatar avatar-4by3 overlay overlay--primary mr-12pt rounded">
+                                                        <img src="assets/images/paths/angular_routing_200x168.png"
+                                                            alt="Angular Routing In-Depth" width="50" height="50"
+                                                            class="avatar-img rounded">
+                                                        <span class="overlay__content"></span>
+                                                    </a>
+                                                    <strong class="js-lists-values-class">
+                                                        Engineering Mechanics II
+                                                    </strong>
+                                                </p>
+                                                <small class="js-lists-values-employee-email text-50"></small>
+                                            </div>
+                                        </td>
+                                        <td class="text-center"> Private </td>
+                                        <td class="text-center"> 10 </td>
+                                        <td class="text-50 js-lists-values-rating text-center small">450</td>
+                                        <td class="text-right pl-0">
+                                            <a href="student-my-courses.html"
+                                                class="btn btn-sm btn-outline-secondary dropdown-toggle"
+                                                id="tableAction" data-toggle="dropdown">
+                                                More
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="tableAction">
+                                                <a class="border-bottom dropdown-item" href="single-class.html">Edit</a>
+                                                <a class="border-bottom dropdown-item" href="single-class.html">Delete
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+
+
+                    </div>
+                    <!-- Class List Ends here -->
+
+
                 </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="page-separator mb-4">
-                            <div class="page-separator__text">Basic Information</div>
-                        </div>
-                        <form>
-                            <div class="row">
-                                <div class="col-md-6 form-group">
-                                    <label class="form-label">First name</label>
-                                    <input type="text" class="form-control" value="Bosun"
-                                        placeholder="Your first name ...">
-                                </div>
-                                <div class="col-md-6 form-group">
-                                    <label class="form-label">Last name</label>
-                                    <input type="text" class="form-control" value="Jones"
-                                        placeholder="Your last name ...">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 form-group">
-                                    <label class="form-label">Phone Number</label>
-                                    <input type="number" class="form-control" value="08102003000"
-                                        placeholder="Your Phone Number">
-                                </div>
-                                <div class="col-md-6 form-group">
-                                    <label class="form-label">Email address</label>
-                                    <input type="email" class="form-control" value="bounjonesmuyiwa@gmail.com"
-                                        placeholder="Your email address ...">
-                                    <small class="form-text text-muted">Note that if you change your email, you will
-                                        have to
-                                        confirm it again.</small>
-                                </div>
-                            </div>
-                            <label class="form-label">Custom Url</label>
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text border custom-bg-sec text-black-50"
-                                        id="basic-addon3">acadamier.com/</span>
-                                </div>
-                                <input type="text" class="form-control" id="basic-url" value="bosun-jones"
-                                    aria-describedby="basic-addon3">
-                            </div>
-
-
-
-                            <div class="form-group">
-                                <label class="form-label">About</label>
-                                <textarea type="text" class="form-control" rows="4" placeholder="Your Bio ..."> Always Inspired to impact knowledge to people
-                            </textarea>
-                            </div>
-                            <button class="btn btn-primary">Save changes</button>
-                        </form>
-                    </div>
-                    <div class="col-md-6 py-5">
-                        <div class="page-separator mb-4">
-                            <div class="page-separator__text">
-                                <a id="payment">
-                                    Payment Information
-                                </a>
-                            </div>
-                        </div>
-                        <form>
-                            <div class="form-group">
-                                <label class="form-label">Bank Name</label>
-                                <input type="text" class="form-control" value="Zenith Bank"
-                                    placeholder="Your Bank Name ...">
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label">Account Name</label>
-                                <input type="text" class="form-control" value="Bosun Jones"
-                                    placeholder="Your Account Name ...">
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label">Account Number</label>
-                                <input type="number" class="form-control" value="0012004212"
-                                    placeholder="Your Account Number">
-                            </div>
-                            <button class="btn btn-primary">Save changes</button>
-                        </form>
-                    </div>
-
-                    <!-- Password Reset -->
-                    <div class="col-md-6 py-5">
-                        <div class="page-separator mb-4">
-                            <div class="page-separator__text">Password Reset</div>
-                        </div>
-                        <form>
-                            <div class="form-group">
-                                <label class="form-label">Old Password</label>
-                                <input type="password" class="form-control" value="Bosun1234"
-                                    placeholder="Your Old Password ...">
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label">New Password</label>
-                                <input type="passowrd" class="form-control" value=""
-                                    placeholder="Your New Passowrd ...">
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label">Confirm Password</label>
-                                <input type="password" class="form-control" value=""
-                                    placeholder="Your Confrim Password">
-                            </div>
-                            <button class="btn btn-primary">Save changes</button>
-                        </form>
-                    </div>
-                </div>
-
             </div>
 
 
@@ -449,7 +447,6 @@
 
         </div>
         <!-- // END drawer-layout__content -->
-
 
 
 
@@ -500,9 +497,22 @@
                             </a>
                         </li>
                         <li class="sidebar-menu-item">
-                            <a class="sidebar-menu-button" href="facilitor-quizzes.html">
+                            <a class="sidebar-menu-button" href="facilitator-books.html">
+                                <span
+                                    class="material-icons sidebar-menu-icon sidebar-menu-icon--left">import_contacts</span>
+                                <span class="sidebar-menu-text">Manage Books</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="facilitator-quizzes.html">
                                 <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">help</span>
                                 <span class="sidebar-menu-text">Manage Quizzes</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="facilitator-classes.html">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">help</span>
+                                <span class="sidebar-menu-text">Manage Classes</span>
                             </a>
                         </li>
                         <li class="sidebar-menu-item">
@@ -1208,7 +1218,31 @@
     <script src="assets/js/app.js"></script>
 
 
+    <!-- Global Settings -->
+    <script src="assets/js/settings.js"></script>
 
+    <!-- Flatpickr -->
+    <script src="assets/vendor/flatpickr/flatpickr.min.js"></script>
+    <script src="assets/js/flatpickr.js"></script>
+
+    <!-- Moment.js -->
+    <script src="assets/vendor/moment.min.js"></script>
+    <script src="assets/vendor/moment-range.min.js"></script>
+
+    <!-- Chart.js -->
+    <script src="assets/vendor/Chart.min.js"></script>
+    <script src="assets/js/chartjs.js"></script>
+
+    <!-- Chart.js Samples -->
+    <script src="assets/js/page.student-dashboard.js"></script>
+
+    <!-- List.js -->
+    <script src="assets/vendor/list.min.js"></script>
+    <script src="assets/js/list.js"></script>
+
+    <!-- Tables -->
+    <script src="assets/js/toggle-check-all.js"></script>
+    <script src="assets/js/check-selected-row.js"></script>
 
 </body>
 

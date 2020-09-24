@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Account | Profile</title>
+    <title>Facilitator Single Class - Acadamier</title>
 
     <!-- Prevent the demo from appearing in search engines -->
     <meta name="robots" content="noindex">
@@ -33,14 +33,10 @@
 
     <!-- App CSS -->
     <link type="text/css" href="assets/css/app.css" rel="stylesheet">
-
-    <!-- Custom css -->
+    <!-- Custom Css -->
     <link type="text/css" href="assets/css/custom.css" rel="stylesheet">
-
-
-
-
 </head>
+
 
 <body class="layout-app ">
 
@@ -88,7 +84,7 @@
                     </span>
 
                     <small class="flex d-flex flex-column">
-                        <strong class="navbar-text-100">Bosun Jones</strong>
+                        <strong class="navbar-text-100">Smith Jones</strong>
                         <span class="navbar-text-50">2,300 points</span>
                     </small>
                 </span>
@@ -147,7 +143,7 @@
                                             </span>
                                             <span class="flex d-flex flex-column">
                                                 <strong class="text-black-100">Ijeoma Chukwu</strong>
-                                                <span class="text-black-70">🔥 Superb job..</span>
+                                                <span class="text-black-70">🔥 Great meeting you too..</span>
                                             </span>
                                         </span>
                                     </a>
@@ -188,7 +184,7 @@
                                             </span>
                                             <span class="flex d-flex flex-column">
 
-                                                <span class="text-black-70">Your profile information has not been synced
+                                                <span class="text-black-70">Your profile information has been updated
                                                     correctly.</span>
                                             </span>
                                         </span>
@@ -252,177 +248,284 @@
                         <div class="dropdown-menu dropdown-menu-right">
                             <div class="dropdown-header"><strong>Account</strong></div>
                             <a class="dropdown-item" href="facilitator-profile.html">Profile</a>
-                            <a class="dropdown-item" href="facilitator-billing.html">Billings</a>
                             <a class="dropdown-item" href="#">Logout</a>
                         </div>
                     </div>
                 </div>
             </div>
-
-
-
-
             <!-- // END Header -->
+
+            <!-- Conditional Alert, If Pro subscription about to end  -->
+            <div class="alert alert-danger" role="alert">
+                <div class="container d-flex justify-content-between">
+                    <h5 class="mb-0 text-danger text-md pt-1">Pro Subscription expires in 3 Days</h5>
+                    <a href="billing-upgrade.html" class="btn btn-primary text-white">Renew Now</a>
+                </div>
+            </div>
+
 
 
 
             <div class="pt-32pt">
                 <div
                     class="container page__container d-flex flex-column flex-md-row align-items-center text-center text-sm-left">
-                    <div class="flex d-flex flex-column flex-sm-row align-items-center">
+                    <div class="flex d-flex flex-column flex-sm-row align-items-center mb-24pt mb-md-0">
 
                         <div class="mb-24pt mb-sm-0 mr-sm-24pt">
-                            <h2 class="mb-0">Profile</h2>
+                            <h2 class="mb-0">Edit Class</h2>
                             <ol class="breadcrumb p-0 m-0">
                                 <li class="breadcrumb-item"><a href="facilitator-dashboard.html">Home</a></li>
-                                <li class="breadcrumb-item">
-                                    <a href="#">Account</a>
-                                </li>
                                 <li class="breadcrumb-item active">
-                                    Profile
+                                    Edit Class
                                 </li>
                             </ol>
+
                         </div>
                     </div>
-
 
                 </div>
             </div>
 
+            <div class="container page__container">
 
+                <div class="page-section">
+                    <div class="card">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" id="detail" data-toggle="tab" href="#detailTab" role="tab"
+                                    aria-controls="detail" aria-selected="true">Course Details</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="what" data-toggle="tab" href="#whatTab" role="tab"
+                                    aria-controls="whatTab" aria-selected="true">What to Learn</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="module" data-toggle="tab" href="#moduleTab" role="tab"
+                                    aria-controls="moduleTab" aria-selected="false">Modules</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="learner" data-toggle="tab" href="#learnerTab" role="tab"
+                                    aria-controls="learnerTab" aria-selected="false">Learner List</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="book" data-toggle="tab" href="#bookTab" role="tab"
+                                    aria-controls="bookTab" aria-selected="false">Books</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="quiz" data-toggle="tab" href="#quizTab" role="tab"
+                                    aria-controls="quizTab" aria-selected="false">Quizzes</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="discus" data-toggle="tab" href="#discusTab" role="tab"
+                                    aria-controls="discusTab" aria-selected="false">Discussions</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="review" data-toggle="tab" href="#reviewTab" role="tab"
+                                    aria-controls="reviewTab" aria-selected="false">Reviews</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="faq" data-toggle="tab" href="#faqTab" role="tab"
+                                    aria-controls="faqTab" aria-selected="false">FAQs</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <!-- Course Details Tab -->
+                            <div class="tab-pane fade show active" id="detailTab" role="tabpanel"
+                                aria-labelledby="detail">
+                                <div class="card-body p-4">
+                                    <div class="page-separator bg-white">
+                                        <div class="page-separator__text  bg-white">Class Details</div>
+                                    </div>
 
+                                    <form class="py-4">
+                                        <div class="row">
+                                            <div class="col-md-6 form-group">
+                                                <label class="form-label">Name</label>
+                                                <input type="text" class="form-control" value="Excellence in Leadership"
+                                                    placeholder="Enter Class Name ...">
+                                            </div>
+                                            <div class="col-md-6 form-group">
+                                                <label class="form-label">Department</label>
+                                                <input type="text" class="form-control"
+                                                    value="Guidance &amp; Counselling"
+                                                    placeholder="Enter Department...">
+                                            </div>
+                                        </div>
+                                        <!-- class type and status -->
+                                        <div class="row">
+                                            <div class="col-md-6 form-group">
+                                                <label class="form-label">Class Type</label>
+                                                <select name="classType" class="form-control custom-select">
+                                                    <option value="">Select Class Type</option>
+                                                    <option value="private" selected>Private</option>
+                                                    <option value="live">Live</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-6 form-group">
+                                                <label class="form-label">Status</label>
+                                                <select name="status" class="form-control custom-select">
+                                                    <option value="">Select Status</option>
+                                                    <option value="active" selected>Active</option>
+                                                    <option value="draft">Draft</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <!-- Pricing -->
+                                        <div class="row">
+                                            <div class="col-md-4 form-group">
+                                                <label class="form-label">Pricing</label>
+                                                <select name="classType" class="form-control custom-select">
+                                                    <option value="">Select Pricing</option>
+                                                    <option value="private" selected>Paid</option>
+                                                    <option value="live">Free</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-4 form-group">
+                                                <label class="form-label">Amount</label>
+                                                <div class="input-group mb-3">
+                                                    <div class="input-group-prepend">
+                                                        <span
+                                                            class="input-group-text custom-bg-sec text-black-50">&#8358;</span>
+                                                    </div>
+                                                    <input type="text" class="form-control" value="5000"
+                                                        aria-label="Amount (to the nearest Naira)">
+                                                    <div class="input-group-append">
+                                                        <span
+                                                            class="input-group-text custom-bg-sec text-black-50">.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 form-group">
+                                                <label class="form-label">Discount</label>
+                                                <div class="input-group mb-1">
+                                                    <div class="input-group-prepend">
+                                                        <span
+                                                            class="input-group-text custom-bg-sec text-black-50">&#8358;</span>
+                                                    </div>
+                                                    <input type="text" class="form-control" value="0"
+                                                        aria-label="Discount (to the nearest Naira)">
+                                                    <div class="input-group-append">
+                                                        <span
+                                                            class="input-group-text custom-bg-sec text-black-50">.00</span>
+                                                    </div>
+                                                </div>
+                                                <small class="d-block text-muted text-right">Discounted Price is
+                                                    Optional</small>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 form-group">
+                                                <label class="form-label">About</label>
+                                                <textarea type="text" class="form-control" rows="4"
+                                                    placeholder="About this Course ...">There is a potential to lead in everyone's Life, Knowing and Mastering God given ability will propel your faster. This Course will take through how you can be an effective leader
+                                                </textarea>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-primary">Save changes</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- What to Learn Tab -->
+                            <div class="tab-pane fade" id="whatTab" role="tabpanel" aria-labelledby="what">
+                                <div class="card-body p-4">
+                                    <div class="page-separator bg-white">
+                                        <div class="page-separator__text  bg-white">What to Learn</div>
+                                    </div>
 
+                                    <ul class="list-unstyled">
+                                        <li class="d-flex align-items-center">
+                                            <span class="material-icons text-50 mr-8pt">check</span>
+                                            <span class="text-70">You will know how to take amazing photos that impress
+                                                your family and friends</span>
+                                        </li>
+                                        <li class="d-flex align-items-center">
+                                            <span class="material-icons text-50 mr-8pt">check</span>
+                                            <span class="text-70">You will know how to photograph in different scenarios
+                                                like family portraits, landscapes, aerial, product, wildlife, and much
+                                                more</span>
+                                        </li>
+                                        <li class="d-flex align-items-center">
+                                            <span class="material-icons text-50 mr-8pt">check</span>
+                                            <span class="text-70">You will know how to light your subjects with flash
+                                                and natural lighting</span>
+                                        </li>
+                                        <li class="d-flex align-items-center">
+                                            <span class="material-icons text-50 mr-8pt">check</span>
+                                            <span class="text-70">You will know how the camera truly works, so you can
+                                                take better photos using manual settings</span>
+                                        </li>
+                                        <li class="d-flex align-items-center">
+                                            <span class="material-icons text-50 mr-8pt">check</span>
+                                            <span class="text-70">You will know how to compose images beautifully with
+                                                basic photography rules</span>
+                                        </li>
+                                    </ul>
 
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="moduleTab" role="tabpanel" aria-labelledby="module">
+                                <div class="card-body p-4">
+                                    <div class="page-separator bg-white">
+                                        <div class="page-separator__text  bg-white">Modules</div>
+                                    </div>
 
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="learnerTab" role="tabpanel" aria-labelledby="learner">
+                                <div class="card-body p-4">
+                                    <div class="page-separator bg-white">
+                                        <div class="page-separator__text  bg-white">Learner List</div>
+                                    </div>
 
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="bookTab" role="tabpanel" aria-labelledby="book">
+                                <div class="card-body p-4">
+                                    <div class="page-separator bg-white">
+                                        <div class="page-separator__text  bg-white">Books</div>
+                                    </div>
 
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="quizTab" role="tabpanel" aria-labelledby="quiz">
+                                <div class="card-body p-4">
+                                    <div class="page-separator bg-white">
+                                        <div class="page-separator__text  bg-white">Quizzes</div>
+                                    </div>
 
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="discusTab" role="tabpanel" aria-labelledby="discus">
+                                <div class="card-body p-4">
+                                    <div class="page-separator bg-white">
+                                        <div class="page-separator__text  bg-white">Discussions</div>
+                                    </div>
 
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="reviewTab" role="tabpanel" aria-labelledby="review">
+                                <div class="card-body p-4">
+                                    <div class="page-separator bg-white">
+                                        <div class="page-separator__text  bg-white">Reviews &amp; Ratings</div>
+                                    </div>
 
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="faqTab" role="tabpanel" aria-labelledby="faq">
+                                <div class="card-body p-4">
+                                    <div class="page-separator bg-white">
+                                        <div class="page-separator__text  bg-white">FAQs</div>
+                                    </div>
 
-
-
-
-
-            <div class="container page__container page-section">
-
-                <div class="form-group text-center">
-                    <a target="_blank" href="./assets/images/people/256/256_rsz_florian-perennes-594195-unsplash.jpg">
-                        <img src="./assets/images/people/256/256_rsz_florian-perennes-594195-unsplash.jpg" width="200"
-                            height="200" class="rounded-circle d-block mx-auto" />
-                    </a>
-                    <div class="position-relative d-inline-block mx-auto custom-file-picker my-3">
-                        <input type="file" class="">
-                        <span class="btn btn-sm btn-primary ">Choose File</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
+
+
+
                 </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="page-separator mb-4">
-                            <div class="page-separator__text">Basic Information</div>
-                        </div>
-                        <form>
-                            <div class="row">
-                                <div class="col-md-6 form-group">
-                                    <label class="form-label">First name</label>
-                                    <input type="text" class="form-control" value="Bosun"
-                                        placeholder="Your first name ...">
-                                </div>
-                                <div class="col-md-6 form-group">
-                                    <label class="form-label">Last name</label>
-                                    <input type="text" class="form-control" value="Jones"
-                                        placeholder="Your last name ...">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 form-group">
-                                    <label class="form-label">Phone Number</label>
-                                    <input type="number" class="form-control" value="08102003000"
-                                        placeholder="Your Phone Number">
-                                </div>
-                                <div class="col-md-6 form-group">
-                                    <label class="form-label">Email address</label>
-                                    <input type="email" class="form-control" value="bounjonesmuyiwa@gmail.com"
-                                        placeholder="Your email address ...">
-                                    <small class="form-text text-muted">Note that if you change your email, you will
-                                        have to
-                                        confirm it again.</small>
-                                </div>
-                            </div>
-                            <label class="form-label">Custom Url</label>
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text border custom-bg-sec text-black-50"
-                                        id="basic-addon3">acadamier.com/</span>
-                                </div>
-                                <input type="text" class="form-control" id="basic-url" value="bosun-jones"
-                                    aria-describedby="basic-addon3">
-                            </div>
-
-
-
-                            <div class="form-group">
-                                <label class="form-label">About</label>
-                                <textarea type="text" class="form-control" rows="4" placeholder="Your Bio ..."> Always Inspired to impact knowledge to people
-                            </textarea>
-                            </div>
-                            <button class="btn btn-primary">Save changes</button>
-                        </form>
-                    </div>
-                    <div class="col-md-6 py-5">
-                        <div class="page-separator mb-4">
-                            <div class="page-separator__text">
-                                <a id="payment">
-                                    Payment Information
-                                </a>
-                            </div>
-                        </div>
-                        <form>
-                            <div class="form-group">
-                                <label class="form-label">Bank Name</label>
-                                <input type="text" class="form-control" value="Zenith Bank"
-                                    placeholder="Your Bank Name ...">
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label">Account Name</label>
-                                <input type="text" class="form-control" value="Bosun Jones"
-                                    placeholder="Your Account Name ...">
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label">Account Number</label>
-                                <input type="number" class="form-control" value="0012004212"
-                                    placeholder="Your Account Number">
-                            </div>
-                            <button class="btn btn-primary">Save changes</button>
-                        </form>
-                    </div>
-
-                    <!-- Password Reset -->
-                    <div class="col-md-6 py-5">
-                        <div class="page-separator mb-4">
-                            <div class="page-separator__text">Password Reset</div>
-                        </div>
-                        <form>
-                            <div class="form-group">
-                                <label class="form-label">Old Password</label>
-                                <input type="password" class="form-control" value="Bosun1234"
-                                    placeholder="Your Old Password ...">
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label">New Password</label>
-                                <input type="passowrd" class="form-control" value=""
-                                    placeholder="Your New Passowrd ...">
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label">Confirm Password</label>
-                                <input type="password" class="form-control" value=""
-                                    placeholder="Your Confrim Password">
-                            </div>
-                            <button class="btn btn-primary">Save changes</button>
-                        </form>
-                    </div>
-                </div>
-
             </div>
 
 
@@ -449,7 +552,6 @@
 
         </div>
         <!-- // END drawer-layout__content -->
-
 
 
 
@@ -495,14 +597,27 @@
                         <li class="sidebar-menu-item">
                             <a class="sidebar-menu-button" href="instructor-courses.html">
                                 <span
-                                    class="material-icons sidebar-menu-icon sidebar-menu-icon--left">import_contacts</span>
+                                    class="material-icons sidebar-menu-icon sidebar-menu-icon--left">import_learnerTabs</span>
                                 <span class="sidebar-menu-text">Manage Courses</span>
                             </a>
                         </li>
                         <li class="sidebar-menu-item">
-                            <a class="sidebar-menu-button" href="facilitor-quizzes.html">
+                            <a class="sidebar-menu-button" href="facilitator-books.html">
+                                <span
+                                    class="material-icons sidebar-menu-icon sidebar-menu-icon--left">import_learnerTabs</span>
+                                <span class="sidebar-menu-text">Manage Books</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="facilitator-quizzes.html">
                                 <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">help</span>
                                 <span class="sidebar-menu-text">Manage Quizzes</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="facilitator-classes.html">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">help</span>
+                                <span class="sidebar-menu-text">Manage Classes</span>
                             </a>
                         </li>
                         <li class="sidebar-menu-item">
@@ -637,7 +752,7 @@
                         <li class="sidebar-menu-item">
                             <a class="sidebar-menu-button" href="student-take-lesson.html">
                                 <span
-                                    class="material-icons sidebar-menu-icon sidebar-menu-icon--left">import_contacts</span>
+                                    class="material-icons sidebar-menu-icon sidebar-menu-icon--left">import_learnerTabs</span>
                                 <span class="sidebar-menu-text">Take Lesson</span>
                             </a>
                         </li>
@@ -1208,7 +1323,31 @@
     <script src="assets/js/app.js"></script>
 
 
+    <!-- Global Settings -->
+    <script src="assets/js/settings.js"></script>
 
+    <!-- Flatpickr -->
+    <script src="assets/vendor/flatpickr/flatpickr.min.js"></script>
+    <script src="assets/js/flatpickr.js"></script>
+
+    <!-- Moment.js -->
+    <script src="assets/vendor/moment.min.js"></script>
+    <script src="assets/vendor/moment-range.min.js"></script>
+
+    <!-- Chart.js -->
+    <script src="assets/vendor/Chart.min.js"></script>
+    <script src="assets/js/chartjs.js"></script>
+
+    <!-- Chart.js Samples -->
+    <script src="assets/js/page.student-dashboard.js"></script>
+
+    <!-- List.js -->
+    <script src="assets/vendor/list.min.js"></script>
+    <script src="assets/js/list.js"></script>
+
+    <!-- Tables -->
+    <script src="assets/js/toggle-check-all.js"></script>
+    <script src="assets/js/check-selected-row.js"></script>
 
 </body>
 
