@@ -1,0 +1,2151 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Facilitator Edit Class - Acadamier</title>
+
+    <!-- Prevent the demo from appearing in search engines -->
+    <meta name="robots" content="noindex">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CRoboto:400,500%7CExo+2:600&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- Perfect Scrollbar -->
+    <link type="text/css" href="assets/vendor/perfect-scrollbar.css" rel="stylesheet">
+
+    <!-- Fix Footer CSS -->
+    <link type="text/css" href="assets/vendor/fix-footer.css" rel="stylesheet">
+
+    <!-- Material Design Icons -->
+    <link type="text/css" href="assets/css/material-icons.css" rel="stylesheet">
+
+
+    <!-- Font Awesome Icons -->
+    <link type="text/css" href="assets/css/fontawesome.css" rel="stylesheet">
+
+
+    <!-- Preloader -->
+    <link type="text/css" href="assets/css/preloader.css" rel="stylesheet">
+
+
+    <!-- App CSS -->
+    <link type="text/css" href="assets/css/app.css" rel="stylesheet">
+    <!-- Custom Css -->
+    <link type="text/css" href="assets/css/custom.css" rel="stylesheet">
+</head>
+
+
+<body class="layout-app ">
+
+    <!-- what to learn Modal -->
+    <div class="modal fade" id="learn" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">What to Learn</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label class="form-label">Add to List</label>
+                            <input type="text" class="form-control" value="" placeholder="Enter What to learn...">
+                        </div>
+                        <button type="button" class="btn btn-primary w-100 mt-4">Add</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Book -->
+    <div class="modal fade" id="book" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Add Book</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label class="form-label">Select Book</label>
+                            <select class="form-control">
+                                <option>All Your Books</option>
+                                <option>Do Right</option>
+                                <option>Seeing As a Leader</option>
+                            </select>
+                        </div>
+                        <button type="button" class="btn btn-primary w-100 mt-4">Add</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Module Modal -->
+    <div class="modal fade" id="module" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Add Module</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label class="form-label">Module Title</label>
+                            <input type="text" class="form-control" value="" placeholder="Enter Module title...">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Module Topic</label>
+                            <input type="text" class="form-control" value="" placeholder="Enter Module Topic...">
+                        </div>
+                        <label class="form-label">Upload Video</label>
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="inputGroupFile01">
+                            <label class="custom-file-label" for="inputGroupFile01">Choose
+                                file (Video)</label>
+                        </div>
+                        <button type="button" class="btn btn-primary w-100 mt-4">Add</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Faq Modal -->
+    <div class="modal fade" id="faq" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Add FAQ</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label class="form-label">Question</label>
+                            <input type="text" class="form-control" value="" placeholder="Enter Question...">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Answer</label>
+                            <input type="text" class="form-control" value="" placeholder="Enter Answer...">
+                        </div>
+                        <button type="button" class="btn btn-primary w-100 mt-4">Add</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="preloader">
+        <div class="sk-double-bounce">
+            <div class="sk-child sk-double-bounce1"></div>
+            <div class="sk-child sk-double-bounce2"></div>
+        </div>
+    </div>
+
+    <div class="mdk-drawer-layout js-mdk-drawer-layout" data-push data-responsive-width="992px">
+        <div class="mdk-drawer-layout__content page-content">
+
+            <!-- Header -->
+            <div class="navbar navbar-expand pr-0 navbar-light border-bottom-2" id="default-navbar" data-primary>
+                <!-- Navbar toggler -->
+                <button class="navbar-toggler w-auto mr-16pt d-block d-lg-none rounded-0" type="button"
+                    data-toggle="sidebar">
+                    <span class="material-icons">short_text</span>
+                </button>
+
+                <!-- Navbar Brand -->
+                <a href="student-dashboard.html" class="navbar-brand mr-16pt d-lg-none">
+
+                    <span class="avatar avatar-sm navbar-brand-icon mr-0 mr-lg-8pt">
+
+                        <span class="avatar-title rounded bg-primary"><img
+                                src="assets/images/logo/acadamier-logo-white.png" alt="logo" class="img-fluid" /></span>
+
+                    </span>
+
+                </a>
+
+
+
+
+
+                <span class="d-none d-md-flex align-items-center mr-16pt">
+
+                    <span class="avatar avatar-sm mr-12pt">
+
+                        <span class="avatar-title rounded navbar-avatar"><i
+                                class="material-icons">account_circle</i></span>
+
+                    </span>
+
+                    <small class="flex d-flex flex-column">
+                        <strong class="navbar-text-100">Smith Jones</strong>
+                        <span class="navbar-text-50">2,300 points</span>
+                    </small>
+                </span>
+
+
+
+
+
+                <div class="flex"></div>
+
+
+
+                <div class="nav navbar-nav flex-nowrap d-flex mr-16pt">
+
+
+                    <!-- Notifications dropdown -->
+                    <div class="nav-item dropdown dropdown-notifications dropdown-xs-down-full" data-toggle="tooltip"
+                        data-title="Messages" data-placement="bottom" data-boundary="window">
+                        <button class="nav-link btn-flush dropdown-toggle" type="button" data-toggle="dropdown"
+                            data-caret="false">
+                            <i class="material-icons icon-24pt">mail_outline</i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <div data-perfect-scrollbar class="position-relative">
+                                <div class="dropdown-header"><strong>Messages</strong></div>
+                                <div class="list-group list-group-flush mb-0">
+
+                                    <a href="javascript:void(0);" class="list-group-item list-group-item-action unread">
+                                        <span class="d-flex align-items-center mb-1">
+                                            <small class="text-black-50">5 minutes ago</small>
+
+                                            <span class="ml-auto unread-indicator bg-accent"></span>
+
+                                        </span>
+                                        <span class="d-flex">
+                                            <span class="avatar avatar-xs mr-2">
+                                                <img src="assets/images/people/110/woman-5.jpg" alt="people"
+                                                    class="avatar-img rounded-circle">
+                                            </span>
+                                            <span class="flex d-flex flex-column">
+                                                <strong class="text-black-100">Sarah Obasi</strong>
+                                                <span class="text-black-70">Your head dey there</span>
+                                            </span>
+                                        </span>
+                                    </a>
+
+                                    <a href="javascript:void(0);" class="list-group-item list-group-item-action">
+                                        <span class="d-flex align-items-center mb-1">
+                                            <small class="text-black-50">5 minutes ago</small>
+
+                                        </span>
+                                        <span class="d-flex">
+                                            <span class="avatar avatar-xs mr-2">
+                                                <img src="assets/images/people/110/woman-5.jpg" alt="people"
+                                                    class="avatar-img rounded-circle">
+                                            </span>
+                                            <span class="flex d-flex flex-column">
+                                                <strong class="text-black-100">Ijeoma Chukwu</strong>
+                                                <span class="text-black-70">🔥 Great meeting you too..</span>
+                                            </span>
+                                        </span>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // END Notifications dropdown -->
+
+
+                    <!-- Notifications dropdown -->
+                    <div class="nav-item ml-16pt dropdown dropdown-notifications dropdown-xs-down-full"
+                        data-toggle="tooltip" data-title="Notifications" data-placement="bottom" data-boundary="window">
+                        <button class="nav-link btn-flush dropdown-toggle" type="button" data-toggle="dropdown"
+                            data-caret="false">
+                            <i class="material-icons">notifications_none</i>
+                            <span class="badge badge-notifications badge-accent">2</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <div data-perfect-scrollbar class="position-relative">
+                                <div class="dropdown-header"><strong>System notifications</strong></div>
+                                <div class="list-group list-group-flush mb-0">
+
+                                    <a href="javascript:void(0);" class="list-group-item list-group-item-action unread">
+                                        <span class="d-flex align-items-center mb-1">
+                                            <small class="text-black-50">3 minutes ago</small>
+
+                                            <span class="ml-auto unread-indicator bg-accent"></span>
+
+                                        </span>
+                                        <span class="d-flex">
+                                            <span class="avatar avatar-xs mr-2">
+                                                <span class="avatar-title rounded-circle bg-light">
+                                                    <i
+                                                        class="material-icons font-size-16pt text-accent">account_circle</i>
+                                                </span>
+                                            </span>
+                                            <span class="flex d-flex flex-column">
+
+                                                <span class="text-black-70">Your profile information has been updated
+                                                    correctly.</span>
+                                            </span>
+                                        </span>
+                                    </a>
+
+                                    <a href="javascript:void(0);" class="list-group-item list-group-item-action">
+                                        <span class="d-flex align-items-center mb-1">
+                                            <small class="text-black-50">5 hours ago</small>
+
+                                        </span>
+                                        <span class="d-flex">
+                                            <span class="avatar avatar-xs mr-2">
+                                                <span class="avatar-title rounded-circle bg-light">
+                                                    <i class="material-icons font-size-16pt text-primary">group_add</i>
+                                                </span>
+                                            </span>
+                                            <span class="flex d-flex flex-column">
+                                                <strong class="text-black-100">Mordi Chukwu</strong>
+                                                <span class="text-black-70">Wants to join your private group.</span>
+                                            </span>
+                                        </span>
+                                    </a>
+
+                                    <a href="javascript:void(0);" class="list-group-item list-group-item-action">
+                                        <span class="d-flex align-items-center mb-1">
+                                            <small class="text-black-50">1 day ago</small>
+
+                                        </span>
+                                        <span class="d-flex">
+                                            <span class="avatar avatar-xs mr-2">
+                                                <span class="avatar-title rounded-circle bg-light">
+                                                    <i class="material-icons font-size-16pt text-warning">storage</i>
+                                                </span>
+                                            </span>
+                                            <span class="flex d-flex flex-column">
+
+                                                <span class="text-black-70">Your payment was successful.</span>
+                                            </span>
+                                        </span>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // END Notifications dropdown -->
+
+
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link d-flex align-items-center dropdown-toggle" data-toggle="dropdown"
+                            data-caret="false">
+
+                            <span class="avatar avatar-sm mr-8pt2">
+
+                                <span class="avatar-title rounded-circle bg-primary"><i
+                                        class="material-icons">account_box</i></span>
+
+                            </span>
+
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <div class="dropdown-header"><strong>Account</strong></div>
+                            <a class="dropdown-item" href="facilitator-profile.html">Profile</a>
+                            <a class="dropdown-item" href="#">Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- // END Header -->
+
+            <!-- Conditional Alert, If Pro subscription about to end  -->
+            <div class="alert alert-danger" role="alert">
+                <div class="container d-flex justify-content-between">
+                    <h5 class="mb-0 text-danger text-md pt-1">Pro Subscription expires in 3 Days</h5>
+                    <a href="billing-upgrade.html" class="btn btn-primary text-white">Renew Now</a>
+                </div>
+            </div>
+
+
+
+
+            <div class="pt-32pt">
+                <div
+                    class="container page__container d-flex flex-column flex-md-row align-items-center text-center text-sm-left">
+                    <div class="flex d-flex flex-column flex-sm-row align-items-center mb-24pt mb-md-0">
+
+                        <div class="mb-24pt mb-sm-0 mr-sm-24pt">
+                            <h2 class="mb-0">Edit Class</h2>
+                            <ol class="breadcrumb p-0 m-0">
+                                <li class="breadcrumb-item"><a href="facilitator-dashboard.html">Home</a></li>
+                                <li class="breadcrumb-item active">
+                                    Edit Class
+                                </li>
+                            </ol>
+
+                        </div>
+                    </div>
+
+                    <div class="row" role="tablist">
+                        <div class="col-auto">
+                            <a href="#" class="btn btn-outline-secondary">Delete Class</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container page__container">
+
+                <div class="page-section">
+                    <div class="card">
+                        <!-- List of UI tabs -->
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" id="detail" data-toggle="tab" href="#detailTab" role="tab"
+                                    aria-controls="detail" aria-selected="true">Course Details</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="what" data-toggle="tab" href="#whatTab" role="tab"
+                                    aria-controls="whatTab" aria-selected="true">What to Learn</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="module" data-toggle="tab" href="#moduleTab" role="tab"
+                                    aria-controls="moduleTab" aria-selected="false">Modules</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="learner" data-toggle="tab" href="#learnerTab" role="tab"
+                                    aria-controls="learnerTab" aria-selected="false">Learner List</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="book" data-toggle="tab" href="#bookTab" role="tab"
+                                    aria-controls="bookTab" aria-selected="false">Books</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="quiz" data-toggle="tab" href="#quizTab" role="tab"
+                                    aria-controls="quizTab" aria-selected="false">Quizzes</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="discus" data-toggle="tab" href="#discusTab" role="tab"
+                                    aria-controls="discusTab" aria-selected="false">Discussions</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="review" data-toggle="tab" href="#reviewTab" role="tab"
+                                    aria-controls="reviewTab" aria-selected="false">Reviews</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="faq" data-toggle="tab" href="#faqTab" role="tab"
+                                    aria-controls="faqTab" aria-selected="false">FAQs</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <!-- Course Details Tab -->
+                            <div class="tab-pane fade show active" id="detailTab" role="tabpanel"
+                                aria-labelledby="detail">
+                                <div class="card-body p-4">
+                                    <div class="page-separator bg-white">
+                                        <div class="page-separator__text  bg-white">Class Details</div>
+                                    </div>
+
+                                    <form class="py-4">
+                                        <div class="row">
+                                            <div class="col-md-6 form-group">
+                                                <label class="form-label">Name</label>
+                                                <input type="text" class="form-control" value="Excellence in Leadership"
+                                                    placeholder="Enter Class Name ...">
+                                            </div>
+                                            <div class="col-md-6 form-group">
+                                                <label class="form-label">Department</label>
+                                                <input type="text" class="form-control"
+                                                    value="Guidance &amp; Counselling"
+                                                    placeholder="Enter Department...">
+                                            </div>
+                                        </div>
+                                        <!-- class type and status -->
+                                        <div class="row">
+                                            <div class="col-md-6 form-group">
+                                                <label class="form-label">Class Type</label>
+                                                <select name="classType" class="form-control custom-select">
+                                                    <option value="">Select Class Type</option>
+                                                    <option value="private" selected>Private</option>
+                                                    <option value="live">Live</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-6 form-group">
+                                                <label class="form-label">Status</label>
+                                                <select name="status" class="form-control custom-select">
+                                                    <option value="">Select Status</option>
+                                                    <option value="active" selected>Active</option>
+                                                    <option value="draft">Draft</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <!-- Pricing -->
+                                        <div class="row">
+                                            <div class="col-md-4 form-group">
+                                                <label class="form-label">Pricing</label>
+                                                <select name="classType" class="form-control custom-select">
+                                                    <option value="">Select Pricing</option>
+                                                    <option value="private" selected>Paid</option>
+                                                    <option value="live">Free</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-4 form-group">
+                                                <label class="form-label">Amount</label>
+                                                <div class="input-group mb-3">
+                                                    <div class="input-group-prepend">
+                                                        <span
+                                                            class="input-group-text custom-bg-sec text-black-50">&#8358;</span>
+                                                    </div>
+                                                    <input type="text" class="form-control" value="5000"
+                                                        aria-label="Amount (to the nearest Naira)">
+                                                    <div class="input-group-append">
+                                                        <span
+                                                            class="input-group-text custom-bg-sec text-black-50">.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 form-group">
+                                                <label class="form-label">Discount</label>
+                                                <div class="input-group mb-1">
+                                                    <div class="input-group-prepend">
+                                                        <span
+                                                            class="input-group-text custom-bg-sec text-black-50">&#8358;</span>
+                                                    </div>
+                                                    <input type="text" class="form-control" value="0"
+                                                        aria-label="Discount (to the nearest Naira)">
+                                                    <div class="input-group-append">
+                                                        <span
+                                                            class="input-group-text custom-bg-sec text-black-50">.00</span>
+                                                    </div>
+                                                </div>
+                                                <small class="d-block text-muted text-right">Discounted Price is
+                                                    Optional</small>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 form-group">
+                                                <label class="form-label">About</label>
+                                                <textarea type="text" class="form-control" rows="4"
+                                                    placeholder="About this Course ...">There is a potential to lead in everyone's Life, Knowing and Mastering God given ability will propel your faster. This Course will take through how you can be an effective leader
+                                                </textarea>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-primary">Save changes</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- What to Learn Tab -->
+                            <div class="tab-pane fade" id="whatTab" role="tabpanel" aria-labelledby="what">
+                                <div class="card-body p-4">
+                                    <div class="row mb-4">
+                                        <div class="col-md-10">
+                                            <div class="page-separator bg-white mb-0">
+                                                <div class="page-separator__text  bg-white">What to Learn</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 d-flex justify-content-start justify-content-md-end">
+                                            <button class="btn btn-sm btn-secondary py-1" data-toggle="modal"
+                                                data-target="#learn">Add New</button>
+                                        </div>
+                                    </div>
+
+                                    <ul class="list-unstyled">
+                                        <li class="d-flex align-items-center mb-2">
+                                            <span class="material-icons text-50 mr-8pt">check</span>
+                                            <input class="form-control d-inline shadow-sm border-0" type="text"
+                                                value="You will know how to take amazing photos that impress your family and friends" />
+                                        </li>
+                                        <li class="d-flex align-items-center mb-2">
+                                            <span class="material-icons text-50 mr-8pt">check</span>
+                                            <input class="form-control d-inline shadow-sm border-0" type="text"
+                                                value="You will know how to take amazing photos that impress your family and friends" />
+                                        </li>
+                                        <li class="d-flex align-items-center mb-2">
+                                            <span class="material-icons text-50 mr-8pt">check</span>
+                                            <input class="form-control d-inline shadow-sm border-0" type="text"
+                                                value="You will know how to take amazing photos that impress your family and friends" />
+                                        </li>
+                                        <li class="d-flex align-items-center mb-2">
+                                            <span class="material-icons text-50 mr-8pt">check</span>
+                                            <input class="form-control d-inline shadow-sm border-0" type="text"
+                                                value="You will know how to take amazing photos that impress your family and friends" />
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                            <!-- Modules -->
+                            <div class="tab-pane fade" id="moduleTab" role="tabpanel" aria-labelledby="module">
+                                <div class="card-body p-4">
+                                    <div class="page-separator bg-white">
+                                        <div class="page-separator__text  bg-white">Modules</div>
+                                    </div>
+
+                                    <div class="accordion js-accordion accordion--boxed mb-24pt" id="parent">
+                                        <!-- Mod 1 -->
+                                        <div class="accordion__item ">
+                                            <a href="#" class="accordion__toggle collapsed" data-toggle="collapse"
+                                                data-target="#course-toc-1" data-parent="#parent">
+                                                <span class="flex">Class Overview</span>
+                                                <span
+                                                    class="accordion__toggle-icon material-icons">keyboard_arrow_down</span>
+                                            </a>
+                                            <div class="accordion__menu collapse" id="course-toc-1">
+                                                <div class="accordion__menu-link">
+
+                                                    <i
+                                                        class="material-icons text-70 icon-16pt icon--left">drag_handle</i>
+                                                    <a class="flex" href="student-lesson.html">Watch Trailer</a>
+                                                    <span class="text-muted">1m 10s</span>
+
+                                                </div>
+
+                                                <br />
+                                                <!-- Icon to add module title, course and duration -->
+                                                <button class="btn btn-primary rounded-circle d-block float-right m-3"
+                                                    data-toggle="modal" data-target="#module">
+                                                    +
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <!-- Mod 2 -->
+                                        <div class="accordion__item open">
+                                            <a href="#" class="accordion__toggle" data-toggle="collapse"
+                                                data-target="#course-toc-2" data-parent="#parent">
+                                                <span class="flex">Introduction to Leadership</span>
+                                                <span
+                                                    class="accordion__toggle-icon material-icons">keyboard_arrow_down</span>
+                                            </a>
+                                            <div class="accordion__menu collapse show" id="course-toc-2">
+                                                <div>
+                                                    <div class="accordion__menu-link">
+                                                        <i
+                                                            class="material-icons text-70 icon-16pt icon--left">drag_handle</i>
+                                                        <a class="flex" href="student-lesson.html">Introduction</a>
+                                                        <span class="text-muted">8m 42s</span>
+                                                    </div>
+                                                    <div class="accordion__menu-link active">
+                                                        <i
+                                                            class="material-icons text-70 icon-16pt icon--left">drag_handle</i>
+                                                        <a class="flex" href="student-lesson.html">Introduction to
+                                                            Leadership</a>
+                                                        <span class="text-muted">50m 13s</span>
+                                                    </div>
+                                                    <div class="accordion__menu-link">
+                                                        <i
+                                                            class="material-icons text-70 icon-16pt icon--left">drag_handle</i>
+                                                        <a class="flex" href="student-lesson.html">Why Kids have low
+                                                            self-esteem</a>
+                                                        <span class="text-muted">12m 10s</span>
+                                                    </div>
+                                                    <div class="accordion__menu-link">
+                                                        <i
+                                                            class="material-icons text-70 icon-16pt icon--left">drag_handle</i>
+                                                        <a class="flex" href="student-take-quiz.html">Quiz: Introduction
+                                                            to
+                                                            Leadership</a>
+                                                    </div>
+
+                                                    <br />
+                                                    <!-- Icon to add module title, course and duration -->
+                                                    <button
+                                                        class="btn btn-primary rounded-circle d-block float-right m-3"
+                                                        data-toggle="modal" data-target="#module">
+                                                        +
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Mod 3 -->
+                                        <div class="accordion__item">
+                                            <a href="#" class="accordion__toggle collapsed" data-toggle="collapse"
+                                                data-target="#course-toc-3" data-parent="#parent">
+                                                <span class="flex">Trauma Management in Adolescents</span>
+                                                <span
+                                                    class="accordion__toggle-icon material-icons">keyboard_arrow_down</span>
+                                            </a>
+                                            <div class="accordion__menu collapse" id="course-toc-3">
+                                                <div>
+                                                    <div class="accordion__menu-link">
+                                                        <i
+                                                            class="material-icons text-70 icon-16pt icon--left">drag_handle</i>
+                                                        <a class="flex" href="student-lesson.html">Bi-polaric
+                                                            Symptoms</a>
+                                                        <span class="text-muted">04:23</span>
+                                                    </div>
+
+                                                    <br />
+                                                    <!-- Icon to add module title, course and duration -->
+                                                    <button
+                                                        class="btn btn-primary rounded-circle d-block float-right m-3"
+                                                        data-toggle="modal" data-target="#module">
+                                                        +
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion__item">
+                                            <a href="#" class="accordion__toggle collapsed" data-toggle="collapse"
+                                                data-target="#course-toc-4" data-parent="#parent">
+                                                <span class="flex">Mental Illness</span>
+                                                <span
+                                                    class="accordion__toggle-icon material-icons">keyboard_arrow_down</span>
+                                            </a>
+                                            <div class="accordion__menu collapse" id="course-toc-4">
+                                                <div>
+                                                    <div class="accordion__menu-link">
+                                                        <i
+                                                            class="material-icons text-70 icon-16pt icon--left">drag_handle</i>
+                                                        <a class="flex" href="student-lesson.html">How to diagnose
+                                                            Depression</a>
+                                                        <span class="text-muted">04:23</span>
+                                                    </div>
+
+                                                    <br />
+                                                    <!-- Icon to add module title, course and duration -->
+                                                    <button
+                                                        class="btn btn-primary rounded-circle d-block float-right m-3"
+                                                        data-toggle="modal" data-target="#module">
+                                                        +
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Learners List -->
+                            <div class="tab-pane fade" id="learnerTab" role="tabpanel" aria-labelledby="learner">
+                                <div class="card-body p-4">
+                                    <div class="page-separator bg-white">
+                                        <div class="page-separator__text  bg-white">Learner List</div>
+                                    </div>
+                                    <!-- Table -->
+                                    <div class="card m-0 border-0">
+                                        <div class="table-responsive" data-toggle="lists"
+                                            data-lists-sort-by="js-lists-values-name"
+                                            data-lists-values="[&quot;js-lists-values-name&quot;, &quot;js-lists-values-employer-name&quot;, &quot;js-lists-values-projects&quot;, &quot;js-lists-values-point&quot;, &quot;js-lists-values-earnings&quot;]">
+
+                                            <div class="card-header mx-0 row px-0">
+                                                <div class="col-md-6">
+                                                    <div class="search-form w-50">
+                                                        <input type="text" class="form-control search"
+                                                            placeholder="Search ...">
+                                                        <button class="btn" type="button"><i
+                                                                class="material-icons">search</i></button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6"></div>
+                                            </div>
+                                            <table class="table mb-0 thead-border-top-0 table-nowrap">
+                                                <thead>
+                                                    <tr>
+                                                        <th>
+                                                            <a href="javascript:void(0)" class="sort asc"
+                                                                data-sort="js-lists-values-name">Name</a>
+                                                        </th>
+                                                        <th style="width: 37px;">Modules Taken</th>
+                                                        <th style="width: 37px;">Date Enrolled</th>
+                                                        <th style="width: 120px;">
+                                                            <a href="javascript:void(0)" class="sort"
+                                                                data-sort="js-lists-values-point">Point Earned</a>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="list" id="search">
+                                                    <tr>
+                                                        <td>
+                                                            <div class="d-flex flex-column">
+                                                                <p class="mb-0">
+                                                                    <strong class="js-lists-values-name">
+                                                                        Bosun Jones
+                                                                    </strong>
+                                                                </p>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <small
+                                                                class="alert alert-secondary rounded-pill d-inline-block p-1 mb-0 mr-2"
+                                                                role="alert">
+                                                                The Mind of a Leader
+                                                            </small>
+                                                            <small
+                                                                class="alert alert-secondary rounded-pill d-inline-block p-1 mb-0 mr-2"
+                                                                role="alert">
+                                                                Understanding Your Follower
+                                                            </small>
+                                                            <small
+                                                                class="alert alert-secondary rounded-pill d-inline-block p-1 mb-0 mr-2"
+                                                                role="alert">
+                                                                Understanding Your Follower
+                                                            </small>
+
+                                                        </td>
+                                                        <td class="text-center"> 30/09/2020 </td>
+                                                        <td class="text-50 js-lists-values-point text-center">100</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="d-flex flex-column">
+                                                                <p class="mb-0">
+                                                                    <strong class="js-lists-values-name">
+                                                                        Bosun Jones
+                                                                    </strong>
+                                                                </p>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <small
+                                                                class="alert alert-secondary rounded-pill d-inline-block p-1 mb-0 mr-2"
+                                                                role="alert">
+                                                                The Mind of a Leader
+                                                            </small>
+                                                            <small
+                                                                class="alert alert-secondary rounded-pill d-inline-block p-1 mb-0 mr-2"
+                                                                role="alert">
+                                                                Understanding Your Follower
+                                                            </small>
+                                                            <small
+                                                                class="alert alert-secondary rounded-pill d-inline-block p-1 mb-0 mr-2"
+                                                                role="alert">
+                                                                Understanding Your Follower
+                                                            </small>
+
+                                                        </td>
+                                                        <td class="text-center"> 30/09/2020 </td>
+                                                        <td class="text-50 js-lists-values-point text-center">100</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="d-flex flex-column">
+                                                                <p class="mb-0">
+                                                                    <strong class="js-lists-values-name">
+                                                                        Bosun Jones
+                                                                    </strong>
+                                                                </p>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <small
+                                                                class="alert alert-secondary rounded-pill d-inline-block p-1 mb-0 mr-2"
+                                                                role="alert">
+                                                                The Mind of a Leader
+                                                            </small>
+                                                            <small
+                                                                class="alert alert-secondary rounded-pill d-inline-block p-1 mb-0 mr-2"
+                                                                role="alert">
+                                                                Understanding Your Follower
+                                                            </small>
+                                                            <small
+                                                                class="alert alert-secondary rounded-pill d-inline-block p-1 mb-0 mr-2"
+                                                                role="alert">
+                                                                Understanding Your Follower
+                                                            </small>
+
+                                                        </td>
+                                                        <td class="text-center"> 30/09/2020 </td>
+                                                        <td class="text-50 js-lists-values-point text-center">100</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Books -->
+                            <div class="tab-pane fade" id="bookTab" role="tabpanel" aria-labelledby="book">
+                                <div class="card-body p-4">
+                                    <div class="row mb-4">
+                                        <div class="col-md-10">
+                                            <div class="page-separator bg-white mb-0">
+                                                <div class="page-separator__text  bg-white">Books</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 d-flex justify-content-start justify-content-md-end">
+                                            <button class="btn btn-sm btn-secondary py-1" data-toggle="modal"
+                                                data-target="#book">Add New</button>
+                                        </div>
+                                    </div>
+
+                                    <!-- Class List -->
+                                    <div class="card m-0">
+                                        <div class="table-responsive" data-toggle="lists"
+                                            data-lists-sort-by="js-lists-values-book"
+                                            data-lists-values='["js-lists-values-book", "js-lists-values-employer-name", "js-lists-values-projects", "js-lists-values-rating", "js-lists-values-earnings"]'>
+
+                                            <div class="card-header mx-0 row px-0">
+                                                <div class="col-md-6">
+                                                    <div class="search-form w-50">
+                                                        <input type="text" class="form-control search"
+                                                            placeholder="Search ...">
+                                                        <button class="btn" type="button"><i
+                                                                class="material-icons">search</i></button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6"></div>
+                                            </div>
+                                            <table class="table mb-0 thead-border-top-0 table-nowrap">
+                                                <thead>
+                                                    <tr>
+                                                        <th>
+                                                            <a href="javascript:void(0)" class="sort"
+                                                                data-sort="js-lists-values-book">Book Title</a>
+                                                        </th>
+                                                        <th style="width: 24px;" class="pl-0">Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="list" id="search">
+
+                                                    <tr>
+                                                        <td>
+                                                            <div class="d-flex flex-column">
+                                                                <div class="media flex-nowrap align-items-center">
+                                                                    <a href="#"
+                                                                        class="avatar avatar-4by3 overlay overlay--primary mr-12pt">
+                                                                        <img src="assets/images/paths/angular_routing_200x168.png"
+                                                                            alt="course" class="avatar-img rounded">
+                                                                        <span class="overlay__content"></span>
+                                                                    </a>
+                                                                    <div class="media-body">
+                                                                        <a class="text-body js-lists-values-book"
+                                                                            href="#">
+                                                                            <strong>Seeing As a Leader</strong>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#"
+                                                                class="btn btn-sm btn-outline-secondary dropdown-toggle"
+                                                                id="tableAction" data-toggle="dropdown">
+                                                                More
+                                                            </a>
+                                                            <div class="dropdown-menu" aria-labelledby="tableAction">
+                                                                <a class="border-bottom dropdown-item"
+                                                                    href="#">Delete</a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="d-flex flex-column">
+                                                                <div class="media flex-nowrap align-items-center">
+                                                                    <a href="#"
+                                                                        class="avatar avatar-4by3 overlay overlay--primary mr-12pt">
+                                                                        <img src="assets/images/paths/angular_routing_200x168.png"
+                                                                            alt="course" class="avatar-img rounded">
+                                                                        <span class="overlay__content"></span>
+                                                                    </a>
+                                                                    <div class="media-body">
+                                                                        <a class="text-body js-lists-values-book"
+                                                                            href="#">
+                                                                            <strong>Leading to Serve</strong>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#"
+                                                                class="btn btn-sm btn-outline-secondary dropdown-toggle"
+                                                                id="tableAction" data-toggle="dropdown">
+                                                                More
+                                                            </a>
+                                                            <div class="dropdown-menu" aria-labelledby="tableAction">
+                                                                <a class="border-bottom dropdown-item"
+                                                                    href="#">Delete</a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+
+                                    </div>
+                                    <!-- Class List Ends here -->
+                                </div>
+                            </div>
+                            <!-- Quizzes -->
+                            <div class="tab-pane fade" id="quizTab" role="tabpanel" aria-labelledby="quiz">
+                                <div class="card-body p-4">
+                                    <div class="row mb-4">
+                                        <div class="col-md-10">
+                                            <div class="page-separator bg-white mb-0">
+                                                <div class="page-separator__text  bg-white">Quizzes</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 d-flex justify-content-start justify-content-md-end">
+                                            <a class="btn btn-sm btn-secondary py-1" href="edit-quiz.html">Add New</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- Discusiion -->
+                            <div class="tab-pane fade" id="discusTab" role="tabpanel" aria-labelledby="discus">
+                                <div class="card-body p-4">
+                                    <div class="page-separator bg-white">
+                                        <div class="page-separator__text  bg-white">Discussions</div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <div class="row align-items-center" style="white-space: nowrap;">
+                                                <div class="col-lg-auto">
+                                                    <form
+                                                        class="search-form search-form--dark d-lg-inline-flex mb-8pt mb-lg-0"
+                                                        action="#">
+                                                        <input type="text" class="form-control w-lg-auto"
+                                                            placeholder="Search discussions">
+                                                        <button class="btn" type="submit" role="button"><i
+                                                                class="material-icons">search</i></button>
+                                                    </form>
+                                                </div>
+                                                <div class="col-lg d-flex flex-wrap align-items-center">
+                                                    <div class="ml-lg-auto dropdown">
+                                                        <a href="#" class="btn btn-link dropdown-toggle text-70"
+                                                            data-toggle="dropdown">All Topics</a>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a href="#" class="dropdown-item active">All Topics</a>
+                                                            <a href="#" class="dropdown-item">My Topics</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropdown mr-8pt">
+                                                        <a href="#" class="btn btn-link dropdown-toggle text-70"
+                                                            data-toggle="dropdown">Newest</a>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <a href="#" class="dropdown-item active">Newest</a>
+                                                            <a href="#" class="dropdown-item">Unanswered</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="list-group list-group-flush">
+
+                                            <div class="list-group-item p-3">
+                                                <div class="row align-items-start">
+                                                    <div class="col-md-3 mb-8pt mb-md-0">
+                                                        <div class="media align-items-center">
+                                                            <div class="media-left mr-12pt">
+                                                                <a href="#" class="avatar avatar-sm">
+                                                                    <!-- <img src="LB" alt="avatar" class="avatar-img rounded-circle"> -->
+                                                                    <span class="avatar-title rounded-circle">JS</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="d-flex flex-column media-body media-middle">
+                                                                <a href="#" class="card-title">Jide Sanwolu</a>
+                                                                <small class="text-muted">2 days ago</small>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col mb-8pt mb-md-0">
+                                                        <p class="mb-8pt"><a href="discussion.html" class="text-body">
+                                                                <strong>
+                                                                    How to manage emotions as a Leader
+                                                                </strong>
+                                                            </a>
+                                                        </p>
+
+
+                                                        <a href="discussion.html"
+                                                            class="chip chip-outline-secondary">Excellent in
+                                                            Leadership</a>
+
+
+                                                    </div>
+                                                    <div
+                                                        class="col-auto d-flex flex-column align-items-center justify-content-center">
+                                                        <h5 class="m-0">1</h5>
+                                                        <p class="lh-1 mb-0"><small class="text-70">answers</small></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="list-group-item p-3">
+                                                <div class="row align-items-start">
+                                                    <div class="col-md-3 mb-8pt mb-md-0">
+                                                        <div class="media align-items-center">
+                                                            <div class="media-left mr-12pt">
+                                                                <a href="#" class="avatar avatar-sm">
+                                                                    <!-- <img src="AC" alt="avatar" class="avatar-img rounded-circle"> -->
+                                                                    <span class="avatar-title rounded-circle">KA</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="d-flex flex-column media-body media-middle">
+                                                                <a href="#" class="card-title">Kolade Amodu</a>
+                                                                <small class="text-muted">3 days ago</small>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col mb-8pt mb-md-0">
+                                                        <p class="mb-0"><a href="discussion.html"
+                                                                class="text-body"><strong>What stitches work best for
+                                                                    silk fabrics and mural designs?</strong></a></p>
+
+                                                    </div>
+                                                    <div
+                                                        class="col-auto d-flex flex-column align-items-center justify-content-center">
+                                                        <h5 class="m-0">1</h5>
+                                                        <p class="lh-1 mb-0"><small class="text-70">answers</small></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="list-group-item p-3">
+                                                <div class="row align-items-start">
+                                                    <div class="col-md-3 mb-8pt mb-md-0">
+                                                        <div class="media align-items-center">
+                                                            <div class="media-left mr-12pt">
+                                                                <a href="#" class="avatar avatar-sm">
+                                                                    <!-- <img src="EH" alt="avatar" class="avatar-img rounded-circle"> -->
+                                                                    <span class="avatar-title rounded-circle">BJ</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="d-flex flex-column media-body media-middle">
+                                                                <a href="#" class="card-title">Bosun Jones</a>
+                                                                <small class="text-muted">4 days ago</small>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col mb-8pt mb-md-0">
+                                                        <p class="mb-0"><a href="discussion.html"
+                                                                class="text-body"><strong>Why is my stitches not coming
+                                                                    out on a straight line?</strong></a></p>
+
+                                                    </div>
+                                                    <div
+                                                        class="col-auto d-flex flex-column align-items-center justify-content-center">
+                                                        <h5 class="m-0">1</h5>
+                                                        <p class="lh-1 mb-0"><small class="text-70">answers</small></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="list-group-item p-3">
+                                                <div class="row align-items-start">
+                                                    <div class="col-md-3 mb-8pt mb-md-0">
+                                                        <div class="media align-items-center">
+                                                            <div class="media-left mr-12pt">
+                                                                <a href="#" class="avatar avatar-sm">
+                                                                    <!-- <img src="JK" alt="avatar" class="avatar-img rounded-circle"> -->
+                                                                    <span class="avatar-title rounded-circle">SO</span>
+                                                                </a>
+                                                            </div>
+                                                            <div class="d-flex flex-column media-body media-middle">
+                                                                <a href="#" class="card-title">Sarah Obasi</a>
+                                                                <small class="text-muted">6 days ago</small>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col mb-8pt mb-md-0">
+                                                        <p class="mb-0"><a href="discussion.html"
+                                                                class="text-body"><strong>Using satin instead of cotton
+                                                                    to make a Tote Bag</strong></a></p>
+
+                                                    </div>
+                                                    <div
+                                                        class="col-auto d-flex flex-column align-items-center justify-content-center">
+                                                        <h5 class="m-0">1</h5>
+                                                        <p class="lh-1 mb-0"><small class="text-70">answers</small></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+                                        <div class="card-footer">
+
+
+                                            <ul class="pagination justify-content-start pagination-xsm m-0">
+                                                <li class="page-item disabled">
+                                                    <a class="page-link" href="#" aria-label="Previous">
+                                                        <span aria-hidden="true"
+                                                            class="material-icons">chevron_left</span>
+                                                        <span>Prev</span>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Page 1">
+                                                        <span>1</span>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Page 2">
+                                                        <span>2</span>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Next">
+                                                        <span>Next</span>
+                                                        <span aria-hidden="true"
+                                                            class="material-icons">chevron_right</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Reviews and Rating -->
+                            <div class="tab-pane fade" id="reviewTab" role="tabpanel" aria-labelledby="review">
+                                <div class="card-body p-4">
+                                    <div class="page-separator bg-white">
+                                        <div class="page-separator__text  bg-white">Reviews &amp; Ratings</div>
+                                    </div>
+
+                                    <div>
+                                        <div class="card card-body">
+                                            <div class="d-flex">
+                                                <a href="#" class="avatar avatar-sm avatar-online mr-12pt">
+                                                    <!-- <img src="assets/images/people/256/256_rsz_nicolas-horn-689011-unsplash.jpg" alt="people" class="avatar-img rounded-circle"> -->
+                                                    <span class="avatar-title rounded-circle">SO</span>
+                                                </a>
+                                                <div class="flex">
+                                                    <p class="d-flex align-items-center mb-2">
+                                                        <a href="#" class="text-body mr-2"><strong>Sarah
+                                                                Obasi</strong></a>
+                                                        <small class="text-muted">2 min ago</small>
+                                                    </p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                        Asperiores beatae
+                                                        quisquam iste maiores libero, corrupti totam saepe itaque quidem
+                                                        perspiciatis?
+                                                    </p>
+                                                    <div class="d-flex justify-content-end">
+
+                                                        <div>
+                                                            <div class="rating">
+
+                                                                <span class="rating__item">
+                                                                    <span class="material-icons">star</span>
+                                                                </span>
+                                                                <span class="rating__item">
+                                                                    <span class="material-icons">star</span>
+                                                                </span>
+                                                                <span class="rating__item">
+                                                                    <span class="material-icons">star</span>
+                                                                </span>
+                                                                <span class="rating__item">
+                                                                    <span class="material-icons">star_border</span>
+                                                                </span>
+                                                                <span class="rating__item">
+                                                                    <span class="material-icons">star_border</span>
+                                                                </span>
+                                                                <!-- rating in text -->
+                                                                <span class="ml-3">3/5</span>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- FAQs -->
+                            <div class="tab-pane fade" id="faqTab" role="tabpanel" aria-labelledby="faq">
+                                <div class="card-body p-4">
+                                    <div class="row mb-4">
+                                        <div class="col-md-10">
+                                            <div class="page-separator bg-white mb-0">
+                                                <div class="page-separator__text  bg-white">FAQs</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 d-flex justify-content-start justify-content-md-end">
+                                            <button class="btn btn-sm btn-secondary py-1" data-toggle="modal"
+                                                data-target="#faq">Add New</button>
+                                        </div>
+                                    </div>
+
+                                    <!-- FAQ accordion -->
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="card">
+                                            <div class="card-header bg-secondary " id="headingOne"
+                                                data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                                aria-controls="collapseOne">
+                                                <h5 class="mb-0 text-white">
+                                                    How Can I get the Hard Copy of the Book Recommended by the
+                                                    Facilitator?
+                                                </h5>
+                                            </div>
+
+                                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                                data-parent="#accordionExample">
+                                                <div class="card-body">
+                                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                                    terry richardson ad squid.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header bg-secondary" id="headingTwo" data-toggle="collapse"
+                                                data-target="#collapseTwo" aria-expanded="true"
+                                                aria-controls="collapseTwo">
+                                                <h5 class="mb-0 text-white">
+                                                    Can You Guide me as a Mentor ?
+                                                </h5>
+                                            </div>
+
+                                            <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo"
+                                                data-parent="#accordionExample">
+                                                <div class="card-body">
+                                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                                    terry richardson ad squid.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+
+
+
+            <div class="js-fix-footer2 bg-white border-top-2">
+                <div class="container page__container page-section d-flex flex-column">
+                    <p class="text-70 brand mb-24pt">
+                        <img class="brand-icon" src="assets/images/logo/acadamier-logo.png" width="200" alt="Acadamier">
+                    </p>
+                    <p class="measure-lead-max text-50 small mr-8pt">Acadamier is a long established fact that a reader
+                        will be distracted by the readable content of a page when looking at its layout. The point of
+                        using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
+                        using 'Content here, content here', making it look like readable English.</p>
+                    <p class="mb-8pt d-flex">
+                        <a href="#" class="text-70 text-underline mr-8pt small">Terms</a>
+                        <a href="#" class="text-70 text-underline small">Privacy policy</a>
+                    </p>
+                    <p class="text-50 small mt-n1 mb-0">Copyright 2020 &copy; All rights reserved. The English Manner
+                        Company</p>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- // END drawer-layout__content -->
+
+
+
+
+        <!-- drawer -->
+        <div class="mdk-drawer js-mdk-drawer" id="default-drawer">
+            <div class="mdk-drawer__content">
+                <div class="sidebar sidebar-dark-dodger-blue sidebar-left" data-perfect-scrollbar>
+
+
+                    <div class="d-flex align-items-center navbar-height">
+                        <form action="https://luma.humatheme.com/index.html"
+                            class="search-form search-form--black mx-16pt pr-0 pl-16pt">
+                            <input type="text" class="form-control pl-0" placeholder="Search">
+                            <button class="btn" type="submit"><i class="material-icons">search</i></button>
+                        </form>
+                    </div>
+
+
+
+                    <a href="index-2.html" class="sidebar-brand ">
+
+                        <span class="avatar avatar-xl sidebar-brand-icon h-auto">
+
+                            <span class="avatar-title rounded bg-primary"><img
+                                    src="assets/images/illustration/teacher/128/white.svg" class="img-fluid"
+                                    alt="logo" /></span>
+
+                        </span>
+
+                        <span>Acadamier</span>
+                    </a>
+                    <div class="sidebar-heading">Facilitator</div>
+                    <ul class="sidebar-menu">
+
+
+                        <li class="sidebar-menu-item active">
+                            <a class="sidebar-menu-button" href="facilitator-dashboard.html">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">school</span>
+                                <span class="sidebar-menu-text">Facilitator Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="instructor-courses.html">
+                                <span
+                                    class="material-icons sidebar-menu-icon sidebar-menu-icon--left">import_contacts</span>
+                                <span class="sidebar-menu-text">Manage Courses</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="facilitator-books.html">
+                                <span
+                                    class="material-icons sidebar-menu-icon sidebar-menu-icon--left">import_contacts</span>
+                                <span class="sidebar-menu-text">Manage Books</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="facilitator-quizzes.html">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">help</span>
+                                <span class="sidebar-menu-text">Manage Quizzes</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="facilitator-classes.html">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">help</span>
+                                <span class="sidebar-menu-text">Manage Classes</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" data-toggle="collapse" href="#revenue_menu">
+                                <span
+                                    class="material-icons sidebar-menu-icon sidebar-menu-icon--left">trending_up</span>
+                                <span class="sidebar-menu-text">Revenue</span>
+                            </a>
+                            <ul class="sidebar-submenu collapse sm-indent" id="revenue_menu">
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="facilitator-earning.html">
+                                        <span class="sidebar-menu-text">Earnings</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button disabled" href="facilitator-settlement.html">
+                                        <span class="sidebar-menu-text">settlement</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" data-toggle="collapse" href="#sub">
+                                <span
+                                    class="material-icons sidebar-menu-icon sidebar-menu-icon--left">trending_up</span>
+                                <span class="sidebar-menu-text">Subscription</span>
+                            </a>
+                            <ul class="sidebar-submenu collapse sm-indent" id="sub">
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="billing-upgrade.html">
+                                        <span class="sidebar-menu-text">Plans</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="billing-history.html">
+                                        <span class="sidebar-menu-text">Payment History</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="instructor-statement.html">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">receipt</span>
+                                <span class="sidebar-menu-text">Statement</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="instructor-edit-course.html">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">post_add</span>
+                                <span class="sidebar-menu-text">Edit Course</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="instructor-edit-quiz.html">
+                                <span
+                                    class="material-icons sidebar-menu-icon sidebar-menu-icon--left">format_shapes</span>
+                                <span class="sidebar-menu-text">Edit Quiz</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                    <div class="sidebar-heading">Student</div>
+                    <ul class="sidebar-menu">
+
+
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="index-2.html">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">home</span>
+                                <span class="sidebar-menu-text">Home</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="courses.html">
+                                <span
+                                    class="material-icons sidebar-menu-icon sidebar-menu-icon--left">local_library</span>
+                                <span class="sidebar-menu-text">Browse Courses</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="paths.html">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">style</span>
+                                <span class="sidebar-menu-text">Browse Paths</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="student-dashboard.html">
+                                <span
+                                    class="material-icons sidebar-menu-icon sidebar-menu-icon--left">account_box</span>
+                                <span class="sidebar-menu-text">Student Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="student-my-courses.html">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">search</span>
+                                <span class="sidebar-menu-text">My Courses</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="student-paths.html">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">timeline</span>
+                                <span class="sidebar-menu-text">My Paths</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="student-path.html">
+                                <span
+                                    class="material-icons sidebar-menu-icon sidebar-menu-icon--left">change_history</span>
+                                <span class="sidebar-menu-text">Path Details</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="student-course.html">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">face</span>
+                                <span class="sidebar-menu-text">Course Preview</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="student-lesson.html">
+                                <span
+                                    class="material-icons sidebar-menu-icon sidebar-menu-icon--left">panorama_fish_eye</span>
+                                <span class="sidebar-menu-text">Lesson Preview</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="student-take-course.html">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">class</span>
+                                <span class="sidebar-menu-text">Take Course</span>
+                                <span
+                                    class="sidebar-menu-badge badge badge-accent badge-notifications ml-auto">PRO</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="student-take-lesson.html">
+                                <span
+                                    class="material-icons sidebar-menu-icon sidebar-menu-icon--left">import_contacts</span>
+                                <span class="sidebar-menu-text">Take Lesson</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="student-take-quiz.html">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">dvr</span>
+                                <span class="sidebar-menu-text">Take Quiz</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="student-quiz-results.html">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">poll</span>
+                                <span class="sidebar-menu-text">My Quizzes</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="student-quiz-result-details.html">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">live_help</span>
+                                <span class="sidebar-menu-text">Quiz Result</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="student-path-assessment.html">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">layers</span>
+                                <span class="sidebar-menu-text">Skill Assessment</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="student-path-assessment-result.html">
+                                <span
+                                    class="material-icons sidebar-menu-icon sidebar-menu-icon--left">assignment_turned_in</span>
+                                <span class="sidebar-menu-text">Skill Result</span>
+                            </a>
+                        </li>
+
+                    </ul>
+
+
+                    <div class="sidebar-heading">Applications</div>
+                    <ul class="sidebar-menu">
+
+
+
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button js-sidebar-collapse" data-toggle="collapse"
+                                href="#enterprise_menu">
+                                <span
+                                    class="material-icons sidebar-menu-icon sidebar-menu-icon--left">donut_large</span>
+                                Enterprise
+                                <span class="ml-auto sidebar-menu-toggle-icon"></span>
+                            </a>
+                            <ul class="sidebar-submenu collapse sm-indent" id="enterprise_menu">
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="erp-dashboard.html">
+                                        <span class="sidebar-menu-text">ERP Dashboard</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="crm-dashboard.html">
+                                        <span class="sidebar-menu-text">CRM Dashboard</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="hr-dashboard.html">
+                                        <span class="sidebar-menu-text">HR Dashboard</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="employees.html">
+                                        <span class="sidebar-menu-text">Employees</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="staff.html">
+                                        <span class="sidebar-menu-text">Staff</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="leaves.html">
+                                        <span class="sidebar-menu-text">Leaves</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button disabled" href="departments.html">
+                                        <span class="sidebar-menu-text">Departments</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" data-toggle="collapse" href="#productivity_menu">
+                                <span
+                                    class="material-icons sidebar-menu-icon sidebar-menu-icon--left">access_time</span>
+                                Productivity
+                                <span class="ml-auto sidebar-menu-toggle-icon"></span>
+                            </a>
+                            <ul class="sidebar-submenu collapse sm-indent" id="productivity_menu">
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="projects.html">
+                                        <span class="sidebar-menu-text">Projects</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="tasks-board.html">
+                                        <span class="sidebar-menu-text">Tasks Board</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="tasks-list.html">
+                                        <span class="sidebar-menu-text">Tasks List</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button disabled" href="kanban.html">
+                                        <span class="sidebar-menu-text">Kanban</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" data-toggle="collapse" href="#ecommerce_menu">
+                                <span
+                                    class="material-icons sidebar-menu-icon sidebar-menu-icon--left">shopping_cart</span>
+                                eCommerce
+                                <span class="ml-auto sidebar-menu-toggle-icon"></span>
+                            </a>
+                            <ul class="sidebar-submenu collapse sm-indent" id="ecommerce_menu">
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="ecommerce.html">
+                                        <span class="sidebar-menu-text">Shop Dashboard</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button disabled" href="edit-product.html">
+                                        <span class="sidebar-menu-text">Edit Product</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" data-toggle="collapse" href="#messaging_menu">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">message</span>
+                                Messaging
+                                <span class="sidebar-menu-badge badge badge-accent badge-notifications ml-auto">2</span>
+                                <span class="sidebar-menu-toggle-icon"></span>
+                            </a>
+                            <ul class="sidebar-submenu collapse sm-indent" id="messaging_menu">
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="messages.html">
+                                        <span class="sidebar-menu-text">Messages</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="email.html">
+                                        <span class="sidebar-menu-text">Email</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" data-toggle="collapse" href="#cms_menu">
+                                <span
+                                    class="material-icons sidebar-menu-icon sidebar-menu-icon--left">content_copy</span>
+                                CMS
+                                <span class="ml-auto sidebar-menu-toggle-icon"></span>
+                            </a>
+                            <ul class="sidebar-submenu collapse sm-indent" id="cms_menu">
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="cms-dashboard.html">
+                                        <span class="sidebar-menu-text">CMS Dashboard</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="posts.html">
+                                        <span class="sidebar-menu-text">Posts</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" data-toggle="collapse" href="#account_menu">
+                                <span
+                                    class="material-icons sidebar-menu-icon sidebar-menu-icon--left">account_box</span>
+                                Account
+                                <span class="ml-auto sidebar-menu-toggle-icon"></span>
+                            </a>
+                            <ul class="sidebar-submenu collapse sm-indent" id="account_menu">
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="pricing.html">
+                                        <span class="sidebar-menu-text">Pricing</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="login.html">
+                                        <span class="sidebar-menu-text">Login</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="signup.html">
+                                        <span class="sidebar-menu-text">Signup</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="signup-payment.html">
+                                        <span class="sidebar-menu-text">Payment</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="reset-password.html">
+                                        <span class="sidebar-menu-text">Reset Password</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="change-password.html">
+                                        <span class="sidebar-menu-text">Change Password</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="edit-account.html">
+                                        <span class="sidebar-menu-text">Edit Account</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="edit-account-profile.html">
+                                        <span class="sidebar-menu-text">Profile &amp; Privacy</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="edit-account-notifications.html">
+                                        <span class="sidebar-menu-text">Email Notifications</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="edit-account-password.html">
+                                        <span class="sidebar-menu-text">Account Password</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="billing.html">
+                                        <span class="sidebar-menu-text">Subscription</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="billing-upgrade.html">
+                                        <span class="sidebar-menu-text">Upgrade Account</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="billing-payment.html">
+                                        <span class="sidebar-menu-text">Payment Information</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="billing-history.html">
+                                        <span class="sidebar-menu-text">Payment History</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="billing-invoice.html">
+                                        <span class="sidebar-menu-text">Invoice</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" data-toggle="collapse" href="#community_menu">
+                                <span
+                                    class="material-icons sidebar-menu-icon sidebar-menu-icon--left">people_outline</span>
+                                Community
+                                <span class="ml-auto sidebar-menu-toggle-icon"></span>
+                            </a>
+                            <ul class="sidebar-submenu collapse sm-indent" id="community_menu">
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="teachers.html">
+
+                                        <span class="sidebar-menu-text">Browse Teachers</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="student-profile.html">
+
+                                        <span class="sidebar-menu-text">Student Profile</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="teacher-profile.html">
+
+                                        <span class="sidebar-menu-text">Teacher Profile</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="blog.html">
+
+                                        <span class="sidebar-menu-text">Blog</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="blog-post.html">
+
+                                        <span class="sidebar-menu-text">Blog Post</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="faq.html">
+                                        <span class="sidebar-menu-text">FAQ</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="help-center.html">
+                                        <!--  -->
+                                        <span class="sidebar-menu-text">Help Center</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="discussions.html">
+                                        <span class="sidebar-menu-text">Discussions</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="discussion.html">
+                                        <span class="sidebar-menu-text">Discussion Details</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="discussions-ask.html">
+                                        <span class="sidebar-menu-text">Ask Question</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+                    <div class="sidebar-heading">UI</div>
+                    <ul class="sidebar-menu">
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" data-toggle="collapse" href="#components_menu">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">tune</span>
+                                Components
+                                <span class="ml-auto sidebar-menu-toggle-icon"></span>
+                            </a>
+                            <ul class="sidebar-submenu collapse sm-indent" id="components_menu">
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="ui-buttons.html">
+                                        <span class="sidebar-menu-text">Buttons</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="ui-avatars.html">
+                                        <span class="sidebar-menu-text">Avatars</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="ui-forms.html">
+                                        <span class="sidebar-menu-text">Forms</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="ui-loaders.html">
+                                        <span class="sidebar-menu-text">Loaders</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="ui-tables.html">
+                                        <span class="sidebar-menu-text">Tables</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="ui-cards.html">
+                                        <span class="sidebar-menu-text">Cards</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="ui-icons.html">
+                                        <span class="sidebar-menu-text">Icons</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="ui-tabs.html">
+                                        <span class="sidebar-menu-text">Tabs</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="ui-alerts.html">
+                                        <span class="sidebar-menu-text">Alerts</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="ui-badges.html">
+                                        <span class="sidebar-menu-text">Badges</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="ui-progress.html">
+                                        <span class="sidebar-menu-text">Progress</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="ui-pagination.html">
+                                        <span class="sidebar-menu-text">Pagination</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button disabled" href="#">
+                                        <span class="sidebar-menu-text">Disabled</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" data-toggle="collapse" href="#plugins_menu">
+                                <span class="material-icons sidebar-menu-icon sidebar-menu-icon--left">folder</span>
+                                Plugins
+                                <span class="ml-auto sidebar-menu-toggle-icon"></span>
+                            </a>
+                            <ul class="sidebar-submenu collapse sm-indent" id="plugins_menu">
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="ui-plugin-charts.html">
+                                        <span class="sidebar-menu-text">Charts</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="ui-plugin-flatpickr.html">
+                                        <span class="sidebar-menu-text">Flatpickr</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="ui-plugin-daterangepicker.html">
+                                        <span class="sidebar-menu-text">Date Range Picker</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="ui-plugin-dragula.html">
+                                        <span class="sidebar-menu-text">Dragula</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="ui-plugin-dropzone.html">
+                                        <span class="sidebar-menu-text">Dropzone</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="ui-plugin-range-sliders.html">
+                                        <span class="sidebar-menu-text">Range Sliders</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="ui-plugin-quill.html">
+                                        <span class="sidebar-menu-text">Quill</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="ui-plugin-select2.html">
+                                        <span class="sidebar-menu-text">Select2</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="ui-plugin-nestable.html">
+                                        <span class="sidebar-menu-text">Nestable</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="ui-plugin-fancytree.html">
+                                        <span class="sidebar-menu-text">Fancy Tree</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="ui-plugin-maps-vector.html">
+                                        <span class="sidebar-menu-text">Vector Maps</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="ui-plugin-sweet-alert.html">
+                                        <span class="sidebar-menu-text">Sweet Alert</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="ui-plugin-toastr.html">
+                                        <span class="sidebar-menu-text">Toastr</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button disabled" href="#">
+                                        <span class="sidebar-menu-text">Disabled</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" data-toggle="collapse" href="#layouts_menu">
+                                <span
+                                    class="material-icons sidebar-menu-icon sidebar-menu-icon--left">view_compact</span>
+                                Layouts
+                                <span class="ml-auto sidebar-menu-toggle-icon"></span>
+                            </a>
+                            <ul class="sidebar-submenu collapse sm-indent" id="layouts_menu">
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="compact-instructor-dashboard.html">
+                                        <span class="sidebar-menu-text">Compact</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="mini-instructor-dashboard.html">
+                                        <span class="sidebar-menu-text">Mini</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="mini-secondary-instructor-dashboard.html">
+                                        <span class="sidebar-menu-text">Mini + Secondary</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item active">
+                                    <a class="sidebar-menu-button" href="instructor-dashboard.html">
+                                        <span class="sidebar-menu-text">App</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="boxed-instructor-dashboard.html">
+                                        <span class="sidebar-menu-text">Boxed</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="sticky-instructor-dashboard.html">
+                                        <span class="sidebar-menu-text">Sticky</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a class="sidebar-menu-button" href="fixed-instructor-dashboard.html">
+                                        <span class="sidebar-menu-text">Fixed</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+                </div>
+            </div>
+        </div>
+        <!-- // END drawer -->
+
+
+    </div>
+    <!-- // END drawer-layout -->
+
+    <!-- jQuery -->
+    <script src="assets/vendor/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/vendor/popper.min.js"></script>
+    <script src="assets/vendor/bootstrap.min.js"></script>
+
+    <!-- Perfect Scrollbar -->
+    <script src="assets/vendor/perfect-scrollbar.min.js"></script>
+
+    <!-- DOM Factory -->
+    <script src="assets/vendor/dom-factory.js"></script>
+
+    <!-- MDK -->
+    <script src="assets/vendor/material-design-kit.js"></script>
+
+    <!-- Fix Footer -->
+    <script src="assets/vendor/fix-footer.js"></script>
+
+    <!-- App JS -->
+    <script src="assets/js/app.js"></script>
+
+
+    <!-- Global Settings -->
+    <script src="assets/js/settings.js"></script>
+
+    <!-- Flatpickr -->
+    <script src="assets/vendor/flatpickr/flatpickr.min.js"></script>
+    <script src="assets/js/flatpickr.js"></script>
+
+    <!-- Moment.js -->
+    <script src="assets/vendor/moment.min.js"></script>
+    <script src="assets/vendor/moment-range.min.js"></script>
+
+    <!-- Chart.js -->
+    <script src="assets/vendor/Chart.min.js"></script>
+    <script src="assets/js/chartjs.js"></script>
+
+    <!-- Chart.js Samples -->
+    <script src="assets/js/page.student-dashboard.js"></script>
+
+    <!-- List.js -->
+    <script src="assets/vendor/list.min.js"></script>
+    <script src="assets/js/list.js"></script>
+
+    <!-- Tables -->
+    <script src="assets/js/toggle-check-all.js"></script>
+    <script src="assets/js/check-selected-row.js"></script>
+
+</body>
+
+</html>
